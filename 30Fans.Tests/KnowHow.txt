@@ -1,0 +1,20 @@
+﻿     [DeploymentItem(@".\hibernate.cfg.xml")]
+     [DeploymentItem(@".\x86\SQLite.Interop.dll")]     
+Foram adicionados a uma classe pai (IntegrityTests) de testes que lidam com integração de banco de dados. Eles fazem o deploy na pasta de output dos 
+testes de arquivos necessários.
+
+Outro problema encontrado, foi na hora de executar os testes via linha de comando, para integração contínua. Descobri que a dll System.Data.SQLite.dll por não estar 
+sendo referenciada diretamente, não era carregada na pasta de outoput dos testes. Essa dll é carregada dinamicamente via reflection pelo Nhibernate.
+Achei algumas alternativas para isso:
+1)Adicionar o atributo [DeploymentItem(@".\System.Data.SQLite.dll")] a classe pai IntegrityTests. Esse atributo carrega essa dll diretamente do corpo do projeto para 
+a pasta output. (Solução feia pois preciso jogar a dll no file system do projeto de testes)
+
+2)Adicionar o atributo [DeploymentItem(@".\System.Data.SQLite.dll")], que copia força a cópia da dll para a pasta de output. Note que nesse caso a dll não precisa estar
+jogada no folder do projeto.
+
+3)Chamar qualquer objeto, ou método diretamente da dll também força seu carregamento.
+   ex. System.Data.SQLite.SQLiteLog.Enabled = true;
+
+
+
+

@@ -1,0 +1,72 @@
+﻿@using _30Fans.Resources.Home
+@{
+    ViewBag.Title = Index.Title;
+}
+
+<div id="ei_menu" class="ei_menu">
+    <ul>
+	    <li>
+		    <a href="#" class="pos1">
+			    <span class="ei_preview"></span>
+			    <span class="ei_image"></span>
+		    </a>
+		    <div class="ei_descr">
+                <a href="/Football"><h2>Futebol</h2></a>
+                <a href="/Football">
+              	    <h3>@Index.PromoTitleOne</h3>
+                </a><br>		
+			    <p>
+                    Envie sua foto.
+                    Pode ser do jeito que você quiser.<br />
+                    De uma final inesquecível.<br />
+                    Com a camisa do seu time de coração.<br />
+                    Ou com sua tatuagem homenageando seu clube.<br />
+                    Vale qualquer coisa!
+                </p>
+		    </div>
+	    </li>
+	    <li>
+		    <a href="#" class="pos2">
+			    <span class="ei_preview"></span>
+			    <span class="ei_image"></span>
+		    </a>
+		    <div class="ei_descr">
+                <a href="/Football">
+                    <h3>@Index.PromoTitleTwo</h3>
+                </a><br>					
+			    <a href="/Football">
+				    <img src="@Url.Content("~/Content/images/mainpage/promo5.png")" alt="">
+			    </a>					
+		    </div>
+	    </li>
+	    <li>
+		    <a href="#" class="pos3">
+			    <span class="ei_preview"></span>
+			    <span class="ei_image"></span>
+		    </a>
+		    <div class="ei_descr">
+                <a href="/Football"><h2>Outros</h2></a>
+                <a href="/Football">
+              	    <h3>@Index.PromoTitleThree</h3>
+                </a><br>		
+			    <p>
+                    Envie sua foto.
+                    Pode ser sua ou de algum familiar seu. Do jeito que você quiser.<br />
+                    No clube, na praia, no campo, ou em qualquer outro lugar!
+                </p>
+		    </div>
+	    </li>
+	    <br/>
+	    <div class="promotext">
+		    <span class="title">
+			    <a href="/Football">
+				    @Index.PromoTitleExplanation
+			    </a>
+		    </span><br><br><br /><br />
+		    <span class="instrucao1">@Index.PromoExplanation1</span><br><br><br /><br />
+		    <span class="instrucao2">@Index.PromoExplanation2</span><br><br><br /><br />
+		    <span class="instrucao3">@Index.PromoExplanation3</span>
+	    </div>			
+            
+    </ul>	
+</div>

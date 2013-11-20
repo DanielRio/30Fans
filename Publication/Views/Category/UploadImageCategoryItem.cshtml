@@ -1,0 +1,18 @@
+﻿@model Domain.CategoryItem
+
+@{
+    ViewBag.Title = "UploadImageCategoryItem";
+}
+
+<h2>Upload Image for @Model.ItemName</h2>
+
+@using (Html.BeginForm("UploadImageCategoryItem", "Category", FormMethod.Post, new { enctype = "multipart/form-data" })) { 
+    <input type="hidden" id='hiddenId' name='id' value="@Model.Id"/>
+    <p>Type here the item image folder name. Example: CategoryItem: Brazil, items folder:Brazil </p> 
+    <input type="text" id='txtImageContainerFolderName' name='imageContainerFolderName' value="@Model.ItemName" /><br />
+    <input type="file" name="file" /><br />
+    <p>
+        <input type="submit" value="Upload!" />  
+        @Html.ActionLink("Back to List", "Edit", "Category", new { id = Model.Category.Id}, null)
+    </p>
+}

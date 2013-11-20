@@ -1,0 +1,84 @@
+﻿@using Combres.Mvc;
+@using _30Fans.Resources.Shared
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="title" content="30 lucky fans become part of internet history.">
+	<meta name="keywords" content="30, fans, football, fame, history, baseball, basketball, soccer, birthday, wedding, fishing, magic, laugh, cricket,   accidents, fame, success, hits, cartoons">
+	<meta name="description" content="Only a handful of lucky fans become part of internet history!">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/
+        html5.js"></script>
+    <![endif]-->
+
+    
+    @Html.CombresLink("siteCss") 
+    @*
+    <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("~/Content/css/promo.css")" />
+	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/style.css")" />
+	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/elastislide.css")" />
+	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/fancybox/jquery.fancybox.css")" />
+    *@
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div id="title">
+                <h1>@Html.ActionLink(_NewLayout.MainTitle, "Index", "Home", null, new { @class="linkTitle"})</h1>
+            </div>
+            <div id="logindisplay">
+                @Html.Partial("_LogOnPartial")
+            </div>
+            <div id="flags">
+                <a href="/Home/ChangeLanguage/pt" ><img src="../../Content/images/languageFlags/brazilFlag.jpg" alt="portuguese" /></a>                                
+                <a href="/Home/ChangeLanguage/en" ><img src="../../Content/images/languageFlags/usFlag.jpg" alt="english" /></a>
+            </div>
+            <nav>
+                <ul id="menu">
+                    <li>@Html.ActionLink(_NewLayout.MenuHome, "Index", "Home")</li>
+                    <li>@Html.ActionLink(_NewLayout.MenuVideos, "Videos", "Home")</li>
+                    <li>@Html.ActionLink(_NewLayout.MenuBonus, "Bonus", "Home")</li>
+                    <li>@Html.ActionLink(_NewLayout.MenuAbout, "About", "Home")</li>
+                    @if (User.Identity.IsAuthenticated) {
+                        <li>
+                            @Html.ActionLink(_NewLayout.MenuAdmin, "Index", "Admin")
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </header>
+        <section id="main">
+            @RenderBody()
+        </section>
+        <footer>
+            @_NewLayout.FooterCopyright
+        </footer>
+
+        @*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="@Url.Content("~/Content/js/promo.js")"></script>
+		<script type="text/javascript" src="@Url.Content("~/Content/js/jquery.tmpl.min.js")"></script>
+        <script type="text/javascript" src="@Url.Content("~/Content/js/jquery.easing.1.3.js")"></script>
+		<script type="text/javascript" src="@Url.Content("~/Content/js/jquery.elastislide.js")"></script>
+		<script type="text/javascript" src="@Url.Content("~/Content/js/gallery.js")"></script>
+		<script type="text/javascript" src="@Url.Content("~/Content/fancybox/jquery.fancybox.js")"></script>*@
+
+        @Html.CombresLink("siteJs") 
+
+		<script type="text/javascript">
+		    $(".fancybox").fancybox({
+		        "overlayColor": "#000",  // here you set the background black
+		        "overlayOpacity": 1,  // here you set the transparency of background: 1 = opaque
+		        "hideOnOverlayClick": true,  // if true, closes fancybox when clicking OUTSIDE the box
+		        "hideOnContentClick": true, // if true, closes fancybox when clicking INSIDE the box
+		        "width": 980, // if type=iframe is always smart to set dimensions
+		        "height": 640
+		    });
+		</script>
+    </div>
+</body>
+</html>

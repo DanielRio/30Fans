@@ -1,0 +1,38 @@
+﻿@using _30Fans.Resources.Dynamic
+@model IEnumerable<Domain.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1 class="stylizedH1">@ViewBag.Title</h1>
+<table class="CategoryList">
+
+@{ 
+    int numCols = 4;
+    int colsCount = 0;
+}
+
+@foreach (var item in Model) {
+    var imageUrl = item.ImageUrl;
+    var urlItem = "/Category/Index/" + @item.CategoryName;
+    if ((colsCount % numCols) == 0) {
+        @:<tr>
+    }
+        <td>
+            <a href="@urlItem">
+                <img alt="" class="thumbnailImage" src="@imageUrl" />
+                <div>@Categories.ResourceManager.GetObject(item.CategoryName)</div>
+            </a>
+        </td>
+
+    colsCount++;
+    if (colsCount == numCols){
+        @:</tr>
+        colsCount = 0;
+    }    
+}
+
+</table>
+
+

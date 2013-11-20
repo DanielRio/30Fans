@@ -1,0 +1,36 @@
+﻿@using _30Fans.Resources.Dynamic;
+@model Domain.Category
+
+@{
+    ViewBag.Title = Model.CategoryName;
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<h1 class="stylizedH1">@Model.CategoryName</h1>
+<table class="CategoryList">
+
+@{ 
+    int numCols = 4;
+    int colsCount = 0;
+}
+
+@foreach (var item in Model.Items) {
+    var imageUrl = item.ImageUrl;
+    var urlItem = "/Category/Item/" + @item.Id;
+    if ((colsCount % numCols) == 0) {
+        @:<tr>
+    }
+        <td>
+            <a href="@urlItem">
+                <img class="imageShadow" alt="" src="@imageUrl" />
+                <div>@CategoriesItem.ResourceManager.GetObject(item.ItemName)</div>
+            </a>
+        </td>
+    colsCount++;
+    if (colsCount == numCols){
+        @:</tr>
+        colsCount = 0;
+    }    
+}
+
+</table>

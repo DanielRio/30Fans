@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="BuildComplete" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	 <PropertyGroup>
+		<Configuration>Debug</Configuration>
+		<Platform>AnyCPU</Platform>
+		<DefineSolutionProperties>false</DefineSolutionProperties>
+
+		<RootPath>$(MSBuildProjectDirectory)</RootPath>
+		<SrcPath>$(RootPath)</SrcPath>
+		<BuildPath>$(RootPath)\build</BuildPath>
+		<SrcUnitTest>$(SrcPath)\30Fans.Tests</SrcUnitTest>
+		<ReportsPath>$(BuildPath)\reports</ReportsPath>
+		<Packages>$(SrcPath)\packages</Packages>
+		<ExternalLib>$(SrcPath)\ExternalLib</ExternalLib>
+
+        <TextToSay>### Build Completo ###</TextToSay>		
+		<NiceArticleAboutContinousIntegration>http://marcofranssen.nl/ci-with-jenkins-msbuild-nuget-and-git-part-1/</NiceArticleAboutContinousIntegration>
+		<NiceArticleAboutWebConfigTransform>http://www.troyhunt.com/2010/11/you-deploying-it-wrong-teamcity.html</NiceArticleAboutWebConfigTransform>		
+		<NiceArticleAboutPublishWithMSBuild>http://codingcockerel.co.uk/2008/05/18/how-to-publish-a-web-site-with-msbuild/</NiceArticleAboutPublishWithMSBuild>
+		<NiceArticleAboutTestsInMsBuild>http://blog.afry.de/2013/01/running-mstest-unittests-using-msbuild.html#comment-form</NiceArticleAboutTestsInMsBuild>
+		<ContinousIntegrationWithPsake>http://antonkallenberg.com/2012/08/15/continuous-integration-with-jenkins-and-psake/</ContinousIntegrationWithPsake>
+		<LinkSimpleTutorialButRealDetailedWithImages>http://www.russellmccloy.com/2013/07/continuous-integration-with-jenkins-and_2.html</LinkSimpleTutorialButRealDetailedWithImages>
+    </PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectFiles Include="**\*.csproj" />
+	</ItemGroup>
+	
+	<Target Name="Clean">
+		<Message Importance="High" Text="Limpando a sujeira" />
+		<RemoveDir Directories="$(ReportsPath)" Condition="Exists('$(ReportsPath)')" />
+		<RemoveDir Directories="$(BuildPath)/Published" Condition="Exists('$(BuildPath)/Published')" />
+		<MakeDir Directories = "$(ReportsPath);$(ReportsPath)\MSpec;$(ReportsPath)\Coverage" />
+		 <!-- Clean the source code projects -->
+		<MSBuild Projects="@(ProjectFiles)"
+			ContinueOnError="false"
+			Targets="Clean"
+			Properties="Configuration=$(Configuration)" />
+	</Target>
+     
+    <Target Name="Compile" DependsOnTargets="Clean" >
+		<Message Importance="High" Text="Compilando projetos..." />
+
+		<MSBuild Projects="$(SrcPath)\Domain\Domain.csproj"
+			Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+		<MSBuild Projects="$(SrcPath)\Dao\Dao.csproj"
+			Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+		<MSBuild Projects="$(SrcUnitTest)\30Fans.Tests.csproj"
+			Properties="Configuration=$(Configuration);Platform=$(Platform)" />
+		<MSBuild Projects="$(SrcPath)\30Fans\30Fans.csproj"
+			Properties="Configuration=$(Configuration);Platform=$(Platform)"
+			BuildInParallel="true" /> 
+	</Target>
+	
+	<Target Name="TransformLog">
+		<Message Importance="High" Text="Gerando Relatorio..." />
+		<XslTransformation XmlInputPaths="$(BuildPath)\msbuild-output.xml" XslInputPath="$(BuildPath)\msbuild.xsl" OutputPaths="$(BuildPath)\log.html" />		
+	</Target>
+	
+	<Target Name="BuildComplete" DependsOnTargets="Compile" >
+		<Message Importance="High" Text="$(TextToSay)" />
+		<Message Importance="High" Text="Publicando..." />
+
+		<MakeDir Directories = "$(RootPath)\Published;$(RootPath)\Published\TestResults" />
+		<MSBuild Projects="$(SrcPath)\30Fans\30Fans.csproj" 
+				 Targets="ResolveReferences;_CopyWebApplication"
+				 Properties="WebProjectOutputDir=$(RootPath)\Published\;OutDir=$(RootPath)\Published\TestResults\;Configuration=$(Configuration);Platform=$(Platform)" />
+
+		<!--TestSuccessOrNot is the property specify whether the Test is sucess or not -->		
+		<!-- TODO: Refactor, extract a target only to tests and set ContinueOnError=false on Exec -->
+		<!--
+		<PropertyGroup>			
+			<TestSuccessOrNot>1</TestSuccessOrNot>
+			<TestDllPath>$(SrcUnitTest)\bin\$(Configuration)\30Fans.Tests.dll</TestDllPath> 
+		</PropertyGroup>		
+		<Exec Command='"MSTest.exe" /testcontainer:"$(TestDllPath)"' >
+			<Output TaskParameter="ExitCode" PropertyName="TestSuccessOrNot"/>
+		</Exec>
+		<MakeDir Directories = "$(BuildPath)\Published;$(BuildPath)\Published\TestResults" />
+		<MSBuild Condition ="'$(TestSuccessOrNot)'=='0'" 
+				  Projects="$(SrcPath)\30Fans\30Fans.csproj" 
+				  Targets="ResolveReferences;_CopyWebApplication"
+				  Properties="WebProjectOutputDir=$(BuildPath)\Published\;OutDir=$(BuildPath)\Published\TestResults\" />
+	  	-->
+	</Target>
+
+
+
+
+
+    <!--Testing new way of doing things... -->			
+
+    <!--TestSuccessOrNot is the property specify whether the Test is sucess or not -->			
+	<PropertyGroup>	
+		<!-- Path to the MSTest.exe -->
+		<MsTestExePath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\mstest.exe</MsTestExePath>
+		<!-- Path to the Configfile for MSTest -->
+		<MsTestConfigPath>$(MSBuildProjectDirectory)\MSBuildLocalTestRun.testrunconfig</MsTestConfigPath>    
+		<!-- This is the Path where MSBuild will copy the compiled output -->
+		<OutputPath>$(MSBuildProjectDirectory)\Output</OutputPath>
+		<!-- The File for the Testresults -->
+		<MsTestResultPath>$(OutputPath)\MyResults.trx</MsTestResultPath>		
+	</PropertyGroup>
+	
+	<!-- This holds the Path to all the Dlls that contain the Unit Tests. They all end with .Test.dll.
+	This convention will make your live much easier.  The \**\ tells MSBuild to search recursive through the directory and subdirectories.-->
+	<ItemGroup>    
+	   <TestAssemblies Include="$(OutputPath)\**\*.Tests.dll"/>
+	</ItemGroup>
+
+	<Target Name="AnotherWayTesting">
+   		<RemoveDir Directories="TestResults" Condition="Exists('TestResults')" />
+   		<MakeDir Directories="TestResults"/>
+   		<PropertyGroup>
+       		<MsTestCommand>"$(MsTestExePath)" @(TestAssemblies->'/testcontainer:"%(FullPath)"', ' ') /resultsfile:"TestResults\Results.trx" /runconfig:"$(MsTestConfigPath)""</MsTestCommand>
+		</PropertyGroup>
+
+   		<Exec Command="$(MsTestCommand)" ContinueOnError="true" />
+   		<!-- or -->
+   		<!-- 	
+			<Exec Command='"$(MsTestExePath)" /testcontainer:"%(TestAssemblies.FullPath)" /runconfig:"$(MsTestConfigPath)"' />
+		-->
+
+	</Target>
+</Project>

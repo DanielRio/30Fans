@@ -1,0 +1,40 @@
+﻿@model Domain.Category
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this? All the items will be deleted too...</h3>
+<fieldset>
+    <legend>Category</legend>
+
+    <div class="display-label">CategoryName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CategoryName)
+    </div>
+
+    <div class="display-label">Enable</div>
+    <div class="display-field">
+        @Html.ConvertBooleanToYesNo(Model.Enable)
+    </div>
+
+    <div class="display-label">Priority</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Priority)
+    </div>
+
+    <div class="display-label">FullImageName</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FullImageName)
+    </div>
+
+    @Html.Partial("_ListCategoryItems", Model)
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index", "Admin")
+    </p>
+}
