@@ -44,6 +44,10 @@ namespace _30Fans {
         protected void Application_Error(object sender, EventArgs e) {
             Exception exception = Server.GetLastError();
 
+            if (exception == null) {
+                return;
+            }
+
             log4net.ILog log = log4net.LogManager.GetLogger("AppLoggerName");
             log.Error(exception.Message); 
 
@@ -80,8 +84,8 @@ namespace _30Fans {
             Server.ClearError();
 
             // Call target Controller and pass the routeData.
-            IController errorController = new ErrorController();
-            errorController.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));
+            //IController errorController = new ErrorController();
+            //errorController.Execute(new RequestContext(new HttpContextWrapper(Context), routeData));
         }
 
 

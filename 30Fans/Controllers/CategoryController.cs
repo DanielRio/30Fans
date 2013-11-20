@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Dao.Impl;
 using Domain;
 using System.IO;
+using System.Web.UI;
 
 namespace _30Fans.Controllers{
     public class CategoryController : BaseController{
@@ -20,7 +21,8 @@ namespace _30Fans.Controllers{
         }
 
         //
-        // GET: /Football/
+        // GET: /Category/ListAll/
+        [OutputCache(Duration=60,Location=OutputCacheLocation.Server)]
         public ActionResult ListAll() {
             var categorias = _categoryDao.GetaAll();
             return View(categorias);
@@ -28,6 +30,7 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Index/Football
+        [OutputCache(Duration = 60, VaryByParam = "categoryName", Location = OutputCacheLocation.Server)]
         public ActionResult Index(string categoryName) {
             var categoria = _categoryDao.GetByName(categoryName);
             if (!categoria.Enable)
@@ -37,6 +40,7 @@ namespace _30Fans.Controllers{
         }
         
         // GET: /Category/Item/5
+        [OutputCache(Duration = 60, VaryByParam = "id", Location = OutputCacheLocation.Server)]
         public ActionResult Item(int id){
             IList<Product> products = null;
             try {

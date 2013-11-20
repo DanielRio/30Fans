@@ -212,6 +212,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Index.en.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Home\ThankYou.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThankYou.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Home\ThankYou.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ThankYou.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Product\SlideShow.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -448,6 +458,7 @@
     <Content Include="Views\Error\HttpError404.cshtml" />
     <Content Include="Views\Error\HttpError500.cshtml" />
     <Content Include="Views\Error\General.cshtml" />
+    <Content Include="Views\Home\ThankYou.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -525,6 +536,14 @@
     <EmbeddedResource Include="Resources\Home\Index.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Home\ThankYou.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThankYou.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Home\ThankYou.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ThankYou.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Product\SlideShow.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

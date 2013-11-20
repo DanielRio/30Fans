@@ -19,3 +19,36 @@
 2013-11-17 16:43:47,948 [19] ERROR AppLoggerName [(null)] - File does not exist.
 2013-11-17 16:43:49,761 [21] ERROR AppLoggerName [(null)] - File does not exist.
 2013-11-17 16:43:54,291 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-20 19:55:29,086 [5] ERROR AppLoggerName [(null)] - Caminho '/Views/Home/ThankYou.cshtml' não foi encontrado.
+2013-11-20 19:55:37,848 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 19:55:48,561 [6] ERROR AppLoggerName [(null)] - The controller for path '/Views/Home/ThankYou/' was not found or does not implement IController.
+2013-11-20 19:55:48,668 [5] ERROR AppLoggerName [(null)] - Caminho '/Views/Content/images/languageFlags/brazilFlag.jpg' não foi encontrado.
+2013-11-20 19:55:48,761 [5] ERROR AppLoggerName [(null)] - Caminho '/Views/Content/images/languageFlags/usFlag.jpg' não foi encontrado.
+2013-11-20 19:55:49,923 [5] ERROR AppLoggerName [(null)] - Caminho '/Views/Content/images/black.png' não foi encontrado.
+2013-11-20 19:55:49,934 [6] ERROR AppLoggerName [(null)] - Caminho '/Views/Content/images/ajax-loader.gif' não foi encontrado.
+2013-11-20 19:55:50,131 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 19:55:59,738 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 19:57:13,348 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:12:11,822 [15] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:30:57,961 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:33,315 [23] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:33,315 [22] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:33,373 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:33,390 [14] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:42,976 [24] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:42,982 [14] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:31:43,392 [14] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:32:45,649 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,463 [16] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,466 [27] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,466 [23] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,472 [11] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,562 [27] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,562 [21] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:34:00,733 [23] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 87)
+2013-11-20 20:35:51,544 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:36:48,153 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:37:11,038 [9] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:37:30,980 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:37:34,787 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-20 20:37:37,958 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.

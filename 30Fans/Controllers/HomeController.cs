@@ -29,6 +29,10 @@ namespace _30Fans.Controllers {
             return View();
         }
 
+        public ActionResult ThankYou() {
+            return View();
+        }
+
         public ActionResult ComingSoon() {
             return View();
         }
