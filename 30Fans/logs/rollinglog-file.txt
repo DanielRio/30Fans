@@ -52,3 +52,343 @@
 2013-11-20 20:37:30,980 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
 2013-11-20 20:37:34,787 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
 2013-11-20 20:37:37,958 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-23 03:19:53,631 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:19:59,956 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:20:12,876 [12] ERROR AppLoggerName [(null)] - The source was not found, but some or all event logs could not be searched.  To create the source, you need permission to read all event logs to make sure that the new source name is unique.  Inaccessible logs: Security.
+2013-11-23 03:20:12,965 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:20:20,068 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:22:26,187 [12] ERROR AppLoggerName [(null)] - The source was not found, but some or all event logs could not be searched.  To create the source, you need permission to read all event logs to make sure that the new source name is unique.  Inaccessible logs: Security.
+2013-11-23 03:22:26,262 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:22:30,498 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:22:31,753 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:22:52,975 [16] ERROR AppLoggerName [(null)] - The source was not found, but some or all event logs could not be searched.  To create the source, you need permission to read all event logs to make sure that the new source name is unique.  Inaccessible logs: Security.
+2013-11-23 03:22:53,048 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:23:14,542 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:23:17,884 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:23:24,974 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:23:41,868 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:24:59,192 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:25:06,705 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:25:18,281 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:25:20,738 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:26:40,846 [14] ERROR AppLoggerName [(null)] - Path '/Views/Football/Index.cshtml' was not found.
+2013-11-23 03:26:41,036 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:33:50,265 [42] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:02,432 [35] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:25,565 [35] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:39,012 [42] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:40,834 [35] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:41,638 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:42,316 [36] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:42,900 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:43,401 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:43,915 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:44,425 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:44,990 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:45,646 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:47,164 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:34:48,327 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:35:06,999 [5] ERROR AppLoggerName [(null)] - Path '/Views/Football/Index.cshtml' was not found.
+2013-11-23 03:35:07,330 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:39:36,176 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:39:39,867 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:39:42,676 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:39:48,997 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:39:53,942 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:39:59,312 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:40:00,943 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:42:23,971 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:42:24,520 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:47:36,215 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:49:13,244 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:02,634 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:08,022 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:18,271 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:22,587 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:26,188 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:30,116 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:30,319 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:55,259 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:52:55,424 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:53:02,009 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:53:02,344 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:53:53,427 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:53:53,654 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:53:58,872 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:53:59,119 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:54:03,467 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:54:03,710 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:54:07,554 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:54:09,673 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:54:25,453 [9] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:54:37,873 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:55:42,485 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:56:36,309 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:56:38,784 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:56:49,140 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:56:50,362 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:43,601 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:43,805 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:49,140 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:51,726 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:51,924 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:53,467 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:54,881 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:56,536 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:57,877 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:59,142 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 03:57:59,507 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 13:50:11,885 [5] ERROR AppLoggerName [(null)] - Path '/Views/Category/Item.cshtml' was not found.
+2013-11-23 13:50:12,032 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:06:31,105 [25] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:06:40,142 [31] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:06:40,459 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:06:48,315 [31] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:06:48,378 [28] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:27,079 [27] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:08:27,163 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:35,053 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:42,852 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:45,722 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:47,353 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:47,436 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:08:48,358 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:09:09,680 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:09:13,735 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:09:13,803 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:09:18,696 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:09:28,795 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:10:05,365 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:10:10,997 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:10:13,082 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:10:13,155 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:10:14,716 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:11:29,710 [21] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:11:29,788 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:13:41,927 [15] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:13:42,002 [27] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:13:47,278 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:13:49,140 [28] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:13:49,958 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:14:17,987 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:14:31,063 [6] ERROR AppLoggerName [(null)] - Path '/Views/Category/Item.cshtml' was not found.
+2013-11-23 14:14:31,191 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:14:35,442 [11] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:14:43,602 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:14:47,725 [11] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:14:47,783 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:14:59,469 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:16:47,469 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:18:00,055 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:18:04,461 [9] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:18:04,557 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:18:45,417 [13] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:18:45,493 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:19:03,415 [13] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:19:52,046 [13] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:19:52,123 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:21:08,627 [11] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:21:08,712 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:22:20,451 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:22:47,808 [24] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:22:47,870 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:23:06,632 [24] ERROR AppLoggerName [(null)] - The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_NewLayout.cshtml": "breadcumb".
+2013-11-23 14:23:06,708 [9] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:23:16,757 [17] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:23:33,190 [25] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:25:54,290 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:27:31,016 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:42:12,242 [52] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:42:23,024 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:42:27,168 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:42:32,909 [5] ERROR AppLoggerName [(null)] - The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/Index.aspx
+~/Views/Category/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/Category/Index.cshtml
+~/Views/Category/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+2013-11-23 14:42:32,971 [51] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:53:55,900 [52] ERROR AppLoggerName [(null)] - Path '/Views/Football/Index.cshtml' was not found.
+2013-11-23 14:53:56,010 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:54:15,918 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:54:25,615 [41] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:54:35,396 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:54:41,610 [47] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:54:46,237 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:04,468 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:06,292 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:28,531 [43] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:30,972 [44] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:32,904 [45] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:34,638 [44] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:39,178 [40] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:49,720 [45] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:55,613 [44] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:57,290 [44] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:55:58,983 [45] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:56:01,413 [45] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:56:10,639 [44] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:57:00,643 [50] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:57:13,306 [39] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:57:41,355 [41] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:58:11,828 [35] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:58:17,567 [35] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:58:19,656 [42] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 14:58:21,323 [48] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:04,766 [46] ERROR AppLoggerName [(null)] - Path '/Views/Category/Item.cshtml' was not found.
+2013-11-23 15:01:04,872 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:10,004 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:16,895 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:18,689 [40] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:24,781 [37] ERROR AppLoggerName [(null)] - c:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\Views\Category\Item.cshtml(5): error CS1525: Invalid expression term 'string'
+2013-11-23 15:01:24,843 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:35,537 [37] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:50,459 [50] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:01:56,311 [41] ERROR AppLoggerName [(null)] - c:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\Views\Category\Item.cshtml(6): error CS1928: 'System.Web.Mvc.HtmlHelper<System.Collections.Generic.IList<Domain.Product>>' does not contain a definition for 'ActionLink' and the best extension method overload 'System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, object, object)' has some invalid arguments
+2013-11-23 15:01:56,375 [41] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:02:24,912 [29] ERROR AppLoggerName [(null)] - c:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\Views\Category\Item.cshtml(6): error CS1928: 'System.Web.Mvc.HtmlHelper<System.Collections.Generic.IList<Domain.Product>>' does not contain a definition for 'ActionLink' and the best extension method overload 'System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, object, object)' has some invalid arguments
+2013-11-23 15:02:24,988 [41] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:02:38,898 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:02:42,464 [39] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:02:44,208 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:02:48,588 [50] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:03:56,611 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:04:34,551 [38] ERROR AppLoggerName [(null)] - c:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\Views\Category\Item.cshtml(6): error CS1928: 'System.Web.Mvc.HtmlHelper<System.Collections.Generic.IList<Domain.Product>>' does not contain a definition for 'ActionLink' and the best extension method overload 'System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, object, object)' has some invalid arguments
+2013-11-23 15:04:34,625 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:06:46,087 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:06:48,540 [10] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:06:52,432 [14] ERROR AppLoggerName [(null)] - c:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\Views\Category\Item.cshtml(6): error CS1928: 'System.Web.Mvc.HtmlHelper<System.Collections.Generic.IList<Domain.Product>>' does not contain a definition for 'ActionLink' and the best extension method overload 'System.Web.Mvc.Html.LinkExtensions.ActionLink(System.Web.Mvc.HtmlHelper, string, string, string, object, object)' has some invalid arguments
+2013-11-23 15:06:52,504 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:07:37,246 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:07:43,598 [23] ERROR AppLoggerName [(null)] - The controller for path '/Content/images/views.png' was not found or does not implement IController.
+2013-11-23 15:07:43,602 [9] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-23 15:07:45,942 [11] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:08:15,455 [7] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,288 [8] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,320 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,437 [15] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,437 [13] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,437 [14] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,500 [5] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,729 [15] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,732 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:18,891 [7] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,633 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,726 [15] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,767 [5] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,770 [7] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,818 [12] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,821 [5] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:25,872 [8] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:08:28,776 [5] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:09:43,536 [7] ERROR AppLoggerName [(null)] - Acesso negado para o usuário 'jplindgren02'@'%' ao banco de dados 'jplindgren02' (C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-11-24 16:09:54,052 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:10:16,599 [6] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:10:16,716 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:10:36,375 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:31,838 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:36,642 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:38,346 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:38,398 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:42,832 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:44,045 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:49,475 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:54,284 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:56,732 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:56,959 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:57,463 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:17:59,720 [9] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:18:01,878 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:18:06,208 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:18:08,914 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:18:18,136 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:27:22,441 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:27:34,365 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:27:38,692 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:27:46,783 [28] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:30:29,968 [28] ERROR AppLoggerName [(null)] - Could not find a part of the path 'C:\Users\jplindgren\Documents\GitHub\30Fans\30Fans\Category\UploadImageCategoryItem\brazil.png'.
+2013-11-24 16:30:30,040 [32] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 16:49:55,982 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:01:31,195 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:02:37,915 [25] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:04:47,372 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:04:47,438 [17] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:04:49,660 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:04:55,756 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:04:57,963 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:04:59,375 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:25,586 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:29,589 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:34,484 [17] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:35,850 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:35,912 [17] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:37,328 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:42,761 [24] ERROR AppLoggerName [(null)] - Index was out of range. Must be non-negative and less than the size of the collection.
+Parameter name: index
+2013-11-24 17:05:42,823 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:45,226 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:46,581 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:48,424 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:49,900 [23] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:51,600 [17] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:53,323 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:55,729 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:58,024 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:05:59,556 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:01,281 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:01,343 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:02,040 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:03,040 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:04,455 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:05,234 [17] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:11,331 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:13,477 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:19,210 [24] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:06:28,759 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:25:52,215 [22] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:26:15,167 [20] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:26:20,175 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:26:25,993 [28] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:26:28,217 [28] ERROR AppLoggerName [(null)] - The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int64' for method 'System.Web.Mvc.ActionResult _ListProducts(Int64)' in '_30Fans.Controllers.CategoryController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+2013-11-24 17:26:28,288 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:26:32,456 [28] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:27:19,883 [29] ERROR AppLoggerName [(null)] - Path '/Views/Category/EditCategoryItem.cshtml' was not found.
+2013-11-24 17:27:19,988 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:27:52,082 [12] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:28:02,366 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:28:05,195 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:28:08,951 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:28:10,140 [12] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:28:10,203 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:28:11,808 [16] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:29:24,040 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:29:30,045 [5] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:29:30,146 [15] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:29:36,827 [29] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:08,002 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:19,211 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:21,480 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:24,801 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:26,617 [21] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:32:26,685 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:28,540 [18] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:30,428 [21] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:32:30,495 [19] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:33,985 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:44,598 [5] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:32:44,687 [26] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:33:21,700 [19] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:44:05,534 [22] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:45:06,298 [15] ERROR AppLoggerName [(null)] - Object reference not set to an instance of an object.
+2013-11-24 17:47:45,155 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:47:49,915 [26] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:47:49,982 [14] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:47:51,429 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:48:04,387 [14] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:48:04,497 [21] ERROR AppLoggerName [(null)] - File does not exist.
+2013-11-24 17:48:15,743 [17] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-24 17:48:36,398 [12] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.

@@ -19,14 +19,22 @@ namespace Domain {
 
         public virtual string ImageUrl {
             get {
-                return string.Format("{0}/{1}/{2}{3}", "../../Content/images/categories", this.Category.CategoryName, this.ImageName, this.ImageExtension);
+                if (string.IsNullOrEmpty(ImageName))
+                    return string.Empty;
+                return string.Format("{0}{1}{2}", GetImagePath(), this.ImageName, this.ImageExtension);
             }
         }
 
         public virtual string ImageThumbnailUrl {
             get {
-                return string.Format("{0}/{1}/{2}/{3}{4}", "../../Content/images/categories", this.Category.CategoryName, "thumbs", this.ImageName, this.ImageExtension);
+                if (string.IsNullOrEmpty(ImageName))
+                    return string.Empty;
+                return string.Format("{0}{1}/{2}{3}", GetImagePath(), "thumbs", this.ImageName, this.ImageExtension);
             }
+        }
+
+        public virtual string GetImagePath() {
+            return string.Format("{0}/{1}/", "../../Content/images/categories", this.Category.CategoryName);
         }
     }// class
 }

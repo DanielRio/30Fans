@@ -23,10 +23,7 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanSave() {
-            var aNewCategory = new CategoryBuilder().WithCategoryName("New Category")
-                                                    .WithImageNameAndExtension("Test", "jpg")
-                                                    .WithCategoryItem(new CategoryItem() { ItemName = "Item Name" })
-                                                    .Build();
+            var aNewCategory = CategoryWithCategoryItem();
 
             _categoryDao.Save(aNewCategory);
             Assert.AreEqual(1, _categoryDao.RowCount());
@@ -35,10 +32,7 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanGetByName() {
-            var aNewCategory = new CategoryBuilder().WithCategoryName("New Category")
-                                                     .WithImageNameAndExtension("Test", "jpg")
-                                                     .WithCategoryItem(new CategoryItem() { ItemName = "Item Name" })
-                                                     .Build();
+            var aNewCategory = CategoryWithCategoryItem();
 
             _categoryDao.Save(aNewCategory);
 
@@ -46,6 +40,13 @@ namespace _30Fans.Tests.Dao {
             Assert.IsNotNull(_aCategory);
             Assert.AreEqual(aNewCategory.CategoryName, _aCategory.CategoryName);
             Assert.AreEqual(aNewCategory, _aCategory);
+        }
+
+        private Category CategoryWithCategoryItem() {
+            return Category().WithCategoryName("New Category")
+                             .WithImageNameAndExtension("Test", "jpg")
+                             .With(CategoryItem().WithItemName("Item Name"))
+                             .Build();
         }
     } //class
 }

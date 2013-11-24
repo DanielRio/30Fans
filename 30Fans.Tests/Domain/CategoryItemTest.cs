@@ -7,34 +7,54 @@ using Domain;
 
 namespace _30Fans.Tests.Domain {
     [TestClass]
-    public class CategoryItemTest {
+    public class CategoryItemTest : BaseTest{
         [TestMethod]
         public void CreateCategoryItem() {
-            var categoryItem = new CategoryItem();
-
-            categoryItem.Id = 1;
-            categoryItem.ItemName = "Category Item Name";
-            categoryItem.Category = new Category();
-            categoryItem.Enable = true;
+            var categoryItem = CategoryItem().WithId(1)
+                                             .WithItemName("Brazil")
+                                             .WithCategory(Category().Build())
+                                             .Enabled(true)
+                                             .Build();
 
             Assert.AreEqual(1, categoryItem.Id);
-            Assert.AreEqual("Category Item Name", categoryItem.ItemName);
+            Assert.AreEqual("Brazil", categoryItem.ItemName);
             Assert.IsNotNull(categoryItem.Category);
             Assert.AreEqual(true,categoryItem.Enable);
         }
 
         [TestMethod]
         public void ShouldHaveSpecificImageUrlPath() {
-            var categoryItem = new CategoryItem();
+            var categoryItem = CategoryItem().WithImageNameAndImageExtension("Brazil",".png")
+                                             .WithCategory(Category().WithCategoryName("Football").Build())                                            
+                                             .Build();
 
-            categoryItem.Id = 1;
-            categoryItem.ItemName = "Brazil";
-            categoryItem.Category = new Category() { CategoryName = "Football" };
-            categoryItem.Enable = true;
-            categoryItem.ImageName = "Brazil";
-            categoryItem.ImageExtension = ".png";
             Assert.AreEqual("../../Content/images/categories/Football/Brazil.png", categoryItem.ImageUrl);
             Assert.AreEqual("../../Content/images/categories/Football/thumbs/Brazil.png", categoryItem.ImageThumbnailUrl);
         }
+
+        [TestMethod]
+        public void ShouldHaveSpecificPath() {
+            var categoryItem = CategoryItem().WithCategory(Category().WithCategoryName("Football").Build())
+                                             .Build();
+
+            Assert.AreEqual("../../Content/images/categories/Football/", categoryItem.GetImagePath());
+        }
+
+        [TestMethod]
+        public void WhenHasNoImageName_ImageUrlPath_ShouldHaveNoValue() {
+            var categoryItem = CategoryItem().WithImageNameAndImageExtension(string.Empty, string.Empty).Build();
+
+            Assert.AreEqual(string.Empty, categoryItem.ImageUrl);
+            Assert.AreEqual(string.Empty, categoryItem.ImageThumbnailUrl);
+        }
+
+        [TestMethod]
+        public void WhenHasNullImageName_ImageUrlPath_ShouldHaveNoValue() {
+            var categoryItem = CategoryItem().WithImageNameAndImageExtension(null, null).Build();
+
+            Assert.AreEqual(string.Empty, categoryItem.ImageUrl);
+            Assert.AreEqual(string.Empty, categoryItem.ImageThumbnailUrl);
+        }
+
     }// class
 }

@@ -14,16 +14,8 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/
         html5.js"></script>
     <![endif]-->
-
     
     @Html.CombresLink("siteCss") 
-    @*
-    <link href="@Url.Content("~/Content/css/site.css")" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="@Url.Content("~/Content/css/promo.css")" />
-	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/style.css")" />
-	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/css/elastislide.css")" />
-	<link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/fancybox/jquery.fancybox.css")" />
-    *@
 </head>
 <body>
     <div class="page">
@@ -51,6 +43,11 @@
                     }
                 </ul>
             </nav>
+            <div style="background-color: #696969; color:White; width:100%">
+                @if (IsSectionDefined("breadcumb")) {
+                    @RenderSection("breadcumb");
+                }
+            </div>                
         </header>
         <section id="main">
             @RenderBody()
@@ -58,14 +55,6 @@
         <footer>
             @_NewLayout.FooterCopyright
         </footer>
-
-        @*<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="@Url.Content("~/Content/js/promo.js")"></script>
-		<script type="text/javascript" src="@Url.Content("~/Content/js/jquery.tmpl.min.js")"></script>
-        <script type="text/javascript" src="@Url.Content("~/Content/js/jquery.easing.1.3.js")"></script>
-		<script type="text/javascript" src="@Url.Content("~/Content/js/jquery.elastislide.js")"></script>
-		<script type="text/javascript" src="@Url.Content("~/Content/js/gallery.js")"></script>
-		<script type="text/javascript" src="@Url.Content("~/Content/fancybox/jquery.fancybox.js")"></script>*@
 
         @Html.CombresLink("siteJs") 
 

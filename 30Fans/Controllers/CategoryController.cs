@@ -22,7 +22,7 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Category/ListAll/
-        [OutputCache(Duration=60,Location=OutputCacheLocation.Server)]
+        //[OutputCache(Duration=60,Location=OutputCacheLocation.Server)]
         public ActionResult ListAll() {
             var categorias = _categoryDao.GetaAll();
             return View(categorias);
@@ -30,9 +30,10 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Index/Football
-        [OutputCache(Duration = 60, VaryByParam = "categoryName", Location = OutputCacheLocation.Server)]
-        public ActionResult Index(string categoryName) {
-            var categoria = _categoryDao.GetByName(categoryName);
+        //[OutputCache(Duration = 60, VaryByParam = "categoryName", Location = OutputCacheLocation.Server)]
+        public ActionResult Index(string id) {
+            var categoryName = id;
+            var categoria = _categoryDao.GetByName(id);
             if (!categoria.Enable)
                 return RedirectToAction("ComingSoon", "Home");
 
@@ -40,7 +41,7 @@ namespace _30Fans.Controllers{
         }
         
         // GET: /Category/Item/5
-        [OutputCache(Duration = 60, VaryByParam = "id", Location = OutputCacheLocation.Server)]
+        //[OutputCache(Duration = 60, VaryByParam = "id", Location = OutputCacheLocation.Server)]
         public ActionResult Item(int id){
             IList<Product> products = null;
             try {
@@ -121,10 +122,10 @@ namespace _30Fans.Controllers{
 
                 var fileName = Path.GetFileName(file.FileName);
                 var extension = Path.GetExtension(file.FileName);
-                var path = Path.Combine(Server.MapPath(categoryItem.ImageUrl), fileName);
+                var path = Path.Combine(Server.MapPath(categoryItem.GetImagePath()), fileName);
                 file.SaveAs(path);
 
-                CreateFolder(Path.Combine(Server.MapPath(categoryItem.ImageUrl), imageFolderName));
+                CreateFolder(Path.Combine(Server.MapPath(categoryItem.GetImagePath()), imageFolderName));
                 UpdateCategoryItem(categoryItem, Path.GetFileNameWithoutExtension(file.FileName), extension);
             } else {
                 return View();
@@ -206,6 +207,14 @@ namespace _30Fans.Controllers{
             } catch {
                 return View();
             }
+        }
+
+        [HttpPost]
+        public ActionResult _ListProducts(long id) {
+            var idCategoryitem = id;
+            var products = new List<Product>();
+            products.Add(new Product() {  ProductName = "Teste" });
+            return PartialView(products);
         }
 
         private bool CategoryNameAlreadyExists(string categoryName, long idNewCategory) {

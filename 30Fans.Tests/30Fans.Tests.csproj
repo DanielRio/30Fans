@@ -80,7 +80,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\packages\System.Data.SQLite.1.0.88.0\lib\net40\System.Data.SQLite.dll</HintPath>
+      <HintPath>..\packages\System.Data.SQLite.1.0.89.0\lib\net40\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.1.0.89.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Web" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -95,6 +98,7 @@
     <Compile Include="Builder\CategoryItemBuilder.cs" />
     <Compile Include="Builder\PhotoBuilder.cs" />
     <Compile Include="Builder\ProductBuilder.cs" />
+    <Compile Include="IntegrityTest.cs" />
     <Compile Include="Dao\CategoryDaoTest.cs" />
     <Compile Include="Dao\CategoryItemDaoTest.cs" />
     <Compile Include="Dao\mapping\CategoryItemMapTest.cs" />
@@ -103,7 +107,7 @@
     <Compile Include="Dao\ProductDaoTest.cs" />
     <Compile Include="Domain\CategoryItemTest.cs" />
     <Compile Include="Domain\CategoryTest.cs" />
-    <Compile Include="IntegrityTest.cs" />
+    <Compile Include="BaseTest.cs" />
     <Compile Include="Dao\mapping\ProductMapTest.cs" />
     <Compile Include="Dao\SchemaTest.cs" />
     <Compile Include="Domain\ProductTest.cs" />
@@ -130,6 +134,9 @@
       <Project>{1442B0B4-EA39-4732-B101-903CFA61BD29}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

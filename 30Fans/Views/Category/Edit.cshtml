@@ -13,8 +13,9 @@
     @Html.ValidationSummary(true)
     <fieldset>
         <legend>Category</legend>
-
         @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.ImageName)
+        @Html.HiddenFor(model => model.ImageExtension)
 
         <div class="editor-label">
             @Html.LabelFor(model => model.CategoryName)
@@ -44,9 +45,9 @@
             <input type="submit" value="Save" />
         </p>
     </fieldset>
-    <fieldset>
+     <fieldset>
         <legend>Items</legend>
-        @Html.Partial("_ListCategoryItems",Model)
+        @Html.Partial("_ListCategoryItems", Model)
     </fieldset>
 }
 

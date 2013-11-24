@@ -430,3 +430,13 @@ ul#menu li.selected a {
 .rightAlign{
     text-align:right
 }
+
+.teste
+{
+    color:White;
+}
+
+.teste:visited
+{
+    color:White;
+}

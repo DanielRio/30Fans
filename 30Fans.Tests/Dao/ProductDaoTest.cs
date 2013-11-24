@@ -27,16 +27,16 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanSave() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
 
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
-            Product aNewProduct = new ProductBuilder().WithProductName("Produto Teste")
+            var item = category.Items.FirstOrDefault();
+            Product aNewProduct = Product().WithProductName("Produto Teste")
                                                       .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
+                                                      .With(item)
                                                       .Build();
             _productDao.Save(aNewProduct);
             Assert.IsNotNull(aNewProduct.Id);
@@ -45,16 +45,16 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanSaveAsWellWithCategoryItem() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
 
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
-            Product aNewProduct = new ProductBuilder().WithProductName("Produto Teste")
+            var item = category.Items.FirstOrDefault();
+            Product aNewProduct = Product().WithProductName("Produto Teste")
                                                       .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
+                                                      .With(item)
                                                       .Build();
             _productDao.Save(aNewProduct);
             Assert.IsNotNull(aNewProduct.Id);
@@ -64,16 +64,16 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanSaveNewPhotos() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
 
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
-            Product aNewProduct = new ProductBuilder().WithCategoryItem(item)
-                                                      .Build();
-            aNewProduct.AddPhoto("New Photo", "mengao", "jpg");
+            var item = category.Items.FirstOrDefault();
+            Product aNewProduct = Product().With(item)
+                                           .WithPhoto("New Photo", "mengao", "jpg")
+                                           .Build();
 
             _productDao.Save(aNewProduct);
 
@@ -89,16 +89,16 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanGet() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
 
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
-            Product aNewProduct = new ProductBuilder().WithProductName("Produto Teste")
+            var item = category.Items.FirstOrDefault();
+            Product aNewProduct = Product().WithProductName("Produto Teste")
                                                       .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
+                                                      .With(item)
                                                       .Build();
 
             _productDao.Save(aNewProduct);
@@ -110,22 +110,18 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanRetrieveByCategoryItemId() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
 
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
-            Product aNewProduct = new ProductBuilder().WithProductName("Produto Teste")
-                                                      .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
-                                                      .Build();
+            var item = category.Items.FirstOrDefault();
+            ProductBuilder builder = Product().WithPublishedDate(DateTime.Now).With(item);
 
-            Product aNewProduct2 = new ProductBuilder().WithProductName("Produto Teste 2")
-                                                      .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
-                                                      .Build();
+            Product aNewProduct = builder.WithProductName("Produto Teste").Build();
+            Product aNewProduct2 = builder.WithProductName("Produto Teste 2").Build();
+
             _productDao.Save(aNewProduct);
             _productDao.Save(aNewProduct2);
 
@@ -136,15 +132,16 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanUpdate() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
+
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
+            var item = category.Items.FirstOrDefault();
             Product aNewProduct = new ProductBuilder().WithProductName("Produto Teste")
                                                       .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
+                                                      .With(item)
                                                       .Build();
             _productDao.Save(aNewProduct);
             Assert.IsNotNull(aNewProduct.Id);
@@ -158,15 +155,16 @@ namespace _30Fans.Tests.Dao {
 
         [TestMethod]
         public void CanDelete() {
-            CategoryItem item = new CategoryItemBuilder().WithItemName("Item dummy").Build();
-            Category category = new CategoryBuilder().WithCategoryName("Category dummy").WithCategoryItem(item).Build();
+            Category category = CategoryWithCategoryItem();
+
             _categoryDao.Save(category);
             Assert.IsNotNull(category.Id);
             Assert.IsNotNull(category.Items.FirstOrDefault().Id);
 
+            var item = category.Items.FirstOrDefault();
             Product aNewProduct = new ProductBuilder().WithProductName("Produto Teste")
                                                       .WithPublishedDate(DateTime.Now)
-                                                      .WithCategoryItem(item)
+                                                      .With(item)
                                                       .Build();
             _productDao.Save(aNewProduct);
             Assert.IsNotNull(aNewProduct.Id);
@@ -175,6 +173,12 @@ namespace _30Fans.Tests.Dao {
             _productDao.Delete(aProduct);
 
             Assert.AreEqual(0, _productDao.RowCount());
-        }        
+        }
+
+        private Category CategoryWithCategoryItem() {
+            return Category().WithCategoryName("Category dummy")
+                             .With(CategoryItem().WithItemName("Item dummy"))
+                             .Build();
+        }
     }// class
 }

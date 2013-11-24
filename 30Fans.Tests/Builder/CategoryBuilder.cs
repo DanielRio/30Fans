@@ -32,10 +32,10 @@ namespace _30Fans.Tests.Builder {
             return this;
         }
 
-        public CategoryBuilder WithCategoryItem(CategoryItem categoryItem) {
+        public CategoryBuilder With(CategoryItemBuilder categoryItemBuilder) {
             if (category.Items == null)
                 category.Items = new List<CategoryItem>();
-            categoryItem.Category = category;
+            var categoryItem = categoryItemBuilder.WithCategory(category).Build();
             category.Items.Add(categoryItem);
             return this;
         }

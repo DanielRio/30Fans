@@ -15,6 +15,9 @@
         <legend>CategoryItem</legend>
 
         @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.ImageName)
+        @Html.HiddenFor(model => model.ImageExtension)
+        @Html.HiddenFor(model => model.Category.Id)
 
         <div class="editor-label">
             @Html.LabelFor(model => model.ItemName)
@@ -56,15 +59,15 @@
             @Html.ValidationMessageFor(model => model.ImageThumbnailUrl)
         </div>
 
-        @Html.HiddenFor(model => model.Category.Id)
-        @*<input type="hidden" id='hiddenId' name='categoryId' value="@Model.Category.Id"/>*@
-
         <p>
             <input type="submit" value="Save" />
         </p>
     </fieldset>
+    <hr />
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Edit", new { id = Model.Category.Id})
+    @Html.ActionLink("Back to List", "Edit", new { id = Model.Id })
 </div>
+
+

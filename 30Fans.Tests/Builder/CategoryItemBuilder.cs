@@ -26,13 +26,19 @@ namespace _30Fans.Tests.Builder {
             return this;
         }
 
-        public CategoryItemBuilder WithImageName(string imageName) {
+        public CategoryItemBuilder WithImageNameAndImageExtension(string imageName, string extension) {
             _categoryItem.ImageName = imageName;
+            _categoryItem.ImageExtension = extension;
             return this;
         }
 
         public CategoryItemBuilder WithCategory(Category category) {
             _categoryItem.Category = category;
+            return this;
+        }
+
+        public CategoryItemBuilder Enabled(bool enabled) {
+            _categoryItem.Enable = enabled;
             return this;
         }
     } //class

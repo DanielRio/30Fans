@@ -1,6 +1,13 @@
-﻿@model IList<Domain.Product>
+﻿@using _30Fans.Resources.Dynamic;
+@model IList<Domain.Product>
 
-<h1 class="stylizedH1">@ViewBag.Title</h1>
+@section breadcumb {
+    @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
+    @Html.ActionLink(Categories.ResourceManager.GetObject(Model[0].CategoryItem.Category.CategoryName).ToString(), "Index", "Category", new { id = @Model[0].CategoryItem.Category.CategoryName }, new { @class = "teste" }) <text>>></text>
+    @CategoriesItem.ResourceManager.GetObject(Model[0].CategoryItem.ItemName)
+}
+
+<h1 class="stylizedH1">@CategoriesItem.ResourceManager.GetObject(ViewBag.Title)</h1>
 <table class="CategoryList">
 
 @{ 
