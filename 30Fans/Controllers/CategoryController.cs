@@ -22,7 +22,7 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Category/ListAll/
-        //[OutputCache(Duration=60,Location=OutputCacheLocation.Server)]
+        [OutputCache(Duration=180,Location=OutputCacheLocation.Server)]
         public ActionResult ListAll() {
             var categorias = _categoryDao.GetaAll();
             return View(categorias);
@@ -30,7 +30,7 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Index/Football
-        //[OutputCache(Duration = 60, VaryByParam = "categoryName", Location = OutputCacheLocation.Server)]
+        [OutputCache(Duration = 180, VaryByParam = "categoryName", Location = OutputCacheLocation.Server)]
         public ActionResult Index(string id) {
             var categoryName = id;
             var categoria = _categoryDao.GetByName(id);
@@ -41,7 +41,7 @@ namespace _30Fans.Controllers{
         }
         
         // GET: /Category/Item/5
-        //[OutputCache(Duration = 60, VaryByParam = "id", Location = OutputCacheLocation.Server)]
+        [OutputCache(Duration = 180, VaryByParam = "id", Location = OutputCacheLocation.Server)]
         public ActionResult Item(int id){
             IList<Product> products = null;
             try {
@@ -207,14 +207,6 @@ namespace _30Fans.Controllers{
             } catch {
                 return View();
             }
-        }
-
-        [HttpPost]
-        public ActionResult _ListProducts(long id) {
-            var idCategoryitem = id;
-            var products = new List<Product>();
-            products.Add(new Product() {  ProductName = "Teste" });
-            return PartialView(products);
         }
 
         private bool CategoryNameAlreadyExists(string categoryName, long idNewCategory) {

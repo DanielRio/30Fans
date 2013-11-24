@@ -16,7 +16,7 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Product/SlideShow/5
-        [OutputCache(Duration = 60, VaryByParam="id" , Location = OutputCacheLocation.Server)]
+        [OutputCache(Duration = 180, VaryByParam="id" , Location = OutputCacheLocation.Server)]
         public ActionResult SlideShow(int id){
             var product = _productDao.Get(id);
             if (!product.Enable)
