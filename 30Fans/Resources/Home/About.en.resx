@@ -121,16 +121,16 @@
     <value>About 30fans.</value>
   </data>
   <data name="Info1" xml:space="preserve">
-    <value>All sales are making by paypal. We do not kept any sensible data. 100% secure.</value>
+    <value>All purchases are handled by PayPal. Everything is 100% automated.</value>
   </data>
   <data name="Info2" xml:space="preserve">
-    <value>You can buy how many photos you want, if they are available.</value>
+    <value>You can buy as many photos as you like, as long as there are some available.</value>
   </data>
   <data name="Info3" xml:space="preserve">
-    <value>When the 30 slots are sold, we stop selling for that team forever.</value>
+    <value>As soon as the 30 places are sold out PayPal automatically stops further sales.</value>
   </data>
   <data name="Info4" xml:space="preserve">
-    <value>Choose your best picture, because they will be eternized!</value>
+    <value>Your photo cannot be changed, so send the photo you want to be YOU for all time!</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>About us</value>
