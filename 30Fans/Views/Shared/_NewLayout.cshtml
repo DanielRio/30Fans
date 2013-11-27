@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta property="fb:admins" content="100005196451991" />
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,23 +52,50 @@
         </header>
         <section id="main">
             @RenderBody()
+            <div id="fb-root"></div>
         </section>
         <footer>
             @_NewLayout.FooterCopyright
+            <div class="social-nav-wrapper">
+                <ul class="social-nav">
+                    <li>
+                        <div class="fb-like" data-href="http://www.30fans.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="pt">Tweetar</a>
+                    </li>
+                </ul>
+            </div>
         </footer>
-
-        @Html.CombresLink("siteJs") 
-
-		<script type="text/javascript">
-		    $(".fancybox").fancybox({
-		        "overlayColor": "#000",  // here you set the background black
-		        "overlayOpacity": 1,  // here you set the transparency of background: 1 = opaque
-		        "hideOnOverlayClick": true,  // if true, closes fancybox when clicking OUTSIDE the box
-		        "hideOnContentClick": true, // if true, closes fancybox when clicking INSIDE the box
-		        "width": 980, // if type=iframe is always smart to set dimensions
-		        "height": 640
-		    });
-		</script>
     </div>
+
+    @Html.CombresLink("siteJs") 
+    <script type="text/javascript">
+        $(".fancybox").fancybox({
+            "overlayColor": "#000",  // here you set the background black
+            "overlayOpacity": 1,  // here you set the transparency of background: 1 = opaque
+            "hideOnOverlayClick": true,  // if true, closes fancybox when clicking OUTSIDE the box
+            "hideOnContentClick": true, // if true, closes fancybox when clicking INSIDE the box
+            "width": 980, // if type=iframe is always smart to set dimensions
+            "height": 640
+        });
+
+        !function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+            if (!d.getElementById(id)) {
+                js = d.createElement(s); js.id = id;
+                js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs);
+            }
+        }
+            (document, 'script', 'twitter-wjs');
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+	</script>
 </body>
 </html>

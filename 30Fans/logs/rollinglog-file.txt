@@ -392,3 +392,64 @@ Parameter name: parameters
 2013-11-24 17:48:04,497 [21] ERROR AppLoggerName [(null)] - File does not exist.
 2013-11-24 17:48:15,743 [17] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
 2013-11-24 17:48:36,398 [12] ERROR AppLoggerName [(null)] - A public action method '_ListProducts' was not found on controller '_30Fans.Controllers.CategoryController'.
+2013-11-26 21:34:28,066 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:34:28,184 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:34:28,254 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:34:28,323 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:42:34,879 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:42:35,038 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:42:35,109 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:42:35,178 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:10,336 [9] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:10,532 [9] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:10,614 [9] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:10,684 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:53,822 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:54,022 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:54,096 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:45:54,165 [9] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:57:50,178 [19] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:58:21,490 [20] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:58:21,599 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:58:46,582 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:58:46,662 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 21:58:46,976 [19] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:03:54,624 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:03:55,389 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:15:09,500 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:15:09,622 [23] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:15:10,387 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:15:55,787 [15] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:15:56,180 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:16:10,345 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:16:10,801 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:16:10,870 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:16:11,081 [15] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:17:33,468 [15] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:17:33,562 [15] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:20:31,863 [19] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 22:20:32,216 [18] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 23:21:29,635 [13] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 23:21:29,851 [24] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 23:21:29,921 [14] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 23:21:31,469 [13] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-26 23:21:46,144 [5] ERROR AppLoggerName [(null)] - The connection property has not been set or is null.
+2013-11-26 23:21:46,360 [18] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:03:19,359 [23] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:32:26,314 [11] ERROR AppLoggerName [(null)] - Resource at location '~/Content/js/jquery-1.9.1.min' cannot be found
+2013-11-27 00:32:26,663 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:34:15,314 [11] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:34:16,763 [14] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:36:03,756 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:36:06,346 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:36:55,271 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:36:56,236 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:37:15,686 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:37:19,184 [17] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:37:27,084 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:38:03,875 [17] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:43:28,722 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:43:29,310 [24] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:43:30,434 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 00:44:17,300 [24] ERROR AppLoggerName [(null)] - The connection property has not been set or is null.
+2013-11-27 00:44:17,560 [14] ERROR AppLoggerName [(null)] - Arquivo inexistente.

@@ -248,7 +248,7 @@
     </resourceSet>
     <resourceSet name="siteJs" type="js" version="10" minifierRef="msajax" debugEnabled="false">
       <resource path="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" mode="dynamic" forwardCookie="false" />
-      <resource path="~/scripts/jquery-ui-1.7.2.custom.min.js" mode="static" minifierRef="yui" />
+      <resource path="~/Content/js/jquery-1.9.1.min.js" mode="static" minifierRef="yui" />
     </resourceSet>
   </resourceSets>
 </combres>

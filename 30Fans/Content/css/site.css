@@ -112,6 +112,17 @@ footer,
     -moz-border-radius: 0 0 4px 4px;
 }
 
+footer div.social-nav-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    text-align:center;    
+}
+
+footer ul.social-nav li{
+    display:inline-block;
+    margin:0px 10px 0px 0px;    
+}
+        
 /* FORM LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
 
