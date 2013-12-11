@@ -453,3 +453,278 @@ Parameter name: parameters
 2013-11-27 00:43:30,434 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
 2013-11-27 00:44:17,300 [24] ERROR AppLoggerName [(null)] - The connection property has not been set or is null.
 2013-11-27 00:44:17,560 [14] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:18:14,731 [11] ERROR AppLoggerName [(null)] - Caminho '/Views/Home/ThankYou.cshtml' não foi encontrado.
+2013-11-27 22:18:14,732 [10] ERROR AppLoggerName [(null)] - Exceção do tipo 'System.Web.HttpException' foi acionada.
+2013-11-27 22:18:20,520 [24] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:21:04,660 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:21:04,895 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:21:04,971 [17] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:21:05,039 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:22:23,726 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:22:23,847 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:22:24,111 [17] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:22:35,133 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:22:35,414 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:06,706 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:06,947 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:07,016 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:07,088 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:41,929 [11] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:42,152 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:42,225 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:23:42,293 [9] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:24:01,968 [11] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:24:13,946 [11] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:24:14,152 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:24:14,222 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:24:14,293 [21] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:35:31,229 [37] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:35:32,452 [37] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:38:44,696 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:38:46,279 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:38:46,348 [31] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:38:47,239 [31] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:48:00,988 [27] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:48:02,172 [12] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:48:20,044 [17] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:48:20,360 [13] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:53:37,789 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:53:37,861 [11] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 22:53:38,961 [6] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:03:27,256 [26] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:03:27,334 [39] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:03:28,305 [26] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:04:33,884 [28] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:04:34,351 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:04:34,423 [28] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:04:34,979 [26] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:05:22,896 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:05:22,965 [28] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:05:23,044 [26] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:05:23,473 [28] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:05:23,546 [26] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:05:23,812 [10] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:17:30,300 [52] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:17:31,228 [51] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:20:34,845 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:20:34,922 [40] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:20:35,950 [42] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:21:18,955 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:21:19,145 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:21:19,222 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:21:19,296 [49] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:23:20,193 [51] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:23:20,293 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:23:20,372 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:23:20,446 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:03,811 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:04,051 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:04,127 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:04,201 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:46,405 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:46,565 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:46,646 [41] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:24:46,716 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:30:30,498 [42] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:30:30,722 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:30:31,132 [30] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:30:31,899 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:31:14,103 [42] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:31:14,174 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:31:14,255 [42] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:31:14,702 [42] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:31:14,775 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-27 23:31:15,019 [42] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:14:51,407 [54] ERROR AppLoggerName [(null)] - Caminho '/Views/Home/ThankYou.cshtml' não foi encontrado.
+2013-11-28 00:14:51,765 [5] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:16:36,324 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:16:37,231 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:16:37,303 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:16:38,380 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:06,502 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:06,577 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:06,657 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:07,067 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:07,150 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:07,714 [60] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:30,075 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:18:30,438 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:25,985 [46] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:26,057 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:26,132 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:26,606 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:26,688 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:26,889 [46] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:40,335 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:40,405 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:40,661 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:41,718 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:42,217 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:42,288 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:20:42,485 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:14,567 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:14,636 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:14,713 [51] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:15,179 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:15,251 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:15,436 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:44,998 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:45,071 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:45,148 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:45,847 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:45,921 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-11-28 00:21:46,092 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:23:01,747 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:23:01,980 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:23:02,836 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:24:35,267 [48] ERROR AppLoggerName [(null)] - The connection property has not been set or is null.
+2013-12-10 19:24:35,477 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:27:38,630 [54] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,081 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,120 [22] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,387 [51] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,401 [22] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,401 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,480 [54] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,672 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:40,679 [51] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:41,703 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:42,359 [54] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:27:43,461 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:29:47,834 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:30:15,394 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,213 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,364 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,452 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,578 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,655 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,740 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,821 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,891 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:45,968 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:47,072 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:47,209 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:48,195 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:55:51,835 [47] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:56:26,526 [48] ERROR AppLoggerName [(null)] - Unable to connect to any of the specified MySQL hosts. (C:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\web.config line 80)
+2013-12-10 19:57:34,130 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:57:34,250 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:57:34,677 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:57:34,750 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:57:34,829 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:57:35,623 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:57:36,388 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:15,819 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:15,934 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:16,249 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:27,438 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:27,531 [59] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:27,898 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:37,029 [59] ERROR AppLoggerName [(null)] - The controller for path '/Content/images/views.png' was not found or does not implement IController.
+2013-12-10 19:58:37,665 [57] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:37,783 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 19:58:38,180 [58] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:10:27,934 [51] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:10:28,832 [48] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:33,825 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:34,765 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:34,877 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:36,072 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:51,853 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:52,618 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:52,746 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:53,308 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:53,876 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:54,438 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:54,512 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:18:54,908 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:17,620 [45] ERROR AppLoggerName [(null)] - Caminho '/Views/Category/ListAll.cshtml' não foi encontrado.
+2013-12-10 20:21:18,011 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:42,167 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:42,410 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:42,493 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:42,986 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:43,063 [56] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:43,996 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:55,075 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:55,158 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:21:55,479 [56] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:01,856 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:02,109 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:02,199 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:02,590 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:02,689 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:03,537 [56] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:06,734 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:07,554 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:07,654 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:08,385 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:15,571 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:16,195 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:16,269 [45] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:16,881 [22] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:17,796 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:18,469 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:20,843 [56] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:23,791 [44] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:24,459 [56] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:24,536 [53] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:22:25,117 [50] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:23:33,656 [55] ERROR AppLoggerName [(null)] - c:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\Views\Shared\_NewLayout.cshtml(24): error CS0234: O nome do namespace ou o tipo 'Resources' não existe no namespace 'Resources'. Precisa de uma referência de assembly?
+2013-12-10 20:23:34,026 [47] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:24:11,309 [56] ERROR AppLoggerName [(null)] - c:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\Views\Shared\_NewLayout.cshtml(24): error CS0234: O nome do namespace ou o tipo 'Resources' não existe no namespace 'Resources'. Precisa de uma referência de assembly?
+2013-12-10 20:24:11,570 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:04,032 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:04,178 [51] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:04,669 [46] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:05,908 [56] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:45,578 [46] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:46,109 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:46,184 [51] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:46,597 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:47,826 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:48,283 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:48,359 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:25:48,664 [46] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:30:16,970 [40] ERROR AppLoggerName [(null)] - c:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\Views\Home\Index.cshtml(2): error CS0103: O nome 'Index' não existe no contexto atual
+2013-12-10 20:30:17,334 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:01,363 [40] ERROR AppLoggerName [(null)] - Caminho '/Views/Product/SlideShow.cshtml' não foi encontrado.
+2013-12-10 20:31:01,827 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:11,397 [49] ERROR AppLoggerName [(null)] - c:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\Views\Home\Index.cshtml(2): error CS0103: O nome 'Index' não existe no contexto atual
+2013-12-10 20:31:11,685 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:18,760 [40] ERROR AppLoggerName [(null)] - c:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\Views\Home\Index.cshtml(2): error CS0103: O nome 'Index' não existe no contexto atual
+2013-12-10 20:31:18,959 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:39,289 [55] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:39,901 [40] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:39,974 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:40,936 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:31:49,499 [55] ERROR AppLoggerName [(null)] - c:\Users\JoaoPaulo\Documents\GitHub\30Fans\30Fans\Views\Home\Index.cshtml(2): error CS0103: O nome 'Index' não existe no contexto atual
+2013-12-10 20:31:49,720 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:02,152 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:02,408 [32] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:02,711 [40] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:03,274 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:24,795 [32] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:25,048 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:25,485 [16] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:32:25,897 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:33:40,736 [40] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:33:40,985 [25] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:33:41,067 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:33:41,629 [40] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:33:41,724 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:33:42,440 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:39,908 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:40,019 [25] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:40,828 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:42,011 [25] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:42,465 [25] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:57,176 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:35:57,926 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:36:09,395 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:36:09,476 [25] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:36:09,833 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:36:20,003 [54] ERROR AppLoggerName [(null)] - The controller for path '/Content/images/views.png' was not found or does not implement IController.
+2013-12-10 20:36:20,427 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:36:20,517 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.
+2013-12-10 20:36:20,886 [54] ERROR AppLoggerName [(null)] - Arquivo inexistente.

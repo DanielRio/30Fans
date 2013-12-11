@@ -145,6 +145,86 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Dynamic\Categories.Designer.cs">
+      <DependentUpon>Categories.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dynamic\Categories.en.Designer.cs">
+      <DependentUpon>Categories.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dynamic\CategoriesItem.Designer.cs">
+      <DependentUpon>CategoriesItem.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dynamic\CategoriesItem.en.Designer.cs">
+      <DependentUpon>CategoriesItem.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\About.Designer.cs">
+      <DependentUpon>About.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\About.en.Designer.cs">
+      <DependentUpon>About.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\ComingSoon.Designer.cs">
+      <DependentUpon>ComingSoon.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\ComingSoon.en.Designer.cs">
+      <DependentUpon>ComingSoon.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Index.Designer.cs">
+      <DependentUpon>Index.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Index.en.Designer.cs">
+      <DependentUpon>Index.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\ThankYou.Designer.cs">
+      <DependentUpon>ThankYou.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\ThankYou.en.Designer.cs">
+      <DependentUpon>ThankYou.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Product\SlideShow.Designer.cs">
+      <DependentUpon>SlideShow.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Product\SlideShow.en.Designer.cs">
+      <DependentUpon>SlideShow.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shared\_NewLayout.Designer.cs">
+      <DependentUpon>_NewLayout.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Shared\_NewLayout.en.Designer.cs">
+      <DependentUpon>_NewLayout.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="App_Start\Combres.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
@@ -168,82 +248,82 @@
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\AdminModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Dynamic\Categories.Designer.cs">
+    <Compile Include="ResourcesN\Dynamic\Categories.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Categories.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Dynamic\Categories.en.Designer.cs">
+    <Compile Include="ResourcesN\Dynamic\Categories.en.Designer.cs">
       <DependentUpon>Categories.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\Dynamic\CategoriesItem.en.Designer.cs">
+    <Compile Include="ResourcesN\Dynamic\CategoriesItem.en.Designer.cs">
       <DependentUpon>CategoriesItem.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\Dynamic\CategoriesItem.Designer.cs">
+    <Compile Include="ResourcesN\Dynamic\CategoriesItem.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CategoriesItem.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\About.Designer.cs">
+    <Compile Include="ResourcesN\Home\About.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>About.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\About.en.Designer.cs">
+    <Compile Include="ResourcesN\Home\About.en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>About.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\ComingSoon.Designer.cs">
+    <Compile Include="ResourcesN\Home\ComingSoon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ComingSoon.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\ComingSoon.en.Designer.cs">
+    <Compile Include="ResourcesN\Home\ComingSoon.en.Designer.cs">
       <DependentUpon>ComingSoon.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\Home\Index.Designer.cs">
+    <Compile Include="ResourcesN\Home\Index.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Index.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\Index.en.Designer.cs">
+    <Compile Include="ResourcesN\Home\Index.en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Index.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\ThankYou.Designer.cs">
+    <Compile Include="ResourcesN\Home\ThankYou.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ThankYou.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Home\ThankYou.en.Designer.cs">
+    <Compile Include="ResourcesN\Home\ThankYou.en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ThankYou.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Product\SlideShow.Designer.cs">
+    <Compile Include="ResourcesN\Product\SlideShow.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SlideShow.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Product\SlideShow.en.Designer.cs">
+    <Compile Include="ResourcesN\Product\SlideShow.en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SlideShow.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Shared\_NewLayout.Designer.cs">
+    <Compile Include="ResourcesN\Shared\_NewLayout.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_NewLayout.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Shared\_NewLayout.en.Designer.cs">
+    <Compile Include="ResourcesN\Shared\_NewLayout.en.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_NewLayout.en.resx</DependentUpon>
@@ -458,67 +538,131 @@
     <Content Include="Views\Product\SlideShow.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Dynamic\Categories.resx">
+    <Content Include="App_GlobalResources\Dynamic\Categories.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Categories.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Dynamic\Categories.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Categories.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Dynamic\CategoriesItem.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CategoriesItem.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Dynamic\CategoriesItem.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CategoriesItem.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\About.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>About.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\About.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>About.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\ComingSoon.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ComingSoon.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\ComingSoon.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ComingSoon.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\Index.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Index.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\Index.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Index.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\ThankYou.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ThankYou.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\ThankYou.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ThankYou.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Product\SlideShow.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SlideShow.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Product\SlideShow.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SlideShow.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Shared\_NewLayout.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>_NewLayout.en.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Shared\_NewLayout.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>_NewLayout.Designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="ResourcesN\Dynamic\Categories.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Categories.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Dynamic\Categories.en.resx">
+    <EmbeddedResource Include="ResourcesN\Dynamic\Categories.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Categories.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Dynamic\CategoriesItem.en.resx">
+    <EmbeddedResource Include="ResourcesN\Dynamic\CategoriesItem.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CategoriesItem.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Dynamic\CategoriesItem.resx">
+    <EmbeddedResource Include="ResourcesN\Dynamic\CategoriesItem.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>CategoriesItem.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\About.en.resx">
+    <EmbeddedResource Include="ResourcesN\Home\About.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>About.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\About.resx">
+    <EmbeddedResource Include="ResourcesN\Home\About.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>About.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\ComingSoon.resx">
+    <EmbeddedResource Include="ResourcesN\Home\ComingSoon.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ComingSoon.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\ComingSoon.en.resx">
+    <EmbeddedResource Include="ResourcesN\Home\ComingSoon.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ComingSoon.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\Index.en.resx">
+    <EmbeddedResource Include="ResourcesN\Home\Index.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\Index.resx">
+    <EmbeddedResource Include="ResourcesN\Home\Index.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Index.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\ThankYou.en.resx">
+    <EmbeddedResource Include="ResourcesN\Home\ThankYou.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ThankYou.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Home\ThankYou.resx">
+    <EmbeddedResource Include="ResourcesN\Home\ThankYou.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ThankYou.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Product\SlideShow.en.resx">
+    <EmbeddedResource Include="ResourcesN\Product\SlideShow.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SlideShow.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Product\SlideShow.resx">
+    <EmbeddedResource Include="ResourcesN\Product\SlideShow.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SlideShow.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Shared\_NewLayout.en.resx">
+    <EmbeddedResource Include="ResourcesN\Shared\_NewLayout.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_NewLayout.en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Shared\_NewLayout.resx">
+    <EmbeddedResource Include="ResourcesN\Shared\_NewLayout.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>_NewLayout.Designer.cs</LastGenOutput>
     </EmbeddedResource>

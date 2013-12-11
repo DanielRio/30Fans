@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+  This file contains basic settings needed for most web apps.
+  For full Combres settings (with explanation), refer to the sample definition file: combres_full_with_annotation.xml
+  Also, refer to Combres' documentation: http://combres.codeplex.com/documentation	
+-->
+<combres xmlns='urn:combres'>
+  <filters>
+    <filter type="Combres.Filters.FixUrlsInCssFilter, Combres" />
+  </filters>
+  <resourceSets url="~/combres.axd"
+                defaultDuration="30"
+                defaultVersion="auto"
+                defaultDebugEnabled="false"
+                defaultIgnorePipelineWhenDebug="true"
+                localChangeMonitorInterval="30"
+                remoteChangeMonitorInterval="60"
+                >
+    <resourceSet name="siteCss" type="css">
+      <resource path="~/Content/css/site.css" />
+      <resource path="~/Content/css/promo.css" />
+      <resource path="~/Content/css/style.css" />
+      <resource path="~/Content/css/elastislide.css" />
+      <resource path="~/Content/fancybox/jquery.fancybox.css" />
+    </resourceSet>
+    <resourceSet name="siteJs" type="js">
+        <!--<resource path="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" mode="dynamic" />-->
+        <resource path="~/Content/js/jquery-1.9.1.min.js" />
+        <resource path="~/Content/js/promo.js" />
+        <resource path="~/Content/js/jquery.tmpl.min.js" />
+        <resource path="~/Content/js/jquery.easing.1.3.js" />
+        <resource path="~/Content/js/jquery.elastislide.js"/>
+        <resource path="~/Content/js/gallery.js"/>
+        <resource path="~/Content/fancybox/jquery.fancybox.js" />        
+    </resourceSet>
+  </resourceSets>
+</combres>
