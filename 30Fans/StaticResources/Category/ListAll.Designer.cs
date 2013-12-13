@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _30Fans.ResourcesN.Home {
+namespace _30Fans.StaticResources.Category {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace _30Fans.ResourcesN.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class About {
+    public class ListAll {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal About() {
+        internal ListAll() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace _30Fans.ResourcesN.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.ResourcesN.Home.About", typeof(About).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.StaticResources.Category.ListAll", typeof(ListAll).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,52 +61,7 @@ namespace _30Fans.ResourcesN.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sobre o 30Fans.
-        /// </summary>
-        public static string Header {
-            get {
-                return ResourceManager.GetString("Header", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Todas as compras são feitas pelo Paypal. Nós não guardamos nenhum dado financeiro. Tudo 100% seguro..
-        /// </summary>
-        public static string Info1 {
-            get {
-                return ResourceManager.GetString("Info1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Você poderá comprar quantas fotos quiser, desde que elas estejam disponíveis..
-        /// </summary>
-        public static string Info2 {
-            get {
-                return ResourceManager.GetString("Info2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Assim que os 30 lugares estiverem vendidos O PayPal parará automaticamente suas vendas. Sua foto não poderá ser alterada..
-        /// </summary>
-        public static string Info3 {
-            get {
-                return ResourceManager.GetString("Info3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Assim escolha a sua melhor foto, pois ela será utilizada para sempre..
-        /// </summary>
-        public static string Info4 {
-            get {
-                return ResourceManager.GetString("Info4", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sobre.
+        ///   Looks up a localized string similar to Todas as categorias.
         /// </summary>
         public static string Title {
             get {

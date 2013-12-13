@@ -3,6 +3,13 @@
     ViewBag.Title = Resources.SlideShow.Title;
 }
 
+@section breadcumb {
+    @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
+    @Html.ActionLink(Resources.Categories.ResourceManager.GetObject(Model.CategoryItem.Category.CategoryName).ToString(), "Index", "Category", new { id = @Model.CategoryItem.Category.CategoryName }, new { @class = "teste" }) <text>>></text>
+    @Html.ActionLink(Resources.CategoriesItem.ResourceManager.GetObject(Model.CategoryItem.ItemName).ToString(), "Item", "Category", new { id = @Model.CategoryItem.Id }, new { @class = "teste" }) <text>>></text>
+    @Html.Label("productName",Model.ProductName)
+}
+
 <noscript>
 	<style>
 		.es-carousel ul{

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _30Fans.ResourcesN.Shared {
+namespace _30Fans.StaticResources.Shared {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace _30Fans.ResourcesN.Shared {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.ResourcesN.Shared._NewLayout", typeof(_NewLayout).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.StaticResources.Shared._NewLayout", typeof(_NewLayout).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

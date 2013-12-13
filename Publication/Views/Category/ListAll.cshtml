@@ -1,7 +1,8 @@
-﻿@model IEnumerable<Domain.Category>
+﻿@using _30Fans.StaticResources.Category
+@model IEnumerable<Domain.Category>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = @ListAll.Title;
 }
 
 <h1 class="stylizedH1">@ViewBag.Title</h1>

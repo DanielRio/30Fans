@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _30Fans.ResourcesN.Home {
+namespace _30Fans.StaticResources.Home {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace _30Fans.ResourcesN.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.ResourcesN.Home.Index", typeof(Index).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.StaticResources.Home.Index", typeof(Index).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

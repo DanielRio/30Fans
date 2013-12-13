@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _30Fans.ResourcesN.Dynamic {
+namespace _30Fans.StaticResources.Product {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace _30Fans.ResourcesN.Dynamic {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class Categories {
+    public class SlideShow {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Categories() {
+        internal SlideShow() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace _30Fans.ResourcesN.Dynamic {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.ResourcesN.Dynamic.Categories", typeof(Categories).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.StaticResources.Product.SlideShow", typeof(SlideShow).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,38 +61,47 @@ namespace _30Fans.ResourcesN.Dynamic {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Basquete.
+        ///   Looks up a localized string similar to PayPal - A maneira mais fácil e segura de efetuar pagamentos online!.
         /// </summary>
-        public static string Basketball {
+        public static string PaypalAlt {
             get {
-                return ResourceManager.GetString("Basketball", resourceCulture);
+                return ResourceManager.GetString("PaypalAlt", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Futebol.
+        ///   Looks up a localized string similar to Por apenas R$99.99 [5 x 20,00 sem juros] você entrará na história do seu clube!.
         /// </summary>
-        public static string Football {
+        public static string Price {
             get {
-                return ResourceManager.GetString("Football", resourceCulture);
+                return ResourceManager.GetString("Price", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Corrida.
+        ///   Looks up a localized string similar to Próxima.
         /// </summary>
-        public static string Running {
+        public static string SlideShowNext {
             get {
-                return ResourceManager.GetString("Running", resourceCulture);
+                return ResourceManager.GetString("SlideShowNext", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Skate.
+        ///   Looks up a localized string similar to Anterior.
         /// </summary>
-        public static string Skate {
+        public static string SlideShowPrevious {
             get {
-                return ResourceManager.GetString("Skate", resourceCulture);
+                return ResourceManager.GetString("SlideShowPrevious", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Os 30 maiores fans!.
+        /// </summary>
+        public static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

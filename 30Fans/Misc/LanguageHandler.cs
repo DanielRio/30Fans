@@ -16,7 +16,7 @@ namespace _30Fans.Misc {
             ApplyCurrentLanguage(currentlanguage);                
         }
 
-        private string GetSelectedLanguage() {
+        public string GetSelectedLanguage() {
             HttpContext context = HttpContext.Current;
             string selectedLaguage = string.Empty;
             if (context.Session != null && context.Session["currentLanguage"] != null) {

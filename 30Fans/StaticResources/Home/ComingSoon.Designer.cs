@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace _30Fans.ResourcesN.Home {
+namespace _30Fans.StaticResources.Home {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace _30Fans.ResourcesN.Home {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ThankYou {
+    public class ComingSoon {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ThankYou() {
+        internal ComingSoon() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace _30Fans.ResourcesN.Home {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.ResourcesN.Home.ThankYou", typeof(ThankYou).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("_30Fans.StaticResources.Home.ComingSoon", typeof(ComingSoon).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,16 +61,16 @@ namespace _30Fans.ResourcesN.Home {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thank your for purchase your slot on 30fans. Please send your picture to 30fans@gmail.com..
+        ///   Looks up a localized string similar to Em breve....
         /// </summary>
-        public static string ThankYouMessage {
+        public static string Announcement {
             get {
-                return ResourceManager.GetString("ThankYouMessage", resourceCulture);
+                return ResourceManager.GetString("Announcement", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Thank You.
+        ///   Looks up a localized string similar to Em Breve.
         /// </summary>
         public static string Title {
             get {

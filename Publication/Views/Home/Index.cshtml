@@ -51,7 +51,7 @@
 	    </li>
 	    <br/>
 	    <div class="promotext">
-		    <span class="title">
+		    <span class="gold">
 			    <a href="/Football">
 				    @Resources.Index.PromoTitleExplanation
 			    </a>
@@ -62,5 +62,9 @@
 	    </div>			
     </ul>
     <hr />
-    <h1 class="rightAlign">@Html.ActionLink(Resources.Index.MoreCategories, "ListAll", "Category", null, new { @class = "linkTitle" })</h1>
+    <h1 class="rightAlign">
+        <span class="gold">
+            @Html.ActionLink(Resources.Index.MoreCategories, "ListAll", "Category")
+        </span>
+    </h1>
 </div>

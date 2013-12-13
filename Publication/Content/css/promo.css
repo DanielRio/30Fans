@@ -116,13 +116,13 @@
 	margin-left:25px;
 }
 
-.ei_menu ul div.promotext span.title{
+span.gold{
 	text-align: center;
 }
 
-.ei_menu ul div.promotext span.title a{
-    color:#ffff00;
+span.gold a{
     text-decoration:none;
+    color:#ffff00;
 }
 
 /* For the index_3 demo */

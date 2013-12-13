@@ -24,5 +24,10 @@ namespace _30Fans.Misc {
             return MvcHtmlString.Create(anchorHtml);
         }
 
+        public static String GetSelectedLanguage(this HtmlHelper helper){
+            LanguageHandler handler = new LanguageHandler();
+            return handler.GetSelectedLanguage();
+        }
+
     } //class
 }

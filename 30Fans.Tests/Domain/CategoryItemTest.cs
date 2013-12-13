@@ -7,7 +7,7 @@ using Domain;
 
 namespace _30Fans.Tests.Domain {
     [TestClass]
-    public class CategoryItemTest : BaseTest{
+    public class CategoryItemTest : BaseDomainTest{
         [TestMethod]
         public void CreateCategoryItem() {
             var categoryItem = CategoryItem().WithId(1)

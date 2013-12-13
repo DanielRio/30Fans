@@ -7,7 +7,7 @@ using Domain;
 
 namespace _30Fans.Tests.Domain {
     [TestClass]
-    public class ProductTest : BaseTest{
+    public class ProductTest : BaseDomainTest{
 
         [TestMethod]
         public void CreateProduct() {

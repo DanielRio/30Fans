@@ -15,7 +15,7 @@ namespace _30Fans.Tests {
     [DeploymentItem(@".\x86\SQLite.Interop.dll")]
     [DeploymentItem(@".\System.Data.SQLite.dll")]    
     [TestClass]
-    public class IntegrityTest : BaseTest {
+    public class IntegrityTest : BaseDomainTest {
         public IntegrityTest() {
             //This line above force load System.Data.SQLite.dll to output folder. We can solve this problem adding DeploymentItem as well.
             //System.Data.SQLite.SQLiteLog.Enabled = true;

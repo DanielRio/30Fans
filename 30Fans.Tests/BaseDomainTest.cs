@@ -10,7 +10,7 @@ using _30Fans.Tests.Builder;
 
 namespace _30Fans.Tests {    
     [TestClass]
-    public class BaseTest {
+    public class BaseDomainTest {
         //Factories to remove the noise of always call new builders...
         protected CategoryBuilder Category() {
             return new CategoryBuilder();
