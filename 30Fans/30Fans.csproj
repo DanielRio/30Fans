@@ -110,10 +110,10 @@
       <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.SQLite">
+    <Reference Include="System.Data.SQLite, Version=1.0.89.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.1.0.89.0\lib\net40\System.Data.SQLite.dll</HintPath>
     </Reference>
-    <Reference Include="System.Data.SQLite.Linq">
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.89.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Data.SQLite.1.0.89.0\lib\net40\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
@@ -165,13 +165,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App_GlobalResources\Home\About.Designer.cs">
-      <DependentUpon>About.resx</DependentUpon>
+    <Compile Include="App_GlobalResources\Home\Contact.designer.cs">
+      <DependentUpon>Contact.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App_GlobalResources\Home\About.en.Designer.cs">
-      <DependentUpon>About.en.resx</DependentUpon>
+    <Compile Include="App_GlobalResources\Home\Contact.en.designer.cs">
+      <DependentUpon>Contact.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -325,6 +325,22 @@
     <Content Include="App_Data\combres_minimal.xml" />
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\elastislide.css" />
+    <Content Include="Content\css\images\animated-overlay.gif" />
+    <Content Include="Content\css\images\readme.txt" />
+    <Content Include="Content\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\css\jquery-ui.css" />
     <Content Include="Content\css\promo.css" />
     <Content Include="Content\css\reset.css" />
     <Content Include="Content\css\site.css" />
@@ -430,8 +446,27 @@
     <Content Include="Content\images\nav_thumbs.png" />
     <Content Include="Content\images\pattern.png" />
     <Content Include="Content\images\under_construction.jpg" />
+    <Content Include="Content\js\custom\fans.contact.js" />
+    <Content Include="Content\js\custom\fans.js" />
+    <Content Include="Content\js\custom\fans.boot.js" />
     <Content Include="Content\js\gallery.js" />
+    <Content Include="Content\js\images\animated-overlay.gif" />
+    <Content Include="Content\js\images\readme.txt" />
+    <Content Include="Content\js\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\js\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\js\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\js\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\js\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\js\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\js\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\js\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\js\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\js\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\js\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\js\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\js\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Content\js\jquery-1.9.1.min.js" />
+    <Content Include="Content\js\jquery-ui.js" />
     <Content Include="Content\js\jquery.easing.1.3.js" />
     <Content Include="Content\js\jquery.elastislide.js" />
     <Content Include="Content\js\jquery.tmpl.min.js" />
@@ -452,14 +487,11 @@
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="x64\SQLite.Interop.dll">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
     <Content Include="x86\SQLite.Interop.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -491,6 +523,7 @@
     <Content Include="Views\Error\General.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Shared\_Contact.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -502,6 +535,7 @@
   <ItemGroup>
     <Folder Include="Content\images\categories\Running\Beach\" />
     <Folder Include="Content\images\categories\Skate\" />
+    <Folder Include="x64\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -545,13 +579,13 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>CategoriesItem.Designer.cs</LastGenOutput>
     </Content>
-    <Content Include="App_GlobalResources\Home\About.en.resx">
+    <Content Include="App_GlobalResources\Home\Contact.en.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>About.en.Designer.cs</LastGenOutput>
+      <LastGenOutput>Contact.en.designer.cs</LastGenOutput>
     </Content>
-    <Content Include="App_GlobalResources\Home\About.resx">
+    <Content Include="App_GlobalResources\Home\Contact.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>About.Designer.cs</LastGenOutput>
+      <LastGenOutput>Contact.designer.cs</LastGenOutput>
     </Content>
     <Content Include="App_GlobalResources\Home\ComingSoon.en.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>

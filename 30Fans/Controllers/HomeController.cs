@@ -20,7 +20,11 @@ namespace _30Fans.Controllers {
             return View();
         }
 
-        public ActionResult About() {
+        public ActionResult Contact() {
+            return View();
+        }
+
+        public ActionResult Conditions() {
             return View();
         }
 

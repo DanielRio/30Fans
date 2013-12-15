@@ -32,10 +32,10 @@
             </div>
             <nav>
                 <ul id="menu">
-                    <li>@Html.ActionLink(Resources._NewLayout.MenuHome, "Index", "Home")</li>
+                    @*<li>@Html.ActionLink(Resources._NewLayout.MenuHome, "Index", "Home")</li>*@
                     <li>@Html.ActionLink(Resources._NewLayout.MenuVideos, "Videos", "Home")</li>
-                    <li>@Html.ActionLink(Resources._NewLayout.MenuBonus, "Bonus", "Home")</li>
-                    <li>@Html.ActionLink(Resources._NewLayout.MenuAbout, "About", "Home")</li>
+                    <li>@Html.ActionLink(Resources._NewLayout.MenuConditions, "Conditions", "Home")</li>
+                    <li><a href="#" id="navContact">@Resources._NewLayout.MenuContact</a></li>
                     @if (User.Identity.IsAuthenticated) {
                         <li>
                             @Html.ActionLink(Resources._NewLayout.MenuAdmin, "Index", "Admin")
@@ -68,8 +68,23 @@
         </footer>
     </div>
 
+    <div id="contactDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front notVisible" tabindex="-1" role="dialog" title="@Resources._NewLayout.MenuContact">
+        @Html.Partial("_Contact")
+    </div>
+
     @Html.CombresLink("siteJs") 
     <script type="text/javascript">
+        ;$(function () {
+            $('#navContact').on("click", function (e) {
+                e.preventDefault();
+                $('#contactDialog').dialog({    
+                            width: 800,
+                            height: 600, 
+                            modal: true 
+                        });
+            });
+        });       
+
         $(".fancybox").fancybox({
             "overlayColor": "#000",  // here you set the background black
             "overlayOpacity": 1,  // here you set the transparency of background: 1 = opaque
