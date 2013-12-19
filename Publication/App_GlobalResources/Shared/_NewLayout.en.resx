@@ -129,11 +129,11 @@
   <data name="MainTitle" xml:space="preserve">
     <value>30Fans</value>
   </data>
-  <data name="MenuAbout" xml:space="preserve">
-    <value>About</value>
+  <data name="MenuConditions" xml:space="preserve">
+    <value>Conditions</value>
   </data>
-  <data name="MenuBonus" xml:space="preserve">
-    <value>Bonus</value>
+  <data name="MenuContact" xml:space="preserve">
+    <value>Contact</value>
   </data>
   <data name="MenuHome" xml:space="preserve">
     <value>Home</value>

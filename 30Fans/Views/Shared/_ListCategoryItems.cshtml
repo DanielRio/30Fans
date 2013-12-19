@@ -1,7 +1,7 @@
 ﻿@model Domain.Category
 
 <p>
-    @Html.ActionLink("Create New", "AddCategoryItem", new { id = Model.Id })
+    @Html.ActionLink("Create New", "Create", "CategoryItem", new { id = Model.Id }, null)
 </p>
 <table width="90%">
     <tr>
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.ImageThumbnailUrl)
         </td>
         <td>
-            @Html.ActionLink("Edit", "EditCategoryItem", new { id=item.Id }) |
-            @Html.ActionLink("Upload Image", "UploadImageCategoryItem", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "DeleteCategoryItem", new { id=item.Id })
+            @Html.ActionLink("Edit", "Edit", "CategoryItem", new { id=item.Id }, null) |
+            @Html.ActionLink("Upload Image", "UploadImage", "CategoryItem", new { id=item.Id }, null) |
+            @Html.ActionLink("Delete", "Delete", "CategoryItem", new { id=item.Id }, null)
         </td>
     </tr>
 }

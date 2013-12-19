@@ -20,7 +20,7 @@
 
 @foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList()) {
     var imageUrl = item.ImageUrl;
-    var urlItem = "/Category/Item/" + @item.Id;
+    var urlItem = "/CategoryItem/Show/" + @item.Id;
     if ((colsCount % numCols) == 0) {
         @:<tr>
     }

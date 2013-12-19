@@ -4,13 +4,13 @@
     ViewBag.Title = "AddCategoryItem";
 }
 
-<h2>AddCategoryItem</h2>
+<h2>Add New Category Item</h2>
 
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
     <fieldset>
-        <legend>CategoryItem</legend>
+        <legend>Category Item</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.ItemName)
@@ -39,11 +39,11 @@
         @Html.Hidden("CategoryId", (long)ViewBag.CategoryId)
 
         <p>
-            <input type="submit" value="AddCategoryItem" />
+            <input type="submit" value="Create" />
         </p>
     </fieldset>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Edit", new { id = (long)ViewBag.CategoryId })
+    @Html.ActionLink("Back to List", "Edit", "Category", new { id = (long)ViewBag.CategoryId }, null)
 </div>

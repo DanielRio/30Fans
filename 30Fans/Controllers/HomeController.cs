@@ -28,12 +28,11 @@ namespace _30Fans.Controllers {
             return View();
         }
 
-        public ActionResult Category(string category) {
-            // teria de ter uma categoria --> itens da categoria e cada item conteria N produtos
+        public ActionResult ThankYou() {
             return View();
         }
 
-        public ActionResult ThankYou() {
+        public ActionResult Videos() {
             return View();
         }
 

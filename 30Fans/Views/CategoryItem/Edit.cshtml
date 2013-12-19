@@ -4,10 +4,10 @@
     ViewBag.Title = "EditCategoryItem";
 }
 
-<h2>EditCategoryItem</h2>
+<h2>Edit Category Item</h2>
 
 @using (Html.BeginForm()) {
-    @Html.ValidationSummary(true)
+    @Html.ValidationSummary(true) 
     <fieldset>
         <legend>CategoryItem</legend>
 
@@ -64,7 +64,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Edit", new { id = Model.Id })
+    @Html.ActionLink("Back to List", "Edit", "Category", new { id = Model.Category.Id }, null)
 </div>
 
 

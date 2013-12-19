@@ -7,17 +7,20 @@ using Dao.Impl;
 using Domain;
 using System.IO;
 using System.Web.UI;
+using _30Fans.Misc;
 
 namespace _30Fans.Controllers{
     public class CategoryController : BaseController{
         private ProductDao _productDao;
         private CategoryDao _categoryDao;
         private CategoryItemDao _categoryItemDao;
+        private FileSystemService _fileSystemService;
 
         public CategoryController() {
             _productDao = new ProductDao();
             _categoryDao = new CategoryDao();
             _categoryItemDao = new CategoryItemDao();
+            _fileSystemService = new FileSystemService();
         }
 
         //
@@ -25,7 +28,12 @@ namespace _30Fans.Controllers{
         [OutputCache(Duration=180,Location=OutputCacheLocation.Server)]
         public ActionResult ListAll() {
             var categorias = _categoryDao.GetaAll();
+            categorias = Priorize(categorias);
             return View(categorias);
+        }
+
+        private IList<Category> Priorize(IList<Category> categorias) {
+            return categorias.OrderByDescending(x => x.Priority).ToList();
         }
 
         //
@@ -38,23 +46,6 @@ namespace _30Fans.Controllers{
                 return RedirectToAction("ComingSoon", "Home");
 
             return View(categoria);
-        }
-        
-        // GET: /Category/Item/5
-        [OutputCache(Duration = 180, VaryByParam = "id", Location = OutputCacheLocation.Server)]
-        public ActionResult Item(int id){
-            IList<Product> products = null;
-            try {
-                var categoryItem = _categoryItemDao.Get(id);
-                if (!categoryItem.Enable)
-                    return RedirectToAction("ComingSoon", "Home");
-                products = _productDao.GetByCategoryItemId(id);
-                ViewBag.Title = products[0].CategoryItem.ItemName;
-            }catch(ProductNotFoundException ex){
-                ViewBag.Title = "Produto não encontrado";
-                products = new List<Product>();
-            }
-            return View(products);
         }
 
         //
@@ -76,6 +67,7 @@ namespace _30Fans.Controllers{
                     throw new Exception("Category name already exists!");
                 }
 
+                category.Items = _categoryItemDao.GetByCategoryId(id);
                 _categoryDao.Update(category);
                 return RedirectToAction("Index" , "Admin");
             } catch {
@@ -91,7 +83,7 @@ namespace _30Fans.Controllers{
 
         [HttpPost]
         [Authorize]
-        public ActionResult UploadImage(HttpPostedFileBase file, string id, string imageFolderName, FormCollection collection) {
+        public ActionResult UploadImage(HttpPostedFileBase file, string id,FormCollection collection) {
             if (file != null && file.ContentLength > 0) {
                 var category = _categoryDao.Get(Convert.ToInt64(id));
 
@@ -100,33 +92,8 @@ namespace _30Fans.Controllers{
                 var path = Path.Combine(Server.MapPath(ImagePathConstants.CATEGORIES), fileName);
                 file.SaveAs(path);
 
-                CreateFolder(Path.Combine(Server.MapPath(ImagePathConstants.CATEGORIES), imageFolderName));
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(ImagePathConstants.CATEGORIES), category.CategoryName));
                 UpdateCategory(category, fileName, extension);
-            } else {
-                return View();
-            }
-            return RedirectToAction("Index","Admin");
-        }
-
-        [Authorize]
-        public ActionResult UploadImageCategoryItem(long id) {
-            var categoryItem = _categoryItemDao.Get(id);
-            return View(categoryItem);
-        }
-
-        [HttpPost]
-        [Authorize]
-        public ActionResult UploadImageCategoryItem(HttpPostedFileBase file, string id, string imageFolderName, FormCollection collection) {
-            if (file != null && file.ContentLength > 0) {
-                var categoryItem = _categoryItemDao.Get(Convert.ToInt64(id));
-
-                var fileName = Path.GetFileName(file.FileName);
-                var extension = Path.GetExtension(file.FileName);
-                var path = Path.Combine(Server.MapPath(categoryItem.GetImagePath()), fileName);
-                file.SaveAs(path);
-
-                CreateFolder(Path.Combine(Server.MapPath(categoryItem.GetImagePath()), imageFolderName));
-                UpdateCategoryItem(categoryItem, Path.GetFileNameWithoutExtension(file.FileName), extension);
             } else {
                 return View();
             }
@@ -155,69 +122,9 @@ namespace _30Fans.Controllers{
             }
         }
 
-        [Authorize]
-        public ActionResult AddCategoryItem(long id) {
-            ViewBag.CategoryId = id;
-            return View();
-        }
-
-        [Authorize]
-        [HttpPost]
-        public ActionResult AddCategoryItem(CategoryItem categoryItem, long CategoryId) {
-            try {
-                categoryItem.Category = _categoryDao.Get(CategoryId);
-                _categoryItemDao.Save(categoryItem);
-                return RedirectToAction("Edit", new { id = CategoryId });
-            } catch {
-                return View();
-            }
-        }
-
-        [Authorize]
-        public ActionResult EditCategoryItem(long id) {
-            var categoryItem = _categoryItemDao.Get(id);
-            return View(categoryItem);
-        }
-
-        [Authorize]
-        [HttpPost]
-        public ActionResult EditCategoryItem(long id, CategoryItem categoryItem) {
-            try {
-                _categoryItemDao.Update(categoryItem);
-                return RedirectToAction("Edit", new { id = categoryItem.Category.Id });
-            } catch (Exception ex) {
-                var teste = ex;
-                return View();
-            }
-        }
-
-        [Authorize]
-        public ActionResult DeleteCategoryItem(long id) {
-            var categoryItem = _categoryItemDao.Get(id);
-            return View(categoryItem);
-        }
-
-        [Authorize]
-        [HttpPost]
-        public ActionResult DeleteCategoryItem(long id, CategoryItem categoryItem) {
-            try {
-                _categoryItemDao.Delete(categoryItem);
-                var refreshedCategoryItem = _categoryItemDao.Get(id);
-                return RedirectToAction("Edit", new { id = refreshedCategoryItem.Category.Id });
-            } catch {
-                return View();
-            }
-        }
-
         private bool CategoryNameAlreadyExists(string categoryName, long idNewCategory) {
             Category category = _categoryDao.GetByName(categoryName);
             return category != null && category.Id != idNewCategory;
-        }
-
-        private void CreateFolder(string folderPath) {
-            if (!Directory.Exists(folderPath)){
-                Directory.CreateDirectory(folderPath);
-            }
         }
 
         private void UpdateCategory(Category category, string fileName, string extension) {
@@ -225,12 +132,6 @@ namespace _30Fans.Controllers{
             category.ImageName = fileName;
             category.ImageExtension = extension;
             _categoryDao.Update(category);
-        }
-
-        private void UpdateCategoryItem(CategoryItem categoryItem, string fileName, string extension) {
-            categoryItem.ImageName = fileName;
-            categoryItem.ImageExtension = extension;
-            _categoryItemDao.Update(categoryItem);
         }
 
     } //class

@@ -30,7 +30,7 @@
             <td>@Html.ConvertBooleanToYesNo(item.Enable)</td>
             <td>@Html.DisplayFor(x => item.Priority)</td>
             <td>
-                @Html.ActionLink("Add Item", "AddCategoryItem", "Category",  new {  id=item.Id  }, null) |
+                @Html.ActionLink("Add Item", "Create", "CategoryItem",  new {  id=item.Id  }, null) |
                 @Html.ActionLink("Edit", "Edit", "Category",  new {  id=item.Id  }, null) |
                 @Html.ActionLink("Upload Image", "UploadImage", "Category", new {  id=item.Id  }, null) |
                 @Html.ActionLink("Delete", "Delete", "Category" , new { id = item.Id }, null)

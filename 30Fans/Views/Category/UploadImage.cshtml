@@ -8,8 +8,8 @@
 
 @using (Html.BeginForm("UploadImage", "Category", FormMethod.Post, new { enctype = "multipart/form-data" })) { 
     <input type="hidden" id='hiddenId' name='id' value="@Model.Id"/>
-    <p>Type here the items image folder name. Example: Category: Football, items folder:Football </p> 
-    <input type="text" id='txtChildImageFolderName' name='imageFolderName' value="@Model.CategoryName" /><br />
+    @*<p>Type here the items image folder name. Example: Category: Football, items folder:Football </p> *@
+    @*<input type="text" id='txtChildImageFolderName' name='imageFolderName' value="@Model.CategoryName" /><br />*@
     <input type="file" name="file" /><br />
     <p>
         <input type="submit" value="Upload!" />  

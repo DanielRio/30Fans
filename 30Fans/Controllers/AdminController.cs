@@ -6,13 +6,17 @@ using System.Web.Mvc;
 using Dao.Impl;
 using _30Fans.Models;
 using Domain;
+using _30Fans.Misc;
+using System.IO;
 
 namespace _30Fans.Controllers{
     [Authorize()]
     public class AdminController : BaseController{
         private CategoryDao _categoryDao;
+        private FileSystemService _fileSystemService;
         public AdminController() {
             _categoryDao = new CategoryDao();
+            _fileSystemService = new FileSystemService();
         }
         //
         // GET: /Admin/
@@ -33,6 +37,7 @@ namespace _30Fans.Controllers{
         [HttpPost]
         public ActionResult CreateCategory(Category category) {
             try{
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(ImagePathConstants.CATEGORIES), category.CategoryName));
                 _categoryDao.Save(category);
                 return RedirectToAction("Index");
             }

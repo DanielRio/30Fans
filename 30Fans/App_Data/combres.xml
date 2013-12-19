@@ -11,7 +11,7 @@
   <resourceSets url="~/combres.axd"
                 defaultDuration="30"
                 defaultVersion="auto"
-                defaultDebugEnabled="true"
+                defaultDebugEnabled="false"
                 defaultIgnorePipelineWhenDebug="true"
                 localChangeMonitorInterval="30"
                 remoteChangeMonitorInterval="60"
@@ -35,6 +35,7 @@
         <resource path="~/Content/js/jquery-ui.js" />
         <resource path="~/Content/js/custom/fans.js" />
         <resource path="~/Content/js/custom/fans.contact.js" />
+        <resource path="~/Content/js/custom/fans.condition.js" />
         <resource path="~/Content/js/custom/fans.boot.js" />
         
         <resource path="~/Content/js/gallery.js"/>
