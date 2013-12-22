@@ -205,6 +205,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="App_GlobalResources\Home\Videos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Videos.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Videos.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Videos.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Product\SlideShow.Designer.cs">
       <DependentUpon>SlideShow.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -310,6 +320,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SlideShow.en.resx</DependentUpon>
     </Compile>
+    <Compile Include="StaticResources\Shared\_Conditions.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Conditions.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StaticResources\Shared\_Conditions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Conditions.resx</DependentUpon>
+    </Compile>
     <Compile Include="StaticResources\Shared\_Contact.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -332,7 +352,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\combres.xml" />
+    <Content Include="App_Data\combres.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\combres_full_with_annotation.xml" />
     <Content Include="App_Data\combres_minimal.xml" />
     <Content Include="Content\css\demo.css" />
@@ -458,6 +480,15 @@
     <Content Include="Content\images\nav_thumbs.png" />
     <Content Include="Content\images\pattern.png" />
     <Content Include="Content\images\under_construction.jpg" />
+    <Content Include="Content\images\videos\accidents.png" />
+    <Content Include="Content\images\videos\basketball.png" />
+    <Content Include="Content\images\videos\cartoons.png" />
+    <Content Include="Content\images\videos\cricket.png" />
+    <Content Include="Content\images\videos\football.png" />
+    <Content Include="Content\images\videos\hits.png" />
+    <Content Include="Content\images\videos\magic.png" />
+    <Content Include="Content\images\videos\wtf.png" />
+    <Content Include="Content\js\custom\CategoryItem\edit.js" />
     <Content Include="Content\js\custom\fans.condition.js" />
     <Content Include="Content\js\custom\fans.contact.js" />
     <Content Include="Content\js\custom\fans.js" />
@@ -525,6 +556,9 @@
     <Content Include="Views\CategoryItem\Show.cshtml" />
     <Content Include="Views\CategoryItem\Delete.cshtml" />
     <Content Include="Views\Home\Videos.cshtml" />
+    <Content Include="Views\Shared\_Conditions.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\_AdminProductList.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -625,6 +659,14 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>_NewLayout.Designer.cs</LastGenOutput>
     </Content>
+    <Content Include="App_GlobalResources\Home\Videos.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Videos.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\Videos.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Videos.en.designer.cs</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="StaticResources\Category\ListAll.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ListAll.en.Designer.cs</LastGenOutput>
@@ -672,6 +714,14 @@
     <EmbeddedResource Include="StaticResources\Product\SlideShow.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SlideShow.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticResources\Shared\_Conditions.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Conditions.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticResources\Shared\_Conditions.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Conditions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="StaticResources\Shared\_Contact.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

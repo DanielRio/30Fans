@@ -1,4 +1,5 @@
-﻿@model Domain.CategoryItem
+﻿@using Combres.Mvc
+@model Domain.CategoryItem
 
 @{
     ViewBag.Title = "EditCategoryItem";
@@ -61,10 +62,20 @@
         </p>
     </fieldset>
     <hr />
+     <fieldset>
+        <legend>Products</legend>
+        <div id="productsResult">
+            <img id="productLoaderImage" src="../../Content/images/ajax-loader.gif" />
+        </div>
+    </fieldset>
 }
 
 <div>
     @Html.ActionLink("Back to List", "Edit", "Category", new { id = Model.Category.Id }, null)
 </div>
+
+@section PageScripts{
+    @Html.CombresLink("editCategoryItemJs")
+}
 
 
