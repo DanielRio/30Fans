@@ -11,7 +11,7 @@
   <resourceSets url="~/combres.axd"
                 defaultDuration="30"
                 defaultVersion="auto"
-                defaultDebugEnabled="false"
+                defaultDebugEnabled="auto"
                 defaultIgnorePipelineWhenDebug="true"
                 localChangeMonitorInterval="30"
                 remoteChangeMonitorInterval="60"
@@ -37,8 +37,12 @@
         <resource path="~/Content/js/custom/fans.contact.js" />
         <resource path="~/Content/js/custom/fans.condition.js" />
         <resource path="~/Content/js/custom/fans.boot.js" />
-        
+    </resourceSet>
+    <resourceSet name="slideShowPageJs" type="js">
         <resource path="~/Content/js/gallery.js"/>
+    </resourceSet>
+    <resourceSet name="editCategoryItemJs" type="js">
+        <resource path="~/Content/js/custom/CategoryItem/edit.js"/>
     </resourceSet>
   </resourceSets>
 </combres>

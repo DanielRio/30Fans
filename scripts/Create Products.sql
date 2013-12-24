@@ -58,3 +58,58 @@ VALUES('Coritiba','coritiba','png',30,'CN3QN97QG63AQ',Now(),2,1,6);
 INSERT INTO `jplindgren02`.`Product`
 (`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
 VALUES('Figueirense','figueirense','png',30,'WPDXL3SGMTPQG',Now(),2,1,6);
+
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Adelaide','adelaide', 'png' ,30,'CE7BEU6YR3G4G',Now(),4, 1,10);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Brisbane Lions','brisbanelions','png',30,'Y9P5N7CNZ78WS',Now(),4, 1,10);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Bulldogs','bulldogs','png',30,'WGW5AVP3CNZLG',Now(),4, 1,10);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Carlton','carlton','png',30,'2PKH6CKUVWUCW',Now(),4, 1,10);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Collingwood','collingwood','png',30,'AZ4UPSV44GJY6',Now(),4,1,9);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Essendon','essendon','png',30,'RVYBPXSQRRUTG',Now(),4,1,9);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Fremantle','fremantle','png',30,'EM4849ABRVNMQ',Now(),4,1,9);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Geelong','geelong','png',30,'VZWM3GSD85MUS',Now(),4,1,9);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Giants','giants','png',30,'',Now(),4,1,8);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Gold Coast','goldcoast','png',30,'W32EQHZ88HAFY',Now(),4,1,8);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Hawthorn','hawthorne','png',30,'VQHJ4ZV5DTUKW',Now(),4,1,8);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Melbourne','melbourne','png',30,'D6JUBT2PDRRN2',Now(),4,1,8);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('North Melbourne','northmelbourne','png',30,'ZVB58H8QBAPB4',Now(),4,1,7);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Port Adelaide','portadelaide','png',30,'FQHPKGCMZVRC4',Now(),4,1,7);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Richmond','richmond','png',30,'SMMH5J24N37PC',Now(),4,1,7);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('St Kilda','stkilda','png',30,'K7QRRX64BFMNN',Now(),4,1,7);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('Sydney','sydney','png',30,'NCUHXH4KXAA7E',Now(),4,1,6);
+INSERT INTO `jplindgren02`.`Product`
+(`ProductName`, `ImageName`, `ImageExtension`,`AvailableQuantity`,`PaymentCode`,`PublishedDate`,`CategoryItemId`,`Enable`, `Priority`)
+VALUES('West Coast','westcoast','png',30,'WKJFBRWSAM9SL',Now(),4,1,6);

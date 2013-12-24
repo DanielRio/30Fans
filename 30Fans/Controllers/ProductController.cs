@@ -30,7 +30,6 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Product/SlideShow/5
-        [OutputCache(Duration = 180, VaryByParam = "id", Location = OutputCacheLocation.Server)]
         public ActionResult List(int id) {
             IList<Product> products = null;
             ViewBag.CategoryItemId = id;
@@ -57,8 +56,29 @@ namespace _30Fans.Controllers{
                 product.CategoryItem = _categoryItemDao.Get(CategoryItemId);
                 product.AvailableQuantity = 30;
                 product.PublishedDate = DateTime.Now;
+                _productDao.Save(product);
                 return RedirectToAction("Edit", "CategoryItem", new { id = product.CategoryItem.Id });
             } catch {
+                return View();
+            }
+        }
+
+        [Authorize]
+        public ActionResult Edit(long id) {
+            var product = _productDao.Get(id);
+            return View(product);
+        }
+
+        [Authorize]
+        [HttpPost]
+        public ActionResult Edit(long id, Product product) {
+            try {
+                var originalProduct = _productDao.Get(id);
+                product.PublishedDate = originalProduct.PublishedDate;
+                product.CategoryItem = originalProduct.CategoryItem;
+                _productDao.Update(product);
+                return RedirectToAction("Edit", "CategoryItem", new { id = product.CategoryItem.Id });
+            } catch (Exception) {
                 return View();
             }
         }

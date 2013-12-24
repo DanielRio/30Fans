@@ -72,10 +72,13 @@
     </div>
 
     <div id="conditionsDialog" class="ui-dialog ui-widget ui-widget-content ui-corner-all ui-front notVisible" tabindex="-1" role="dialog" title="@Resources._NewLayout.MenuConditions">
-        <p>Conditions</p>
+        @Html.Partial("_Conditions")
     </div>
 
-    @Html.CombresLink("siteJs") 
+    @Html.CombresLink("siteJs")
+
+    @RenderSection("PageScripts",false)
+
     <script type="text/javascript">
         $(".fancybox").fancybox({
             "overlayColor": "#000",  // here you set the background black

@@ -165,16 +165,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App_GlobalResources\Home\Contact.designer.cs">
-      <DependentUpon>Contact.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\Home\Contact.en.designer.cs">
-      <DependentUpon>Contact.en.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="App_GlobalResources\Home\ComingSoon.Designer.cs">
       <DependentUpon>ComingSoon.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -399,6 +389,24 @@
     <Content Include="Content\images\categories\football.jpg" />
     <Content Include="Content\images\categories\Football\argentina.png" />
     <Content Include="Content\images\categories\Football\australia.png" />
+    <Content Include="Content\images\categories\Football\Australia\adelaide.png" />
+    <Content Include="Content\images\categories\Football\Australia\brisbanelions.png" />
+    <Content Include="Content\images\categories\Football\Australia\bulldogs.png" />
+    <Content Include="Content\images\categories\Football\Australia\carlton.png" />
+    <Content Include="Content\images\categories\Football\Australia\collingwood.png" />
+    <Content Include="Content\images\categories\Football\Australia\essendon.png" />
+    <Content Include="Content\images\categories\Football\Australia\fremantle.png" />
+    <Content Include="Content\images\categories\Football\Australia\geelong.png" />
+    <Content Include="Content\images\categories\Football\Australia\giants.png" />
+    <Content Include="Content\images\categories\Football\Australia\goldcoast.png" />
+    <Content Include="Content\images\categories\Football\Australia\hawthorne.png" />
+    <Content Include="Content\images\categories\Football\Australia\melbourne.png" />
+    <Content Include="Content\images\categories\Football\Australia\northmelbourne.png" />
+    <Content Include="Content\images\categories\Football\Australia\portadelaide.png" />
+    <Content Include="Content\images\categories\Football\Australia\richmond.png" />
+    <Content Include="Content\images\categories\Football\Australia\stkilda.png" />
+    <Content Include="Content\images\categories\Football\Australia\sydney.png" />
+    <Content Include="Content\images\categories\Football\Australia\westcoast.png" />
     <Content Include="Content\images\categories\Football\brazil.png" />
     <Content Include="Content\images\categories\Football\Brazil\america_mineiro.png" />
     <Content Include="Content\images\categories\Football\Brazil\atletico_goianiense.png" />
@@ -516,7 +524,6 @@
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
@@ -559,6 +566,8 @@
     <Content Include="Views\Shared\_Conditions.cshtml" />
     <Content Include="Views\Product\Create.cshtml" />
     <Content Include="Views\Product\_AdminProductList.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Home\ShowVideo.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -610,14 +619,6 @@
     <Content Include="App_GlobalResources\Dynamic\CategoriesItem.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>CategoriesItem.Designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Home\Contact.en.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Contact.en.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Home\Contact.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Contact.designer.cs</LastGenOutput>
     </Content>
     <Content Include="App_GlobalResources\Home\ComingSoon.en.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
