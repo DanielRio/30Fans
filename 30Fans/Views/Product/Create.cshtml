@@ -1,0 +1,65 @@
+﻿@model Domain.Product
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Create a new Product for @ViewBag.CategoryItemName</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ProductName)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ProductName)
+            @Html.ValidationMessageFor(model => model.ProductName)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.AvailableQuantity)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.AvailableQuantity)
+            @Html.ValidationMessageFor(model => model.AvailableQuantity)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaymentCode)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaymentCode)
+            @Html.ValidationMessageFor(model => model.PaymentCode)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Enable)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Enable)
+            @Html.ValidationMessageFor(model => model.Enable)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Priority)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Priority)
+            @Html.ValidationMessageFor(model => model.Priority)
+        </div>
+
+
+        @Html.Hidden("CategoryItemId", (long)ViewBag.CategoryItemId)
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Show", "CategoryItem", new { id = (long)ViewBag.CategoryItemId }, null)
+</div>

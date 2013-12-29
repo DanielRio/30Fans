@@ -165,16 +165,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="App_GlobalResources\Home\Contact.designer.cs">
-      <DependentUpon>Contact.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="App_GlobalResources\Home\Contact.en.designer.cs">
-      <DependentUpon>Contact.en.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="App_GlobalResources\Home\ComingSoon.Designer.cs">
       <DependentUpon>ComingSoon.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -204,6 +194,16 @@
       <DependentUpon>ThankYou.en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Videos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Videos.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Videos.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Videos.en.resx</DependentUpon>
     </Compile>
     <Compile Include="App_GlobalResources\Product\SlideShow.Designer.cs">
       <DependentUpon>SlideShow.resx</DependentUpon>
@@ -310,6 +310,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SlideShow.en.resx</DependentUpon>
     </Compile>
+    <Compile Include="StaticResources\Shared\_Conditions.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Conditions.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StaticResources\Shared\_Conditions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Conditions.resx</DependentUpon>
+    </Compile>
     <Compile Include="StaticResources\Shared\_Contact.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -332,7 +342,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\combres.xml" />
+    <Content Include="App_Data\combres.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="App_Data\combres_full_with_annotation.xml" />
     <Content Include="App_Data\combres_minimal.xml" />
     <Content Include="Content\css\demo.css" />
@@ -377,6 +389,24 @@
     <Content Include="Content\images\categories\football.jpg" />
     <Content Include="Content\images\categories\Football\argentina.png" />
     <Content Include="Content\images\categories\Football\australia.png" />
+    <Content Include="Content\images\categories\Football\Australia\adelaide.png" />
+    <Content Include="Content\images\categories\Football\Australia\brisbanelions.png" />
+    <Content Include="Content\images\categories\Football\Australia\bulldogs.png" />
+    <Content Include="Content\images\categories\Football\Australia\carlton.png" />
+    <Content Include="Content\images\categories\Football\Australia\collingwood.png" />
+    <Content Include="Content\images\categories\Football\Australia\essendon.png" />
+    <Content Include="Content\images\categories\Football\Australia\fremantle.png" />
+    <Content Include="Content\images\categories\Football\Australia\geelong.png" />
+    <Content Include="Content\images\categories\Football\Australia\giants.png" />
+    <Content Include="Content\images\categories\Football\Australia\goldcoast.png" />
+    <Content Include="Content\images\categories\Football\Australia\hawthorne.png" />
+    <Content Include="Content\images\categories\Football\Australia\melbourne.png" />
+    <Content Include="Content\images\categories\Football\Australia\northmelbourne.png" />
+    <Content Include="Content\images\categories\Football\Australia\portadelaide.png" />
+    <Content Include="Content\images\categories\Football\Australia\richmond.png" />
+    <Content Include="Content\images\categories\Football\Australia\stkilda.png" />
+    <Content Include="Content\images\categories\Football\Australia\sydney.png" />
+    <Content Include="Content\images\categories\Football\Australia\westcoast.png" />
     <Content Include="Content\images\categories\Football\brazil.png" />
     <Content Include="Content\images\categories\Football\Brazil\america_mineiro.png" />
     <Content Include="Content\images\categories\Football\Brazil\atletico_goianiense.png" />
@@ -458,6 +488,15 @@
     <Content Include="Content\images\nav_thumbs.png" />
     <Content Include="Content\images\pattern.png" />
     <Content Include="Content\images\under_construction.jpg" />
+    <Content Include="Content\images\videos\accidents.png" />
+    <Content Include="Content\images\videos\basketball.png" />
+    <Content Include="Content\images\videos\cartoons.png" />
+    <Content Include="Content\images\videos\cricket.png" />
+    <Content Include="Content\images\videos\football.png" />
+    <Content Include="Content\images\videos\hits.png" />
+    <Content Include="Content\images\videos\magic.png" />
+    <Content Include="Content\images\videos\wtf.png" />
+    <Content Include="Content\js\custom\CategoryItem\edit.js" />
     <Content Include="Content\js\custom\fans.condition.js" />
     <Content Include="Content\js\custom\fans.contact.js" />
     <Content Include="Content\js\custom\fans.js" />
@@ -485,7 +524,6 @@
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
@@ -525,6 +563,11 @@
     <Content Include="Views\CategoryItem\Show.cshtml" />
     <Content Include="Views\CategoryItem\Delete.cshtml" />
     <Content Include="Views\Home\Videos.cshtml" />
+    <Content Include="Views\Shared\_Conditions.cshtml" />
+    <Content Include="Views\Product\Create.cshtml" />
+    <Content Include="Views\Product\_AdminProductList.cshtml" />
+    <Content Include="Views\Product\Edit.cshtml" />
+    <Content Include="Views\Home\ShowVideo.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -577,14 +620,6 @@
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>CategoriesItem.Designer.cs</LastGenOutput>
     </Content>
-    <Content Include="App_GlobalResources\Home\Contact.en.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Contact.en.designer.cs</LastGenOutput>
-    </Content>
-    <Content Include="App_GlobalResources\Home\Contact.resx">
-      <Generator>GlobalResourceProxyGenerator</Generator>
-      <LastGenOutput>Contact.designer.cs</LastGenOutput>
-    </Content>
     <Content Include="App_GlobalResources\Home\ComingSoon.en.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>ComingSoon.en.Designer.cs</LastGenOutput>
@@ -624,6 +659,14 @@
     <Content Include="App_GlobalResources\Shared\_NewLayout.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>_NewLayout.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\Videos.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Videos.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Home\Videos.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Videos.en.designer.cs</LastGenOutput>
     </Content>
     <EmbeddedResource Include="StaticResources\Category\ListAll.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -672,6 +715,14 @@
     <EmbeddedResource Include="StaticResources\Product\SlideShow.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>SlideShow.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticResources\Shared\_Conditions.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Conditions.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaticResources\Shared\_Conditions.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>_Conditions.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="StaticResources\Shared\_Contact.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

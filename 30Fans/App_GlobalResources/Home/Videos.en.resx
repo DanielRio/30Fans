@@ -117,22 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Header" xml:space="preserve">
-    <value>Sobre o 30Fans</value>
+  <data name="Accidents" xml:space="preserve">
+    <value>Accidents</value>
   </data>
-  <data name="Info1" xml:space="preserve">
-    <value>Todas as compras são feitas pelo Paypal. Nós não guardamos nenhum dado financeiro. Tudo 100% seguro.</value>
+  <data name="Basketball" xml:space="preserve">
+    <value>Basketball</value>
   </data>
-  <data name="Info2" xml:space="preserve">
-    <value>Você poderá comprar quantas fotos quiser, desde que elas estejam disponíveis.</value>
+  <data name="Cartoons" xml:space="preserve">
+    <value>Cartoons</value>
   </data>
-  <data name="Info3" xml:space="preserve">
-    <value>Assim que os 30 lugares estiverem vendidos O PayPal parará automaticamente suas vendas. Sua foto não poderá ser alterada.</value>
+  <data name="Cricket" xml:space="preserve">
+    <value>Cricket</value>
   </data>
-  <data name="Info4" xml:space="preserve">
-    <value>Assim escolha a sua melhor foto, pois ela será utilizada para sempre.</value>
+  <data name="Football" xml:space="preserve">
+    <value>Football</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>Sobre</value>
+  <data name="Hits" xml:space="preserve">
+    <value>Hits</value>
+  </data>
+  <data name="Magic" xml:space="preserve">
+    <value>Magic</value>
+  </data>
+  <data name="Wtf" xml:space="preserve">
+    <value>WTF</value>
   </data>
 </root>

@@ -22,14 +22,14 @@ namespace Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Web.Application.StronglyTypedResourceProxyBuilder", "10.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Contact {
+    internal class Videos {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Contact() {
+        internal Videos() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.Contact", global::System.Reflection.Assembly.Load("App_GlobalResources"));
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.Videos", global::System.Reflection.Assembly.Load("App_GlobalResources"));
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,56 +61,74 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sobre o 30Fans.
+        ///   Looks up a localized string similar to Acidentes.
         /// </summary>
-        internal static string Header {
+        internal static string Accidents {
             get {
-                return ResourceManager.GetString("Header", resourceCulture);
+                return ResourceManager.GetString("Accidents", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Todas as compras são feitas pelo Paypal. Nós não guardamos nenhum dado financeiro. Tudo 100% seguro..
+        ///   Looks up a localized string similar to Basquete.
         /// </summary>
-        internal static string Info1 {
+        internal static string Basketball {
             get {
-                return ResourceManager.GetString("Info1", resourceCulture);
+                return ResourceManager.GetString("Basketball", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Você poderá comprar quantas fotos quiser, desde que elas estejam disponíveis..
+        ///   Looks up a localized string similar to Desenhos.
         /// </summary>
-        internal static string Info2 {
+        internal static string Cartoons {
             get {
-                return ResourceManager.GetString("Info2", resourceCulture);
+                return ResourceManager.GetString("Cartoons", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assim que os 30 lugares estiverem vendidos O PayPal parará automaticamente suas vendas. Sua foto não poderá ser alterada..
+        ///   Looks up a localized string similar to Cricket.
         /// </summary>
-        internal static string Info3 {
+        internal static string Cricket {
             get {
-                return ResourceManager.GetString("Info3", resourceCulture);
+                return ResourceManager.GetString("Cricket", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assim escolha a sua melhor foto, pois ela será utilizada para sempre..
+        ///   Looks up a localized string similar to Futebol.
         /// </summary>
-        internal static string Info4 {
+        internal static string Football {
             get {
-                return ResourceManager.GetString("Info4", resourceCulture);
+                return ResourceManager.GetString("Football", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sobre.
+        ///   Looks up a localized string similar to Hits.
         /// </summary>
-        internal static string Title {
+        internal static string Hits {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("Hits", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mágica.
+        /// </summary>
+        internal static string Magic {
+            get {
+                return ResourceManager.GetString("Magic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to WTF.
+        /// </summary>
+        internal static string Wtf {
+            get {
+                return ResourceManager.GetString("Wtf", resourceCulture);
             }
         }
     }

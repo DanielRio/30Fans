@@ -117,22 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Header" xml:space="preserve">
-    <value>About 30fans.</value>
+  <data name="Accidents" xml:space="preserve">
+    <value>Accidents</value>
   </data>
-  <data name="Info1" xml:space="preserve">
-    <value>All purchases are handled by PayPal. Everything is 100% automated.</value>
+  <data name="Basketball" xml:space="preserve">
+    <value>Basketball</value>
   </data>
-  <data name="Info2" xml:space="preserve">
-    <value>You can buy as many photos as you like, as long as there are some available.</value>
+  <data name="Cartoons" xml:space="preserve">
+    <value>Cartoons</value>
   </data>
-  <data name="Info3" xml:space="preserve">
-    <value>As soon as the 30 places are sold out PayPal automatically stops further sales.</value>
+  <data name="Cricket" xml:space="preserve">
+    <value>Cricket</value>
   </data>
-  <data name="Info4" xml:space="preserve">
-    <value>Your photo cannot be changed, so send the photo you want to be YOU for all time!</value>
+  <data name="Football" xml:space="preserve">
+    <value>Football</value>
   </data>
-  <data name="Title" xml:space="preserve">
-    <value>About us</value>
+  <data name="Hits" xml:space="preserve">
+    <value>Hits</value>
+  </data>
+  <data name="Magic" xml:space="preserve">
+    <value>Magic</value>
+  </data>
+  <data name="Wtf" xml:space="preserve">
+    <value>WTF</value>
   </data>
 </root>

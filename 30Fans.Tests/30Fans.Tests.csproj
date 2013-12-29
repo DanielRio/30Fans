@@ -101,6 +101,7 @@
     <Compile Include="Builder\CategoryItemBuilder.cs" />
     <Compile Include="Builder\PhotoBuilder.cs" />
     <Compile Include="Builder\ProductBuilder.cs" />
+    <Compile Include="Domain\VideoGroupTest.cs" />
     <Compile Include="IntegrityTest.cs" />
     <Compile Include="Dao\CategoryDaoTest.cs" />
     <Compile Include="Dao\CategoryItemDaoTest.cs" />

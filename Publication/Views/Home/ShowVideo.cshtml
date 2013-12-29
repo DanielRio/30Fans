@@ -1,0 +1,13 @@
+﻿@model Domain.VideoGroup
+
+@{
+    ViewBag.Title = "30 fans videos";
+}
+
+@section breadcumb {
+    @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
+    @Html.ActionLink("Videos", "Videos", "Home", null, new { @class = "teste" })  <text>>></text>
+    @Resources.Videos.ResourceManager.GetObject(@Model.VideoCategory)  
+}
+
+<iframe src="@Model.GetUrl()" frameborder="0" allowfullscreen width="100%" height="800px"></iframe>

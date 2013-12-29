@@ -123,6 +123,7 @@ span.gold{
 span.gold a{
     text-decoration:none;
     color:#ffff00;
+    font-size:1.2em;
 }
 
 /* For the index_3 demo */
@@ -159,6 +160,7 @@ ul.trigger_list li a:hover{
     background-repeat: no-repeat;
     padding: 20px 0 0 0;
     font-size:1.2em;
+    color:#fff;
 }
 
 .instrucao2{
@@ -166,6 +168,7 @@ ul.trigger_list li a:hover{
     background-repeat: no-repeat;
     padding: 20px 0 0 0;
     font-size:1.2em;
+    color:#fff;
 }
 
 .instrucao3{
@@ -173,4 +176,5 @@ ul.trigger_list li a:hover{
     background-repeat: no-repeat;
     padding: 20px 0 0 0;
     font-size:1.2em;
+    color:#fff;
 }
