@@ -64,7 +64,7 @@
 		<MakeDir Directories = "$(RootPath)\Published;$(RootPath)\Published\TestResults" />
 		<MSBuild Projects="$(SrcPath)\30Fans\30Fans.csproj" 
 				 Targets="ResolveReferences;_CopyWebApplication"
-				 Properties="WebProjectOutputDir=$(RootPath)\Published\;OutDir=$(RootPath)\Published\TestResults\;Configuration=$(Configuration);Platform=$(Platform)" />
+				 Properties="WebProjectOutputDir=$(RootPath)\Published\;OutDir=$(RootPath)\Published\TestResults\;Configuration=$(Configuration);Platform=$(Platform);AutoParameterizationWebConfigConnectionStrings=False" />
 
 		<!--TestSuccessOrNot is the property specify whether the Test is sucess or not -->		
 		<!-- TODO: Refactor, extract a target only to tests and set ContinueOnError=false on Exec -->
