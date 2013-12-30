@@ -99,7 +99,7 @@
 	color:#000;
 	padding:0px 5px 0px 5px;
 	line-height:18px;
-	font-size:12px;
+	font-size:13px;
 	font-family: Cursive, Arial;
 	text-transform:none;
 }
@@ -123,6 +123,7 @@ span.gold{
 span.gold a{
     text-decoration:none;
     color:#ffff00;
+    font-size:1.2em;
 }
 
 /* For the index_3 demo */

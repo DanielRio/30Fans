@@ -120,7 +120,7 @@
   <data name="Info1" xml:space="preserve">
     <value>&lt;p class="highlighted-text"&gt;I forgot your team?&lt;/p&gt;
     &lt;p&gt;Let me know!&lt;/p&gt;    
-    &lt;a href="mailp.php"&gt;Email&lt;/a&gt;
+    &lt;a href="../../Mail/mailp.php" target="_blank"&gt;Email&lt;/a&gt;
     &lt;p&gt;and i will add it!&lt;/p&gt;</value>
   </data>
   <data name="Info2" xml:space="preserve">
