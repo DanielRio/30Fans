@@ -165,6 +165,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="App_GlobalResources\Dynamic\Products.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Products.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Dynamic\Products.en.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Products.en.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Home\ComingSoon.Designer.cs">
       <DependentUpon>ComingSoon.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -658,6 +668,14 @@
     <Content Include="App_GlobalResources\Home\Videos.en.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Videos.en.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Dynamic\Products.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Dynamic\Products.en.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Products.en.designer.cs</LastGenOutput>
     </Content>
     <EmbeddedResource Include="StaticResources\Category\ListAll.en.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
