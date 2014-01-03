@@ -75,8 +75,7 @@ namespace _30Fans.StaticResources.Shared {
         /// <summary>
         ///   Looks up a localized string similar to     &lt;p class=&quot;highlighted-text&quot;&gt;Sua foto ainda não aparaceu?&lt;/p&gt;
         ///    &lt;p&gt;Fique tranquilo, sua fama está segura em minhas mãos. Mas como eu só tenho duas delas, por favor, seja paciente!&lt;/p&gt;
-        ///    &lt;p&gt;Lembre-se: você ficará orgulhoso para sempre com a sua foto aqui!&lt;/p&gt;
-        ///    &lt;p&gt;30 Fans!&lt;/p&gt;.
+        ///    &lt;p&gt;Lembre-se: sua foto ficará para sempre aqui!&lt;/p&gt;.
         /// </summary>
         public static string Info2 {
             get {

@@ -4,13 +4,13 @@
     @Html.ActionLink("Create New Product", "Create", "Product", new { idCategoryItem = (long)ViewBag.CategoryItemId }, null)
 </p>            
 
-<table>
+<table style="width:100%">
     <tr>
         <th>
             ProductName
         </th>
         <th>
-            AvailableQuantity
+            Qty
         </th>
         <th>
             PaymentCode
@@ -25,13 +25,13 @@
             ImageName
         </th>
         <th>
-            ImageExtension
+            Extension
         </th>
         <th>
             ImageUrl
         </th>
         <th>
-            PublishedDate
+            PublisheddDate
         </th>
         <th></th>
     </tr>
@@ -67,7 +67,7 @@
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Upload Image", "UploadImage", "Product", new { id = item.Id }, null) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
         </td>
     </tr>

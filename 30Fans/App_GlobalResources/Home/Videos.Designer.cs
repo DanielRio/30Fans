@@ -124,7 +124,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 100 horas de videos interessantes e hilariantes.
+        ///   Looks up a localized string similar to 100 horas de videos inacreditáveis.
         /// </summary>
         internal static string Title {
             get {

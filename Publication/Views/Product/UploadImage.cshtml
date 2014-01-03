@@ -1,0 +1,16 @@
+﻿@model Domain.Product
+
+@{
+    ViewBag.Title = "UploadImage";
+}
+
+<h2>Upload Image for @Model.ProductName</h2>
+
+@using (Html.BeginForm("UploadImage", "Product", FormMethod.Post, new { enctype = "multipart/form-data" })) { 
+    <input type="hidden" id='hiddenId' name='id' value="@Model.Id"/>
+    <input type="file" name="file" /><br />
+    <p>
+        <input type="submit" value="Upload!" />  
+        @Html.ActionLink("Back to List", "Edit", "CategoryItem", new { id = Model.CategoryItem.Id }, null)
+    </p>
+}

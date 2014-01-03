@@ -49,13 +49,13 @@
 }
 .rg-caption p{
 	font-size:12px;
-	color:#000;
+	color:#fff;
 	font-weight:bold;
 	letter-spacing:2px;
 	font-family: 'Trebuchet MS', 'Myriad Pro', Arial, sans-serif;
 	line-height:16px;
 	padding:0 15px;
-	text-transform:uppercase;
+	text-transform:normal;
 }
 .rg-view{
 	height:30px;

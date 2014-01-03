@@ -23,8 +23,14 @@ namespace Domain {
 
         public virtual string ImageUrl {
             get {
-                return string.Format("{0}/{1}/{2}/{3}.{4}", "../../Content/images/categories", this.CategoryItem.Category.CategoryName, this.CategoryItem.ItemName, this.ImageName, this.ImageExtension);
+                if (string.IsNullOrEmpty(ImageName))
+                    return string.Empty;
+                return string.Format("{0}{1}{2}", GetImagePath(), this.ImageName, this.ImageExtension);
             }
+        }
+
+        public virtual string GetImagePath() {
+            return string.Format("{0}/{1}/{2}/", "../../Content/images/categories", this.CategoryItem.Category.CategoryName, this.CategoryItem.ItemName);
         }
 
         public virtual void AddPhoto(string text, string photoName, string extension) {

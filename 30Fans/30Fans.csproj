@@ -260,16 +260,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ListAll.en.resx</DependentUpon>
     </Compile>
-    <Compile Include="StaticResources\Home\About.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>About.resx</DependentUpon>
-    </Compile>
-    <Compile Include="StaticResources\Home\About.en.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>About.en.resx</DependentUpon>
-    </Compile>
     <Compile Include="StaticResources\Home\ComingSoon.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -568,6 +558,7 @@
     <Content Include="Views\Product\_AdminProductList.cshtml" />
     <Content Include="Views\Product\Edit.cshtml" />
     <Content Include="Views\Home\ShowVideo.cshtml" />
+    <Content Include="Views\Product\UploadImage.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />
@@ -675,14 +666,6 @@
     <EmbeddedResource Include="StaticResources\Category\ListAll.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ListAll.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StaticResources\Home\About.en.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>About.en.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StaticResources\Home\About.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>About.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="StaticResources\Home\ComingSoon.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

@@ -118,15 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Info1" xml:space="preserve">
-    <value>&lt;p class="highlighted-text"&gt;I forgot your team?&lt;/p&gt;
+    <value>&lt;p class="highlighted-text"&gt;Did I miss your team?&lt;/p&gt;
     &lt;p&gt;Let me know!&lt;/p&gt;    
     &lt;a href="../../Mail/mailp.php" target="_blank"&gt;Email&lt;/a&gt;
     &lt;p&gt;and i will add it!&lt;/p&gt;</value>
   </data>
   <data name="Info2" xml:space="preserve">
-    <value>&lt;p class="highlighted-text"&gt;Your photo has not yet appeared?&lt;/p&gt;
-    &lt;p&gt;Stay cool, your fame is secure in my hands. But as i only have two of them, please, be patient!&lt;/p&gt;
-    &lt;p&gt;Remember: you will be proud forever with your photo here!&lt;/p&gt;
-    &lt;p&gt;30 Fans!&lt;/p&gt;</value>
+    <value>&lt;p class="highlighted-text"&gt;Your photo isn't up yet?&lt;/p&gt;
+    &lt;p&gt;It will be, your fame is safe in my hands. But as I only have two of them, please be patient!&lt;/p&gt;
+    &lt;p&gt;Remember: you will proudly be here FOREVER!&lt;/p&gt;</value>
   </data>
 </root>

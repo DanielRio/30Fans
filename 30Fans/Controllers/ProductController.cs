@@ -6,15 +6,19 @@ using System.Web.Mvc;
 using Dao.Impl;
 using System.Web.UI;
 using Domain;
+using _30Fans.Misc;
+using System.IO;
 
 namespace _30Fans.Controllers{
     public class ProductController : BaseController{
         private ProductDao _productDao;
         private CategoryItemDao _categoryItemDao;
+        private FileSystemService _fileSystemService;
 
         public ProductController() {
             _productDao = new ProductDao();
             _categoryItemDao = new CategoryItemDao();
+            _fileSystemService = new FileSystemService();
         }
 
         //
@@ -30,6 +34,7 @@ namespace _30Fans.Controllers{
 
         //
         // GET: /Product/SlideShow/5
+        [Authorize]
         public ActionResult List(int id) {
             IList<Product> products = null;
             ViewBag.CategoryItemId = id;
@@ -81,6 +86,41 @@ namespace _30Fans.Controllers{
             } catch (Exception) {
                 return View();
             }
+        }
+
+        [Authorize]
+        public ActionResult UploadImage(long id) {
+            var product = _productDao.Get(id);
+            return View(product);
+        }
+
+        [HttpPost]
+        [Authorize]
+        public ActionResult UploadImage(HttpPostedFileBase file, string id, FormCollection collection) {
+            Product product = null;
+            if (file != null && file.ContentLength > 0) {
+                product = _productDao.Get(Convert.ToInt64(id));
+
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(ImagePathConstants.CATEGORIES), product.CategoryItem.Category.CategoryName));
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(product.CategoryItem.GetImagePath()), product.CategoryItem.ItemName));
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(product.GetImagePath()), product.ProductName));
+
+                var fileName = Path.GetFileName(file.FileName);
+                var extension = Path.GetExtension(file.FileName);
+                var path = Path.Combine(Server.MapPath(product.GetImagePath()), fileName);
+                file.SaveAs(path);
+
+                UpdateProductItem(product, Path.GetFileNameWithoutExtension(file.FileName), extension);
+            } else {
+                return View();
+            }
+            return RedirectToAction("Edit", "CategoryItem", new { id = product.CategoryItem.Id });
+        }
+
+        private void UpdateProductItem(Product product, string fileName, string extension) {
+            product.ImageName = fileName;
+            product.ImageExtension = extension;
+            _productDao.Update(product);
         }
     } // class
 }

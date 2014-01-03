@@ -133,7 +133,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vídeos.
+        ///   Looks up a localized string similar to Vídeos Inacreditáveis.
         /// </summary>
         internal static string MenuVideos {
             get {

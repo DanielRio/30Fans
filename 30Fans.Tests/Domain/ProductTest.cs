@@ -20,11 +20,25 @@ namespace _30Fans.Tests.Domain {
             Product aProduct = Product().With(aCategory.Items.FirstOrDefault())
                                         .WithProductName(expectedValue)
                                         .WithImageName("Flamengo")
-                                        .WithImageExtension("jpg")
+                                        .WithImageExtension(".jpg")
                                         .Build();
 
             Assert.AreEqual(expectedValue, aProduct.ProductName);
             Assert.AreEqual("../../Content/images/categories/Football/Brazil/Flamengo.jpg", aProduct.ImageUrl);
+        }
+
+        [TestMethod]
+        public void WhenHasNoImageName_ImageUrlPath_ShouldHaveNoValue() {
+            var product = Product().WithImageName(string.Empty).WithImageExtension(string.Empty).Build();
+
+            Assert.AreEqual(string.Empty, product.ImageUrl);
+        }
+
+        [TestMethod]
+        public void WhenHasNullImageName_ImageUrlPath_ShouldHaveNoValue() {
+            var product = Product().WithImageName(null).WithImageExtension(null).Build();
+
+            Assert.AreEqual(string.Empty, product.ImageUrl);
         }
         
         [TestMethod]
@@ -67,6 +81,20 @@ namespace _30Fans.Tests.Domain {
                 Assert.AreEqual("../../Content/images/categories/Football/Brazil/Flamengo/.jpg", photo.ImageUrl);
                 Assert.AreEqual("../../Content/images/categories/Football/Brazil/Flamengo/thumbs/.jpg", photo.ImageThumbnailUrl);
             }            
+        }
+
+        [TestMethod]
+        public void ShouldHaveSpecificPath() {
+            var aCategory = Category().WithCategoryName("Football")
+                                                 .With(CategoryItem().WithItemName("Brazil"))
+                                                 .Build();
+
+            var aProduct = Product().WithProductName("Flamengo")
+                                    .With(aCategory.Items.FirstOrDefault())
+                                    .WithPhoto("photo test", "mengao", "jpg")
+                                    .Build();
+
+            Assert.AreEqual("../../Content/images/categories/Football/Brazil/", aProduct.GetImagePath());
         }
     }
 }//class

@@ -120,6 +120,9 @@
   <data name="PaypalAlt" xml:space="preserve">
     <value>PayPal - The easiest way to make a payment.</value>
   </data>
+  <data name="PrefixTitle" xml:space="preserve">
+    <value>The Top 30</value>
+  </data>
   <data name="Price" xml:space="preserve">
     <value>Only $49.00! You will enter in your team history.</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="SlideShowPrevious" xml:space="preserve">
     <value>Previous</value>
+  </data>
+  <data name="SufixTitle" xml:space="preserve">
+    <value>Fans</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>The 30 biggests Fans!</value>
