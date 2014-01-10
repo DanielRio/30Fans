@@ -24,7 +24,7 @@ namespace _30Fans.Tests.Domain {
                                         .Build();
 
             Assert.AreEqual(expectedValue, aProduct.ProductName);
-            Assert.AreEqual("../../Content/images/categories/Football/Brazil/Flamengo.jpg", aProduct.ImageUrl);
+            Assert.AreEqual("~/Content/images/categories/Football/Brazil/Flamengo.jpg", aProduct.ImageUrl);
         }
 
         [TestMethod]
@@ -84,6 +84,24 @@ namespace _30Fans.Tests.Domain {
         }
 
         [TestMethod]
+        [ExpectedException(typeof(PhotoException))]
+        public void GetLastSavedPhoto_When_There_Are_No_Photo() {
+            var aProduct = Product().Build();
+            aProduct.GetLastSavedPhoto();
+        }
+
+        [TestMethod]
+        public void GetLastSavedPhoto_When_There_Are_Photo_Saved() {
+            var aCategory = Category().WithCategoryName("Football")
+                                                 .With(CategoryItem().WithItemName("Brazil"))
+                                                 .Build();
+            var aProduct = Product().WithPhoto("mengao", "mengo", ".jpg").With(aCategory.Items.FirstOrDefault()).Build();
+            
+            var photo = aProduct.GetLastSavedPhoto();
+            Assert.IsNull(photo);
+        }
+
+        [TestMethod]
         public void ShouldHaveSpecificPath() {
             var aCategory = Category().WithCategoryName("Football")
                                                  .With(CategoryItem().WithItemName("Brazil"))
@@ -94,7 +112,21 @@ namespace _30Fans.Tests.Domain {
                                     .WithPhoto("photo test", "mengao", "jpg")
                                     .Build();
 
-            Assert.AreEqual("../../Content/images/categories/Football/Brazil/", aProduct.GetImagePath());
+            Assert.AreEqual("~/Content/images/categories/Football/Brazil/", aProduct.GetImagePath());
+        }
+
+        [TestMethod]
+        public void ShouldHaveSpecificPhotoImagePath() {
+            var aCategory = Category().WithCategoryName("Football")
+                                                 .With(CategoryItem().WithItemName("Brazil"))
+                                                 .Build();
+
+            var aProduct = Product().WithProductName("Flamengo")
+                                    .With(aCategory.Items.FirstOrDefault())
+                                    .WithPhoto("photo test", "mengao", "jpg")
+                                    .Build();
+
+            Assert.AreEqual("~/Content/images/categories/Football/Brazil/Flamengo/", aProduct.GetPhotoImagePath());
         }
     }
 }//class

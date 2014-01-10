@@ -17,13 +17,14 @@ namespace Domain {
 
         public virtual string ImageThumbnailUrl {
             get {
-                return string.Format("{0}/{1}/{2}/{3}/{4}/{5}.{6}", "../../Content/images/categories", this.product.CategoryItem.Category.CategoryName, this.product.CategoryItem.ItemName, this.product.ProductName, "thumbs", this.Id, this.Extension);
+                //return string.Format("{0}/{1}/{2}/{3}/{4}/{5}{6}", "../../Content/images/categories", this.product.CategoryItem.Category.CategoryName, this.product.CategoryItem.ItemName, this.product.ProductName, "thumbs", this.Id, this.Extension);
+                return ImageUrl;
             }
         }
 
         public virtual string ImageUrl {
             get {
-                return string.Format("{0}/{1}/{2}/{3}/{4}.{5}", "../../Content/images/categories", this.product.CategoryItem.Category.CategoryName, this.product.CategoryItem.ItemName, this.product.ProductName, this.Id, this.Extension);
+                return string.Format("{0}/{1}/{2}/{3}/{4}{5}", "../../Content/images/categories", this.product.CategoryItem.Category.CategoryName, this.product.CategoryItem.ItemName, this.product.ProductName, this.Id, this.Extension);
             }
         }
 

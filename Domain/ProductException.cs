@@ -23,4 +23,11 @@ namespace Domain {
 
         }
     } // class
+
+    public class PhotoException : Exception {
+        public PhotoException(string message)
+            : base(message) {
+
+        }
+    } // class
 }

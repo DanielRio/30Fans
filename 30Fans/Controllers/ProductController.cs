@@ -117,6 +117,37 @@ namespace _30Fans.Controllers{
             return RedirectToAction("Edit", "CategoryItem", new { id = product.CategoryItem.Id });
         }
 
+        [HttpPost]
+        [Authorize]
+        public ActionResult UploadPhoto(HttpPostedFileBase uploadFile, FormCollection collection) {
+            if (string.IsNullOrEmpty(collection["ddProducts"]))
+                throw new InvalidOperationException("Product Id does not found");
+            long productId = Convert.ToInt64(collection["ddProducts"]);
+
+            Product product = null;
+            if (uploadFile != null && uploadFile.ContentLength > 0) {
+                product = _productDao.Get(productId);
+                var imageText = collection["imageText"];
+
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(ImagePathConstants.CATEGORIES), product.CategoryItem.Category.CategoryName));
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(product.CategoryItem.GetImagePath()), product.CategoryItem.ItemName));
+                _fileSystemService.CreateFolder(Path.Combine(Server.MapPath(product.GetImagePath()), product.ProductName));
+
+                var fileName = Path.GetFileName(uploadFile.FileName);
+                var extension = Path.GetExtension(uploadFile.FileName);
+
+                product.AddPhoto(imageText, fileName, extension);
+                _productDao.Update(product);
+
+                var physicalFileName = product.GetLastSavedPhoto().Id.ToString() + extension;
+                var path = Path.Combine(Server.MapPath(product.GetPhotoImagePath()), physicalFileName);
+                uploadFile.SaveAs(path);
+            } else {
+                return View();
+            }
+            return RedirectToAction("Admin", "AddPhoto");
+        }
+
         private void UpdateProductItem(Product product, string fileName, string extension) {
             product.ImageName = fileName;
             product.ImageExtension = extension;

@@ -30,7 +30,11 @@ namespace Domain {
         }
 
         public virtual string GetImagePath() {
-            return string.Format("{0}/{1}/{2}/", "../../Content/images/categories", this.CategoryItem.Category.CategoryName, this.CategoryItem.ItemName);
+            return string.Format("{0}/{1}/{2}/", "~/Content/images/categories", this.CategoryItem.Category.CategoryName, this.CategoryItem.ItemName);
+        }
+
+        public virtual string GetPhotoImagePath() {
+            return string.Format("{0}/{1}/{2}/{3}/", "~/Content/images/categories", this.CategoryItem.Category.CategoryName, this.CategoryItem.ItemName, this.ProductName);
         }
 
         public virtual void AddPhoto(string text, string photoName, string extension) {
@@ -43,6 +47,12 @@ namespace Domain {
 
             photos.Add(new Photo(this, text, photoName, extension));
             AvailableQuantity--;
-        } 
+        }
+
+        public virtual Photo GetLastSavedPhoto() {
+            if (photos == null || photos.Count == 0)
+                throw new PhotoException("There are no photo available!");
+            return photos.LastOrDefault(x => x.Id.HasValue);
+        }
     } // class
 }
