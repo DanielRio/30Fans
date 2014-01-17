@@ -145,7 +145,7 @@ namespace _30Fans.Controllers{
             } else {
                 return View();
             }
-            return RedirectToAction("Admin", "AddPhoto");
+            return RedirectToAction("AddPhoto", "Admin");
         }
 
         private void UpdateProductItem(Product product, string fileName, string extension) {

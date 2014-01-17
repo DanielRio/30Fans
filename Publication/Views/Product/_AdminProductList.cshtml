@@ -48,7 +48,7 @@
             @Html.DisplayFor(modelItem => item.PaymentCode)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Enable)
+            @Html.ConvertBooleanToYesNo(item.Enable)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Priority)

@@ -51,7 +51,7 @@
                         @foreach (var photo in Model.Photos) {
                             var thumbImageUrl = photo.ImageThumbnailUrl;
                             var imageUrl = photo.ImageUrl;
-                            <li><a href="#"><img src="@thumbImageUrl" data-large="@imageUrl" alt="image01" data-description="@photo.Text" /></a></li>
+                            <li><a href="#"><img src="@thumbImageUrl" data-large="@Url.Content(imageUrl)" alt="image01" data-description="@photo.Text" /></a></li>
                         }
 					</ul>
 				</div>

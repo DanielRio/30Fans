@@ -1,0 +1,23 @@
+﻿@using Combres.Mvc;
+@model IEnumerable<Domain.Category>
+@{
+    ViewBag.Title = "AddPhoto";
+}
+
+<h2>Add Photo</h2>
+@using (Html.BeginForm("UploadPhoto", "Product", FormMethod.Post, new { enctype = "multipart/form-data"})){
+    @Html.DropDownList("ddCategories", new SelectList(Model, "Id", "CategoryName", "---Select a product---"), new { id = "ddCategories" })<br />
+    @Html.DropDownList("ddCategoriesItems", Enumerable.Empty<SelectListItem>(), "--Loading Values--", new { id = "ddCategoriesItems" })<br />
+    @Html.DropDownList("ddProducts", Enumerable.Empty<SelectListItem>(), "--Loading Values--", new { id = "ddProducts" })<br />    
+    
+    <fieldset id="uploadPhotoFieldset" style="display:none">
+        <legend>Upload a Photo Daniel!</legend>
+        <input type="file" name="uploadFile" id="uploadFile" style="display:none" /><br />
+        <textarea rows="5" cols="50" name="imageText" id="imageText"></textarea><br />
+        <input type="submit" id="submit" name="submit" value="Send Photo!" style="display:none"  />
+    </fieldset>    
+}
+
+@section PageScripts{
+    @Html.CombresLink("AddPhotoJs");
+}
