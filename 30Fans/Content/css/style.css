@@ -48,7 +48,7 @@
 	position:relative;
 }
 .rg-caption p{
-	font-size:12px;
+	font-size:18px;
 	color:#fff;
 	font-weight:bold;
 	letter-spacing:2px;
@@ -99,4 +99,4 @@
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	opacity:0.7;
-}
+} 

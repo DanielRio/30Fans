@@ -106,7 +106,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fãs.
+        ///   Looks up a localized string similar to .
         /// </summary>
         internal static string SufixTitle {
             get {
