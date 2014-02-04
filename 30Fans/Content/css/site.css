@@ -7,7 +7,7 @@ html{
 
 }
 body {
-    /*background-color: #5c87b2;*/
+    background: url(../images/mainpage/backgroundBig.jpg) no-repeat top left;
     background-color: #D8D8D8;
     font-size: .85em;
     font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
@@ -212,7 +212,7 @@ div#title {
     font-size: 1.1em;
     display: block;
     text-align: right;
-    margin: 10px;
+    margin: 0px 10px;
     color: #000;
     text-shadow:1px 1px 1px #ccc;
 }
@@ -340,6 +340,15 @@ ul#menu {
     -webkit-box-shadow: 0px 1px 2px #ccc;
     -moz-box-shadow: 0px 1px 2px #ccc;
     background-color: #fafaf6;
+    opacity:0.8;
+    filter: alpha(opacity = 80);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+}
+
+ul#menu:hover{
+    opacity:1;
+    filter: alpha(opacity = 100);
 }
 
 ul#menu li {
