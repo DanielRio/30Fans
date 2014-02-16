@@ -347,6 +347,8 @@
     </Content>
     <Content Include="App_Data\combres_full_with_annotation.xml" />
     <Content Include="App_Data\combres_minimal.xml" />
+    <Content Include="Content\css\bootstrap-responsive.css" />
+    <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\demo.css" />
     <Content Include="Content\css\elastislide.css" />
     <Content Include="Content\css\images\animated-overlay.gif" />
@@ -474,7 +476,6 @@
     <Content Include="Content\images\ImageAttribution.txt" />
     <Content Include="Content\images\languageFlags\brazilFlag.jpg" />
     <Content Include="Content\images\languageFlags\usFlag.jpg" />
-    <Content Include="Content\images\mainpage\background - original.jpg" />
     <Content Include="Content\images\mainpage\background.jpg" />
     <Content Include="Content\images\mainpage\basketball-slice150x350.jpg" />
     <Content Include="Content\images\mainpage\futebol-slice150x350.png" />
@@ -496,6 +497,7 @@
     <Content Include="Content\images\videos\hits.png" />
     <Content Include="Content\images\videos\magic.png" />
     <Content Include="Content\images\videos\wtf.png" />
+    <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\custom\CategoryItem\edit.js" />
     <Content Include="Content\js\custom\fans.condition.js" />
     <Content Include="Content\js\custom\fans.contact.js" />
