@@ -23,6 +23,8 @@
       <resource path="~/Content/css/style.css" />
       <resource path="~/Content/css/elastislide.css" />
       <resource path="~/Content/fancybox/jquery.fancybox.css" />
+      <resource path="~/Content/css/bootstrap.css" />
+      <resource path="~/Content/css/bootstrap-responsive.css" />
     </resourceSet>
     <resourceSet name="siteJs" type="js">
         <!--<resource path="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" mode="dynamic" />-->
@@ -37,6 +39,7 @@
         <resource path="~/Content/js/custom/fans.contact.js" />
         <resource path="~/Content/js/custom/fans.condition.js" />
         <resource path="~/Content/js/custom/fans.boot.js" />
+        <resource path="~/Content/js/bootstrap.js" />
     </resourceSet>
     <resourceSet name="slideShowPageJs" type="js">
         <resource path="~/Content/js/gallery.js"/>

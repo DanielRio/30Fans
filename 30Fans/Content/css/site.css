@@ -446,9 +446,9 @@ ul#menu li.selected a {
 }
 
 .imageShadow{
-    /*-moz-box-shadow:    3px 3px 5px 1px #ccc;
-    -webkit-box-shadow: 3px 3px 5px 1px #ccc;
-    box-shadow:         3px 3px 5px 1px #ccc;*/
+    border:none;
+	max-height: 130px;
+	max-width: 130px;
 }
 
 .rightAlign{
@@ -522,7 +522,7 @@ ul#menu li.selected a {
     display:none;
 }
 
-
+.center { float: none; margin-left: auto; margin-right: auto; }
 
 
 /** @group clearfix **/

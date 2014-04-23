@@ -5,7 +5,7 @@
     <meta property="fb:admins" content="100005196451991" />
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="title" content="30 lucky fans become part of internet history.">
 	<meta name="keywords" content="30, fans, football, fame, history, baseball, basketball, soccer, birthday, wedding, fishing, magic, laugh, cricket,   accidents, fame, success, hits, cartoons">
 	<meta name="description" content="Only a handful of lucky fans become part of internet history!">
@@ -31,7 +31,7 @@
                 <a href="/Home/ChangeLanguage/en-US" ><img src="../../Content/images/languageFlags/usFlag.jpg" alt="english" /></a>
             </div> 
             <nav>
-                <ul id="menu">
+                @*<ul id="menu">
                     <li>@Html.ActionLink(Resources._NewLayout.MenuVideos, "Videos", "Home")</li>
                     <li><a href="#" id="navConditions" data-dialog="conditionsDialog">@Resources._NewLayout.MenuConditions</a></li>
                     <li><a href="#" id="navContact" data-dialog="contactDialog">@Resources._NewLayout.MenuContact</a></li>
@@ -40,7 +40,7 @@
                             @Html.ActionLink(Resources._NewLayout.MenuAdmin, "Index", "Admin")
                         </li>
                     }
-                </ul>
+                </ul>*@
             </nav>
             <div style="background-color: #696969; color:White; width:100%">
                 @if (IsSectionDefined("breadcumb")) {

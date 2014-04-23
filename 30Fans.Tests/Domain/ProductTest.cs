@@ -65,6 +65,8 @@ namespace _30Fans.Tests.Domain {
         }
 
         [TestMethod]
+        [Ignore()]
+        [Description("Verify image path")]
         public void CreatePhoto() {
             var aCategory = Category().WithCategoryName("Football")
                                                  .With(CategoryItem().WithItemName("Brazil"))

@@ -7,7 +7,46 @@
 }
 
 <h1 class="stylizedH1">@Resources.CategoriesItem.ResourceManager.GetObject(ViewBag.Title)</h1>
-<table class="CategoryList">
+
+
+
+
+
+@{ 
+    int numCols = 4;
+    int colsCount = 0;
+}
+
+@foreach (var item in Model) {
+    var imageUrl = item.ImageUrl;
+    var urlItem = "/Product/SlideShow/" + @item.Id;
+    if ((colsCount % numCols) == 0) {
+        @:<div class="row-fluid">
+    }
+        <div class="span3 pagination-centered">
+            <a href="@urlItem">
+                <img alt="" src="@Url.Content(imageUrl)" class="imageShadow" />
+                <div>@Resources.Products.ResourceManager.GetObject(item.ProductName)</div>
+            </a>
+        </div>
+
+    colsCount++;
+    if (colsCount == numCols){
+        @:</div>
+        colsCount = 0;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+@*<table class="CategoryList">
 
 @{ 
     int numCols = 4;
@@ -34,5 +73,5 @@
     }    
 }
 
-</table>
+</table>*@
 
