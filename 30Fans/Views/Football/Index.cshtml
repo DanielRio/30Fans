@@ -1,16 +1,80 @@
 ﻿@model Domain.Category
-
 @{
     ViewBag.Title = Model.CategoryName;
-    Layout = "~/Views/Shared/_NewLayout.cshtml";
+    Layout = "~/Views/Shared/_Bootstrap.cshtml";
 }
 
+@*
 @section breadcumb {
     @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
     @Resources.Categories.ResourceManager.GetObject(@Model.CategoryName)  
 }
+*@
 
-<h1 class="stylizedH1">@Resources.Categories.ResourceManager.GetObject(@Model.CategoryName)</h1>
+<section id="cup" class="slice" style="height: 1747px;">
+    <div class="container clearfix">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>World Cup 2014</h1>
+                <h2 class="subTitle">Be one of the 30 fans of your team</h2>
+            </div>
+            <nav class="col-md-12 text-center" id="filter">
+                <ul>
+                    <li><a data-filter="*" class="btn btn-sm current" href="">All</a></li>
+                    <li><a data-filter=".america" class="btn btn-sm" href="">Americas</a></li>
+                    <li><a data-filter=".europe" class="btn btn-sm " href="">Europe</a></li>
+                    <li><a data-filter=".asia" class="btn btn-sm" href="">Asia</a></li>
+                    <li><a data-filter=".africa" class="btn btn-sm" href="">Africa</a></li>
+                </ul>
+            </nav>
+
+            <div id="3" class="portfolio-items  isotopeWrapper clearfix imgHover isotope" style="position: relative; overflow: hidden; height: 462px;">
+
+                @foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList())
+                {
+
+
+
+
+                    var imageUrl = item.ImageUrl;
+                    var urlItem = "/CategoryItem/Show/" + @item.Id;
+                 
+                    <article class="col-sm-4 isotopeItem america">
+                        <section class="imgWrapper">
+                            <a href="@urlItem" >
+                                <img alt="" src="@Url.Content(imageUrl)" class="img-responsive" style="margin:auto;">
+                            </a>
+                        </section>
+                        <div class="mediaHover">
+                            <div class="mask"></div>
+                            <div class="iconLinks">
+    
+                                <a href="@Url.Content("~/Content/ashley/images/portfolio/zoom6.jpg")" class="image-link" title="Full width image">
+                                    <i class="icon-search iconRounded iconBig"></i>
+                                    <span>Go Fan</span>
+                                </a>
+                            </div>
+                        </div>
+                        <section class="boxContent">
+                            <a href="@urlItem">
+                                <h3 style="text-align: center">@Resources.CategoriesItem.ResourceManager.GetObject(item.ItemName) </h3>
+                            </a>
+
+                        </section>
+                    </article>
+                 
+                 
+                 
+
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+@*<h1 class="stylizedH1">@Resources.Categories.ResourceManager.GetObject(@Model.CategoryName)</h1>
 
 @{ 
     int numCols = 4;
@@ -18,10 +82,12 @@
 }
 
 
-@foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList()) {
+@foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList())
+{
     var imageUrl = item.ImageUrl;
     var urlItem = "/CategoryItem/Show/" + @item.Id;
-    if ((colsCount % numCols) == 0) {
+    if ((colsCount % numCols) == 0)
+    {
         @:<div class="row-fluid">
     }
         <div class="span3 pagination-centered">
@@ -31,12 +97,13 @@
             </a>
         </div>
     colsCount++;
-    if (colsCount == numCols){
+    if (colsCount == numCols)
+    {
         @:</div>
         colsCount = 0;
-    }    
+    }
 }
-
+*@
 
 
 
