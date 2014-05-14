@@ -5,9 +5,105 @@
     var languageHandler = new LanguageHandler();
     var language = languageHandler.GetSelectedLanguage().Replace("-", "_");
     var paypalImgSrc = string.Format("https://www.paypalobjects.com/{0}/i/btn/btn_cart_SM.gif", language);
+    Layout = "~/Views/Shared/_Bootstrap.cshtml";
 }
 
-@section breadcumb {
+
+
+<section class="content">
+
+    <section class="mb15">
+        <div class="container">
+            <div class="row">
+          <div class="col-md-10">
+            <h1>@Resources.SlideShow.PrefixTitle @Model.ProductName @Resources.SlideShow.SufixTitle</h1>
+            <p class="date">In cats / November 24</p>
+        </div>
+        <div class="col-md-2">
+            <a class="btn pull-right" href="javascript:$.pageslide.close()"><i class="icon-cancel-outline"></i>Close</a>
+
+        </div>
+    </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel owl-theme" id="portfolio-carousel" style="opacity: 1; display: block;">
+                        <div class="owl-wrapper-outer">
+                            <div class="owl-wrapper" style="width: 6840px; left: 0px; display: block;"><div class="owl-item" style="width: 1140px;">
+                                <img class="img-responsive" alt="Ashley premium website template" src="@Url.Content("~/Content/ashley/images/portfolio/carousel-1.jpg")">
+                            </div>
+                            <div class="owl-item" style="width: 1140px;">
+                                <img class="img-responsive" alt="Ashley premium website template" src="@Url.Content("~/Content/ashley/images/portfolio/carousel-2.jpg")">
+
+                            </div>
+                                <div class="owl-item" style="width: 1140px;">
+                                    <img class="img-responsive" alt="Ashley premium website template" src="@Url.Content("~/Content/ashley/images/portfolio/carousel-3.jpg")">
+                                </div>
+                            </div>
+                        </div>
+                    <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"></div><div class="owl-next"></div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Another successful project </h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. Sed ac consectetur leo. Pellentesque habitant morbi tristique senectus et netus...</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Client</h2>
+                    <p>Big International Company</p>
+                    <h2>Technology</h2>
+                    <p>HTML5, CSS3, Bootstrap</p>
+                </div>
+                <div class="col-md-4">
+                    <div data-text="Check out Ashley, a great Bootstrap 3 One page template" data-url="http://little-neko.com" id="shareme" class="sharrre"> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- call to action -->
+    <section class="slice mb15">
+        <div class="container">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="ctaBox ">
+                    <div class="container">
+                      <div class="row">
+                       <div class="col-md-8">
+                          <h1>
+                            <strong>@Resources.SlideShow.Price</strong></h1>
+
+                    </div>
+                    <div class="col-md-4">
+                        <a target="blank" href="#" title="" class="btn btn-lg">
+
+                                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                                <p style="text-align:center">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="@Model.PaymentCode">
+                                    <input type="image" src="@paypalImgSrc" name="submit" alt="@Resources.SlideShow.PaypalAlt">
+                                    @*<img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">*@
+                                </p>
+                            </form>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section> 
+<!-- call to action -->     
+</section>
+
+
+
+@*@section breadcumb {
     @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
     @Html.ActionLink(Resources.Categories.ResourceManager.GetObject(Model.CategoryItem.Category.CategoryName).ToString(), "Index", "Category", new { id = @Model.CategoryItem.Category.CategoryName }, new { @class = "teste" }) <text>>></text>
     @Html.ActionLink(Resources.CategoriesItem.ResourceManager.GetObject(Model.CategoryItem.ItemName).ToString(), "Show", "Categoryitem", new { id = @Model.CategoryItem.Id }, new { @class = "teste" }) <text>>></text>
@@ -16,9 +112,9 @@
 
 <noscript>
 	<style>
-		.es-carousel ul{
-			display:block;
-		}
+	    .es-carousel ul {
+	        display: block;
+	    }
 	</style>
 </noscript>
 <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
@@ -51,7 +147,8 @@
 				</div>
 				<div class="es-carousel">
 					<ul>
-                        @foreach (var photo in Model.Photos) {
+                        @foreach (var photo in Model.Photos)
+                        {
                             var thumbImageUrl = photo.ImageThumbnailUrl;
                             var imageUrl = photo.ImageUrl;
                             <li><a href="#"><img src="@thumbImageUrl" data-large="@Url.Content(imageUrl)" alt="image01" data-description="@photo.Text" /></a></li>
@@ -68,7 +165,7 @@
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="@Model.PaymentCode">
             <input type="image" src="@paypalImgSrc" name="submit" alt="@Resources.SlideShow.PaypalAlt">
-            @*<img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">*@
+            @*<img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
         </p>
     </form>
 </div><!-- content -->
@@ -76,3 +173,5 @@
 @section PageScripts {
    @Html.CombresLink("slideShowPageJs")
 }
+
+*@
