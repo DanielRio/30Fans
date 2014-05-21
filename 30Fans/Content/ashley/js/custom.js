@@ -138,7 +138,7 @@ $(document).ready(function() {
     |--------------------------------------------------------------------------
     */
 
-
+    /*
 
     if( $("a.image-link").length){
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
   
     }
 
-
+    */
 
     if( $("a.image-iframe").length){
          $('a.image-iframe').magnificPopup({type:'iframe',mainClass: 'mfp-fade'});
@@ -324,7 +324,7 @@ $(document).ready(function() {
     |--------------------------------------------------------------------------
     */
      if($('#portfolio-carousel').length){ 
-     alert('toto');    
+     //alert('toto');    
         $("#portfolio-carousel").owlCarousel();
     }
     /*
