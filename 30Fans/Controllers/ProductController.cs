@@ -24,7 +24,21 @@ namespace _30Fans.Controllers{
         //
         // GET: /Product/SlideShow/5
         [OutputCache(Duration = 180, VaryByParam="id" , Location = OutputCacheLocation.Server)]
-        public ActionResult SlideShow(int id){
+        public ActionResult SlideShow(int id)
+        {
+            List<string> fanImages = new List<string>();
+            try
+            {
+                fanImages = System.IO.Directory.GetFiles(Server.MapPath("~/FanImages/2014/" + id)).ToList();
+                for (int i = 0; i < fanImages.Count; i++ )
+                {
+                    fanImages[i] = Path.GetFileName(fanImages[i]);
+                }
+            }
+            catch
+            {
+            }
+            ViewBag.FanImages = fanImages;
             var product = _productDao.Get(id);
             if (!product.Enable)
                 return RedirectToAction("ComingSoon", "Home");
