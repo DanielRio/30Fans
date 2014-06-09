@@ -1,0 +1,609 @@
+/////////////////////////////////
+//  GUI
+
+// Colours
+$c-blue:     #1a8bb3
+$c-darkBlue: #082e3a //0b3d4e 
+$c-contrast: #fff
+$c-orange:   #cf4622
+
+// Types
+$t-baseFamily: 'Raleway', sans-serif
+
+// Grid
+$width-container: 960px
+
+// Buttons
+
+
+// Mixins
+=border-radius($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius:    $radius
+    -ms-border-radius:     $radius
+    border-radius:         $radius
+
+=transition($seconds)
+    -webkit-transition: all $seconds ease-in-out
+    -moz-transition: all $seconds ease-in-out
+    -ms-transition: all $seconds ease-in-out
+    -o-transition: all $seconds ease-in-out
+    transition: all $seconds ease-in-out
+        
+=transition-delay($seconds)
+    transition-delay: $seconds
+    -webkit-transition-delay: $seconds // Safari
+        
+=opacity($power)
+    -moz-opacity: $power // Mozilla 1.6 and older
+    opacity: $power
+    
+=scale($scale)
+    -moz-transform: scale($scale)
+    -webkit-transform: scale($scale)
+    -o-transform: scale($scale)
+    -ms-transform: scale($scale)
+    transform: scale($scale)
+    
+=grayscale($power)
+    filter: grayscale($power)
+    -webkit-filter: grayscale($power)
+    -moz-filter: grayscale($power)
+    -ms-filter: grayscale($power)
+    -o-filter: grayscale($power)
+
+=placeholder($color)        
+    &::-webkit-input-placeholder // WebKit browsers
+        color: $color
+            
+    &::-moz-placeholder // Mozilla Firefox 4 to 18 
+        color: $color
+
+    &::-moz-placeholder // Mozilla Firefox 19+ 
+        color: $color
+
+    &::-ms-input-placeholder // Internet Explorer 10+
+        color: $color
+
+@keyframes blink 
+    0%
+        +opacity(0)
+    50%
+        +opacity(0.7)
+    80%
+        +opacity(0)
+    100%
+        +opacity(0.7)
+
+@-webkit-keyframes blink 
+    0%
+        +opacity(0.1)
+    50%
+        +opacity(1)
+    80%
+        +opacity(0.6)
+    100%
+        +opacity(0.2)
+
+        
+=blink($seconds)
+    -webkit-animation: blink $seconds linear infinite
+    -moz-animation: blink $seconds linear infinite
+    animation: blink $seconds linear infinite
+ 
+        
+/////////////////////////////////
+//  BASE
+
+
+// fixing firefox bug
+div:after, ol:after, li:after, form:after, ul:after, dl:after, header:after, footer:after, section:after, article:after
+    content: "."
+    display: block
+    clear: both
+    height: 0
+    overflow: hidden
+        
+*, *:after, *:before
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*, button, select, input, textarea
+    font-family: $t-baseFamily
+
+body
+    background-color: $c-blue
+    
+ol, ul, li
+    padding: 0
+    margin: 0
+    
+a
+    text-decoration: none
+    +transition(200ms)
+
+input:focus, select:focus, button:focus
+    outline: none    
+
+.hidden-text
+    left: -999em
+    position: absolute
+        
+.in-hero
+    border: 0
+    border-bottom: 2px solid $c-contrast
+    background-color: transparent
+    color: $c-contrast
+    font-size: 1.5em
+    font-weight: bold
+    letter-spacing: 3px
+    text-align: center
+    text-transform: uppercase
+    padding: 7px 10px
+    +placeholder($c-contrast)
+    
+.btn
+    background-color: transparent
+    border: 1px solid $c-contrast
+    +border-radius(3px)
+    color: $c-contrast
+    display: inline-block
+    font-size: .7em
+    padding: 3px 15px
+    text-align: center
+    +transition(200ms)
+
+    &.primary
+        background-color: $c-orange
+        border: 0
+        +border-radius(8px)
+        font-size: .9em
+        font-weight: 600
+        letter-spacing: 2px
+        text-transform: uppercase
+        padding: 15px 30px
+        text-align: center
+
+.container
+    margin: auto
+    position: relative
+    width: $width-container    
+ 
+.home .container
+    width: 100%
+    
+.home .hero
+    +border-radius(0px)
+
+.title-main
+    margin: 0
+    padding: 0
+    
+// Header
+#brand
+    background: url('../img/logo-30fans.png') no-repeat center center
+    height: 184px
+    left: 50%
+    margin-left: -55px
+    top: 21px
+    position: absolute
+    width: 110px
+    z-index: 9
+    
+    a
+        display: block
+        height: 184px
+        width: 110px
+    
+    strong
+        left: -999em
+        position: absolute
+        visibility: hidden
+                
+#nav-global
+    margin: auto
+    width: 153px    
+    
+    li
+        float: left
+        margin-right: 20px
+        
+        &:last-child
+            margin-right: 0
+            
+    a
+        color: $c-contrast
+        display: block
+        font-size: .8em
+            
+        &:hover
+            +opacity(.6)
+        
+
+            
+    
+.loaded .title-main strong
+    &:after
+        +opacity(1 !important)
+        
+.hero
+    background-color: $c-darkBlue
+    +border-radius(10px 10px 0 0)
+    //min-height: 560px
+    position: relative
+    
+    .cover
+        background-size: cover
+        +border-radius(10px 10px 0 0)
+        position: absolute
+        height: 100%
+        +opacity(.3)
+        +grayscale(100%)
+        width: 100%
+        z-index: 1
+    
+    .entry-content
+        position: relative
+        z-index: 3
+        
+    .primary
+        display: block
+        margin: auto
+        width: 270px
+    
+    .title-main
+        color: $c-contrast
+        font-size: 1.4em
+        font-weight: 400
+        margin: auto
+        padding-top: 215px
+        text-align: center
+        width: 305px
+        
+        strong
+            font-weight: normal
+            position: relative
+            
+            &:after
+                background: url('../img/forever_highlight.png') no-repeat center bottom
+                content: " "
+                display: block
+                height: 6px
+                +opacity(0)
+                +transition(600ms)
+                +transition-delay(2.3s)
+                position: absolute
+                right: 0px
+                width: 86px    
+                
+    .f-favoriteTeam
+        margin: 40px auto
+        position: relative
+        width: 580px
+        
+        #teamSearch
+            width: 550px
+                
+        .big
+            margin: 30px auto
+            
+        .in-reset
+            background: transparent url('../img/b-close.png') no-repeat center center
+            display: inline-block
+            border: 0
+            height: 20px
+            position: absolute
+            top: 10px
+            right: 0
+            width: 20px
+                
+            span
+                left: -9999em
+                position: absolute
+                    
+
+.page-team 
+    #header
+        height: 20px
+        
+    .hero
+        height: 120px
+    
+    #brand
+        background-size: 100%
+        background-position: center top
+        left: 115px
+        top: 6px
+        width: 70px
+
+        a
+            height: 120px
+            width: 70px
+             
+    #team-brand
+        background-color: $c-contrast
+        +border-radius(3px)
+        display: block
+        margin: auto
+        padding: 15px 25px
+        position: relative
+        text-align: center
+        top: 12px
+        width: 185px
+
+        img
+            width: 135px
+        
+.team-year
+    margin: auto
+    position: absolute
+    overflow: hidden
+    top: 40%
+    right: 29%
+    width: 85px
+    z-index: 12
+    
+    li
+        display: none
+        list-style: none
+    
+        a
+            background-color: $c-contrast
+            color: $c-darkBlue
+            display: block
+            padding: 10px 15px
+            text-align: center
+    
+        &.current
+            display: block
+            position: relative
+            
+            a
+                @extend .in-hero
+                letter-spacing: 1px
+                padding: 2px 5px 4px 0
+                
+                &::after
+                    border-left: 5px solid transparent
+                    border-right: 5px solid transparent
+                    border-top: 5px solid $c-contrast
+                    content: " "
+                    display: block
+                    height: 0
+                    position: absolute
+                    right: 0px
+                    top: 18px
+                    width: 0
+                    +opacity(.5)
+                
+                &::hover::after
+                    +opacity(1)
+
+.post
+    background-color: $c-contrast
+    +border-radius(0 0 10px 10px)
+    padding: 40px
+    
+.list-fans
+    height: 100%
+    margin: auto
+    padding-left: 38px
+    position: relative
+    width: 880px
+    
+    .shelf
+        background: url('../img/shelf_default.png') no-repeat center bottom
+        display: block
+        height: 143px
+        left: 0
+        width: 880px
+        position: absolute
+        
+    .shelf.s1
+        top: 0
+    .shelf.s2
+        top: 150px
+    .shelf.s3
+        top: 300px
+    .shelf.s4
+        top: 450px
+    .shelf.s5
+        top: 600px
+    
+    li
+        //background-color: red
+        +opacity(0)
+        list-style: none
+        float: left
+        margin-bottom: 40px
+        margin-right: 23px
+        position: relative
+        top: -15px
+        height: 110px
+        width: 110px
+        
+        &:last-child
+            margin-right: 0
+            
+        a
+            color: $c-darkBlue
+        
+            &:hover img
+                +transition(200ms)
+                +opacity(.1)
+                    
+            &:hover figcaption
+                +transition(200ms)
+                +opacity(1)
+            
+        figure
+            +border-radius(5px)
+            position: relative
+            height: 110px
+            width: 110px
+            
+            img
+                +border-radius(5px)
+                text-align: center
+                height: 100%
+                width: 100%
+            
+            figcaption
+                +opacity(0)
+                font-size: .8em
+                bottom: 0
+                padding: 10px
+                position: absolute
+        
+        em
+            background: url('../img/tag-counter.png') no-repeat center top
+            color: $c-contrast
+            display: block
+            font-weight: 400
+            font-style: normal
+            font-size: .75em
+            position: absolute
+            top: -2px
+            right: 5px
+            height: 32px
+            text-align: center
+            padding-top: 10px
+            width: 18px
+            z-index: 2
+            
+            span
+                @extend .hidden-text
+                    
+        &.b-call-paypal
+            background-color: $c-orange
+            +border-radius(5px)
+            text-align: center
+            text-transform: uppercase
+            
+            a
+                color: $c-contrast
+            
+            em
+                background: url('../img/tag-counter-white.png') no-repeat center top
+                color: $c-orange
+                z-index: 4
+            
+            figcaption
+                line-height: 14px
+                +opacity(1.0)
+                position: relative
+                top: 25px
+                z-index: 4
+                
+            img
+                +opacity(0)
+                +transition(200ms)
+                left: -15px
+                height: auto
+                position: absolute
+                top: -10px
+                width: auto
+                z-index: 3
+                
+            &:hover img
+                +blink(2s)
+                +opacity(1)
+                
+            .txt-1
+                font-size: 2em
+                font-weight: 600
+                
+            .txt-2
+                font-size: 1.2em
+                font-weight: 600
+                
+            .txt-3
+                font-size: 0.98em
+                font-weight: 600
+    .no-fan
+        +opacity(.06)
+        text-align: center
+        margin-top: 15px
+        
+        img
+            height: auto
+            text-align: center
+            width: auto
+
+.loaded
+    .list-fans
+        li
+            +opacity(1)
+            +transition(200ms)
+            +transition-delay(1s)
+            top: 0
+            
+            &:nth-child(2)
+                +transition-delay(1.50s)
+            &:nth-child(3)
+                +transition-delay(2s)
+            &:nth-child(4)
+                +transition-delay(2.50s)
+            &:nth-child(5)
+                +transition-delay(3s)
+            &:nth-child(6)
+                +transition-delay(3.50s)
+            &:nth-child(7)
+                +transition-delay(4s)
+            &:nth-child(8)
+                +transition-delay(4.50s)
+            &:nth-child(9)
+                +transition-delay(5s)
+            &:nth-child(10)
+                +transition-delay(5.50s)
+            &:nth-child(11)
+                +transition-delay(6s)
+            &:nth-child(12)
+                +transition-delay(6.50s)
+            &:nth-child(13)
+                +transition-delay(7s)
+            &:nth-child(14)
+                +transition-delay(7.50s)
+            &:nth-child(15)
+                +transition-delay(8s)
+            &:nth-child(16)
+                +transition-delay(8.50s)
+            &:nth-child(17)
+                +transition-delay(9s)
+            &:nth-child(18)
+                +transition-delay(9.50s)
+            &:nth-child(19)
+                +transition-delay(10s)
+            &:nth-child(20)
+                +transition-delay(10.50s)
+            &:nth-child(21)
+                +transition-delay(11s)
+            &:nth-child(22)
+                +transition-delay(11.50s)
+            &:nth-child(23)
+                +transition-delay(12s)
+            &:nth-child(24)
+                +transition-delay(12.50s)
+            &:nth-child(25)
+                +transition-delay(13s)
+            &:nth-child(26)
+                +transition-delay(13.50s)
+            &:nth-child(27)
+                +transition-delay(14s)
+            &:nth-child(28)
+                +transition-delay(14.50s)
+            &:nth-child(29)
+                +transition-delay(15s)
+            &:nth-child(30)
+                +transition-delay(15.50s)
+            
+#footer
+    margin: 15px
+    text-align: center
+    
+    em
+        font-style: normal
+        font-size: .8em
+        text-transform: lowercase
+        +opacity(.6)
