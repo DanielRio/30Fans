@@ -21,6 +21,12 @@ namespace _30Fans.Controllers {
             return View();
         }
 
+        public ActionResult Index2()
+        {
+            ViewBag.Message = "Welcome to ASP.NET MVC!";
+            return View();
+        }
+
         public ActionResult ThankYou() {
             return View();
         }

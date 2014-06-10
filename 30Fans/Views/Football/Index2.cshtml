@@ -1,16 +1,16 @@
-﻿@model IList<domain.product>
+﻿@model Domain.Product
     @{
-        ViewBag.Title = Model.CategoryName;
+        ViewBag.BodyClass = "page-team loaded";
         Layout = "~/Views/Shared/_30fans.cshtml";
     }
     <article class="hero">
-        <figure class="cover" style="background-image:url('img/bg_soccer_westcoast_eagles.jpg');"></figure>
+        <figure class="cover" style="background-image:url('@Url.Content("~/Content/30fans/img/bg_soccer_westcoast_eagles.jpg")');"></figure>
         <div class="entry-content">
-            <figure id="team-brand"><img src="img/teams/team-westcoast-eagles.png" alt="Brand West Coast Eagles"></figure>
+            <figure id="team-brand"><img src="@Url.Content(@Model.ImageUrl)" alt="Brand West Coast Eagles"></figure>
 
             <header>
                 <h1 class="hidden-text title-main">
-                    West Coast Eagles
+                    @Model.ProductName
                 </h1>
             </header>
 
@@ -30,180 +30,43 @@
         <section class="list-fans">
             <i class="shelf s1"></i><i class="shelf s2"></i><i class="shelf s3"></i><i class="shelf s4"></i><i class="shelf s5"></i>
             <ol>
-                <li>
-                    <a href="#">
-                        <em><span>#</span> 01</em>
-                        <figure class="avatar">
-                            <img src="img/avatars/user-01.jpg" alt="Pedro">
-                            <figcaption><strong>Pedro Cavalcanti</strong> - Brazil</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <em><span>#</span> 02</em>
-                        <figure class="avatar">
-                            <img src="img/avatars/user-02.jpg" alt="Alvaro">
-                            <figcaption><strong>Alvaro Dinis</strong> - Australia</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <em><span>#</span> 03</em>
-                        <figure class="avatar">
-                            <img src="img/avatars/user-03.jpg" alt="Daniel">
-                            <figcaption><strong>Daniel Watchs</strong> - New Zealand</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <em><span>#</span> 04</em>
-                        <figure class="avatar">
-                            <img src="img/avatars/user-04.jpg" alt="George">
-                            <figcaption><strong>George Brigz</strong> - Japan</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <em><span>#</span> 05</em>
-                        <figure class="avatar">
-                            <img src="img/avatars/user-05.jpg" alt="Robert">
-                            <figcaption><strong>Robert Sprint</strong> - United States of America</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="b-call-paypal">
-                    <a href="#">
-                        <em><span>#</span> 06</em>
-                        <img src="img/winner-brighter.png">
-                        <figure class="avatar">
-                            <figcaption><span class="txt-1">You.</span> <span class="txt-2">Unique.</span> <span class="txt-3">Forever!</span></figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
-                <li>
-                    <figure class="no-fan">
-                        <img src="img/logo-30fans-small.png" alt="">
-                    </figure>
-                </li>
+                @for (int i = 0; i < 30; i++)
+                {
+                    if (ViewBag.FanImages != null && ((List<string>)ViewBag.FanImages).Count > i)
+                    {
+                        <li>
+                            <a href="#">
+                                <em><span>#</span> @((i + 1).ToString())</em>
+                                <figure class="avatar">
+                                    <img src="@Url.Content("~/FanImages/2014/" + Model.Id.ToString() + "/" + ViewBag.FanImages[i])" alt=" pedro">
+                                    <figcaption><strong>Nome do Torcedor @((i + 1).ToString())</strong> - Brazil</figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    }
+                    else if (((List<string>)ViewBag.FanImages).Count == i)
+                    {
+                        <li class="b-call-paypal">
+                            <a href="#">
+                                <em><span>#</span>@((i + 1).ToString())</em>
+                                <img src="@Url.Content("~/Content/30fans/img/winner-brighter.png" )">
+                                <figure class="avatar">
+                                    <figcaption><span class="txt-1">You.</span> <span class="txt-2">Unique.</span> <span class="txt-3">Forever!</span></figcaption>
+                                </figure>
+                            </a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            <figure class="no-fan">
+                                <img src="@Url.Content("~/Content/30fans/img/logo-30fans-small.png" )" alt="">
+                            </figure>
+                        </li>
+                    }
+
+                }
+
             </ol>
         </section>
     </article>

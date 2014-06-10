@@ -34,10 +34,10 @@
 
     <!-- IE 10 Metro tile icon (Metro equivalent of apple-touch-icon) -->
     <meta name="msapplication-TileColor" content="#1a8bb3">
-    <meta name="msapplication-TileImage" content="img/favicons/Icon-72@2x.png" )">
+    <meta name="msapplication-TileImage" content="@Url.Content("~/Content/30fans/img/favicons/Icon-72@2x.png" )">
     <script src="@Url.Content("~/Content/30fans/js/vendor/modernizr-2.6.2.min.js" )"></script>
 </head>
-<body class="home">
+<body class="@ViewBag.BodyClass">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -68,7 +68,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="Content/30fans/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="@Url.Content("~/Content/30fans/js/vendor/jquery-1.11.0.min.js")"><\/script>')</script>
     <script src="js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

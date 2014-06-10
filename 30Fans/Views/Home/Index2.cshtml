@@ -1,10 +1,10 @@
 ﻿@{
     Layout = "~/Views/Shared/_30fans.cshtml";
-    ViewBag.Title = Resources.Index.Title;
+    ViewBag.BodyClass = "home loaded";
 }
 
   <article class="hero total-window-height">
-    <figure class="cover" style="background-image: url('Content/30fans/img/bg_soccer_default.jpg');"></figure>
+    <figure class="cover" style="background-image: url('@Url.Content("~/Content/30fans/img/bg_soccer_default.jpg")');"></figure>
     <div class="entry-content">
         <header>
             <h1 class="title-main">You have the opportunity to be unique, special. <strong>Forever</strong>.</h1>
