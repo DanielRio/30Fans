@@ -26,7 +26,7 @@ namespace Dao.Impl {
                 var criteria = session.CreateCriteria<Product>();
                 criteria.SetFetchMode("CategoryItem", FetchMode.Eager);
                 criteria.SetFetchMode("CategoryItem.Category", FetchMode.Eager);
-                criteria.Add(Expression.InsensitiveLike("ProductName", partName));
+                criteria.Add(Expression.InsensitiveLike("ProductName", partName, MatchMode.Anywhere));
                 return criteria.List<Product>();
             }
         }
