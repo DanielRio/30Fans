@@ -33,6 +33,8 @@ namespace _30Fans.Controllers{
         }
 
 
+
+
         [OutputCache(Duration = 180, VaryByParam = "id", Location = OutputCacheLocation.Server)]
         public ActionResult Index2(int id)
         {
@@ -55,6 +57,14 @@ namespace _30Fans.Controllers{
 
             return View(product);
         }
+
+
+        public PartialViewResult SelectedFriendFilter(string partName)
+        {
+            IList<Product> lista = _productDao.GetByPartName(partName);
+            return PartialView("_TeamSearch", lista);
+        }
+
     
     } //class
 }

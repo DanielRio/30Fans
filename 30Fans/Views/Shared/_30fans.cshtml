@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="@Url.Content("~/Content/30fans/css/main.css" )">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200,300,600,700,800,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="@Url.Content("~/Content/30fans/css/style.css" )">
+    <link rel="stylesheet" href="@Url.Content("~/Content/30fans/css/bootstrap.css")">
 
-    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    ><!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="@Url.Content("~/Content/30fans/img/favicons/Icon-76@2x.png" )">
     <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("~/Content/30fans/img/favicons/Icon-72@2x.png" )">
@@ -69,7 +70,32 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="@Url.Content("~/Content/30fans/js/vendor/jquery-1.11.0.min.js")"><\/script>')</script>
-    <script src="js/main.js"></script>
+    <script src="@Url.Content("~/Content/30fans/js/main.js")"></script>
+    <script src="@Url.Content("~/Content/30fans/js/bootstrap.js")"></script>
+    <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+    <script>
+        $('.typeahead').typeahead({
+            source: function (query, process) {
+                states = [];
+                map = {};
+
+                var data = [
+                    { "stateCode": "CA", "stateName": "California" },
+                    { "stateCode": "AZ", "stateName": "Arizona" },
+                    { "stateCode": "NY", "stateName": "New York" },
+                    { "stateCode": "NV", "stateName": "Nevada" },
+                    { "stateCode": "OH", "stateName": "Ohio" }
+                ];
+
+                $.each(data, function (i, state) {
+                    map[state.stateName] = state;
+                    states.push(state.stateName);
+                });
+
+                process(states);
+            }
+        });
+    </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {

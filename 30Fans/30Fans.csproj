@@ -375,6 +375,8 @@
     <Content Include="App_Data\combres_full_with_annotation.xml" />
     <Content Include="App_Data\combres_minimal.xml" />
     <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Content\30fans\css\bootstrap.css" />
+    <Content Include="Content\30fans\css\bootstrap.min.css" />
     <Content Include="Content\30fans\css\main.css" />
     <Content Include="Content\30fans\css\normalize.css" />
     <Content Include="Content\30fans\css\normalize.min.css" />
@@ -413,6 +415,8 @@
     <Content Include="Content\30fans\img\tag-counter.png" />
     <Content Include="Content\30fans\img\teams\team-westcoast-eagles.png" />
     <Content Include="Content\30fans\img\winner-brighter.png" />
+    <Content Include="Content\30fans\js\bootstrap.js" />
+    <Content Include="Content\30fans\js\bootstrap.min.js" />
     <Content Include="Content\30fans\js\main.js" />
     <Content Include="Content\30fans\js\vendor\jquery-1.11.0.min.js" />
     <Content Include="Content\30fans\js\vendor\modernizr-2.6.2.min.js" />
@@ -1106,6 +1110,7 @@
     <Content Include="Views\Shared\_30fans.cshtml" />
     <Content Include="Views\Football\Index2.cshtml" />
     <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Football\_TeamSearch.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.dll" />

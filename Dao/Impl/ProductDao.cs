@@ -18,6 +18,19 @@ namespace Dao.Impl {
             }
         }
 
+
+        public IList<Product> GetByPartName(string partName)
+        {
+            using (ISession session = NHibernateHelper.OpenSession())
+            {
+                var criteria = session.CreateCriteria<Product>();
+                criteria.SetFetchMode("CategoryItem", FetchMode.Eager);
+                criteria.SetFetchMode("CategoryItem.Category", FetchMode.Eager);
+                criteria.Add(Expression.InsensitiveLike("ProductName", partName));
+                return criteria.List<Product>();
+            }
+        }
+
         public IList<Product> GetByCategoryItemId(long categoryItemId) {
             using (ISession session = NHibernateHelper.OpenSession()) {
                 var criteria = session.CreateCriteria<Product>();

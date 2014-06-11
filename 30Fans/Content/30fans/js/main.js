@@ -9,6 +9,25 @@ function resizeArticle() {
     });
 }
 
+function friendFilter() {
+    //GOLEAK.bloquearTela();
+    $.ajax({
+        url: "/User/SelectedFriendFilter",
+        data: {
+            partName: $("#search-form").val()
+        }
+    }).done(function (data) {
+        var html = templateItem({ Classes: data });
+        $("#search-result").show();
+        $('#search-result').html(html);
+       // GOLEAK.desbloquearTela();
+    }).fail(function (response) {
+        //GOLEAK.desbloquearTela();
+        alert("Ooops, something wrong!");
+        
+    });
+}
+
 $(document).ready(function() {
     $('#teamSearch').focus();
 
@@ -49,6 +68,29 @@ $(document).ready(function() {
         
       xTriggered++;
     });
+
+
+    var templateItem = Handlebars.compile($("#templateItem").html());
+
+
+
+
+
+    $('html').click(function () {
+        $("#search-result").hide();
+    });
+
+    $("#teamSearch").keyup(function () {
+        var texto = this.value;
+
+        if (texto.length < 3) {
+            $("#search-result").html("");
+            return;
+        }
+
+        friendFilter();
+    });
+
 
 });
 
