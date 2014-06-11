@@ -17,9 +17,8 @@ function friendFilter() {
             partName: $("#search-form").val()
         }
     }).done(function (data) {
-        var html = templateItem({ Classes: data });
         $("#search-result").show();
-        $('#search-result').html(html);
+        $('#search-result').html(data);
        // GOLEAK.desbloquearTela();
     }).fail(function (response) {
         //GOLEAK.desbloquearTela();
@@ -68,13 +67,6 @@ $(document).ready(function() {
         
       xTriggered++;
     });
-
-
-    var templateItem = Handlebars.compile($("#templateItem").html());
-
-
-
-
 
     $('html').click(function () {
         $("#search-result").hide();
