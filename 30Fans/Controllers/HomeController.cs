@@ -16,12 +16,12 @@ namespace _30Fans.Controllers {
             _productDao = new ProductDao();
         }
 
-        public ActionResult Index() {
+        public ActionResult Index_old() {
             ViewBag.Message = "Welcome to ASP.NET MVC!";
             return View();
         }
 
-        public ActionResult Index2()
+        public ActionResult Index()
         {
             ViewBag.Message = "Welcome to ASP.NET MVC!";
             return View();

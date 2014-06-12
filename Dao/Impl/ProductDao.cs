@@ -23,11 +23,8 @@ namespace Dao.Impl {
         {
             using (ISession session = NHibernateHelper.OpenSession())
             {
-                var criteria = session.CreateCriteria<Product>();
-                criteria.SetFetchMode("CategoryItem", FetchMode.Eager);
-                criteria.SetFetchMode("CategoryItem.Category", FetchMode.Eager);
-                criteria.Add(Expression.InsensitiveLike("ProductName", partName, MatchMode.Anywhere));
-                return criteria.List<Product>();
+                return session.QueryOver<Product>().Fetch(a => a.CategoryItem).Eager().Fetch(a => a.CategoryItem.Category).Eager().WhereRestrictionOn(p => p.ProductName).IsLike(partName, MatchMode.Anywhere).List(); 
+   
             }
         }
 

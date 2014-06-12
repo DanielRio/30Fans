@@ -1,143 +1,112 @@
-﻿@model Domain.Category
+﻿@using Combres.Mvc;
+@model Domain.Product
 @{
-    ViewBag.Title = Model.CategoryName;
-    Layout = "~/Views/Shared/_Bootstrap.cshtml";
+    ViewBag.BodyClass = "page-team loaded";
+    ViewBag.Title = Resources.SlideShow.Title;
+    var languageHandler = new LanguageHandler();
+    var language = languageHandler.GetSelectedLanguage().Replace("-", "_");
+    var paypalImgSrc = string.Format("https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif");
+    Layout = "~/Views/Shared/_30fans.cshtml";
 }
 
-@*
-@section breadcumb {
-    @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
-    @Resources.Categories.ResourceManager.GetObject(@Model.CategoryName)  
-}
-*@
 
-<section id="cup" class="slice" style="height: 1747px;">
-    <div class="container clearfix">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1>World Cup 2014</h1>
-                <h2 class="subTitle">Proud to be part of your team's history!</h2>
-            </div>
-            <nav class="col-md-12 text-center" id="filter">
-                <ul>
-                    <li><a data-filter="*" class="btn btn-sm current" href="">All</a></li>
-                    <li><a data-filter=".america" class="btn btn-sm" href="">Americas</a></li>
-                    <li><a data-filter=".europe" class="btn btn-sm " href="">Europe</a></li>
-                    <li><a data-filter=".asia" class="btn btn-sm" href="">Asia</a></li>
-                    <li><a data-filter=".africa" class="btn btn-sm" href="">Africa</a></li>
-                </ul>
-            </nav>
+<article class="hero">
+    <figure class="cover" style="background-image:url('@Url.Content("~/Content/30fans/img/bg_soccer_westcoast_eagles.jpg")');"></figure>
+    <div class="entry-content">
+        <figure id="team-brand"><img src="@Url.Content(@Model.ImageUrl)" alt="Brand West Coast Eagles"></figure>
 
-            <div id="3" class="portfolio-items  isotopeWrapper clearfix imgHover isotope" style="position: relative; overflow: hidden; height: 462px;">
+        <header>
+            <h1 class="hidden-text title-main">
+                @Model.ProductName
+            </h1>
+        </header>
 
-                @foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList())
+        <aside class="team-year">
+            <ol>
+                <li class="current active"><a href="javascript:void(0);">2014</a></li>
+            </ol>
+        </aside>
+    </div>
+</article>
+
+<article class="post">
+    <section class="list-fans">
+        <i class="shelf s1"></i><i class="shelf s2"></i><i class="shelf s3"></i><i class="shelf s4"></i><i class="shelf s5"></i>
+        <ol>
+            @for (int i = 0; i < 30; i++)
+            {
+                if (ViewBag.FanImages != null && ((List<string>)ViewBag.FanImages).Count > i)
                 {
-
-
-
-
-                    var imageUrl = item.ImageUrl;
-                    var urlItem = "/CategoryItem/Show/" + @item.Id;
-                 
-                    <article class="col-sm-4 isotopeItem america">
-                        <section class="imgWrapper">
-                            <a href="@urlItem" >
-                                <img alt="" src="@Url.Content(imageUrl)" class="img-responsive" style="margin:auto;">
-                            </a>
-                        </section>
-                        <div class="mediaHover">
-                            <div class="mask"></div>
-                            <div class="iconLinks">
-    
-                                <a href="@urlItem" class="image-link" title="Full width image">
-                                    <i class="icon-search iconRounded iconBig"></i>
-                                    <span>Go Fan</span>
-                                </a>
-                            </div>
-                        </div>
-                        <section class="boxContent">
-                            <a href="@urlItem">
-                                <h3 style="text-align: center">@Resources.CategoriesItem.ResourceManager.GetObject(item.ItemName) </h3>
-                            </a>
-
-                        </section>
-                    </article>
-                 
-                 
-                 
-
+                    <li>
+                        <a href="#">
+                            <em><span>#</span> @((i + 1).ToString())</em>
+                            <figure class="avatar">
+                                <img src="@Url.Content("~/FanImages/2014/" + Model.Id.ToString() + "/" + ViewBag.FanImages[i])" alt=" pedro">
+                                <figcaption><strong>Nome do Torcedor @((i + 1).ToString())</strong> - Brazil</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                }
+                else if (((List<string>)ViewBag.FanImages).Count == i)
+                {
+                    <li class="b-call-paypal">
+                        <a href="#" data-toggle="modal" data-target="#modalFinalizar">
+                            <em><span>#</span>@((i + 1).ToString())</em>
+                            <img src="@Url.Content("~/Content/30fans/img/winner-brighter.png" )">
+                            <figure class="avatar">
+                                <figcaption><span class="txt-1">You.</span> <span class="txt-2">Unique.</span> <span class="txt-3">Forever!</span></figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <figure class="no-fan">
+                            <img src="@Url.Content("~/Content/30fans/img/logo-30fans-small.png" )" alt="">
+                        </figure>
+                    </li>
                 }
 
+            }
 
+        </ol>
+    </section>
+</article>
+
+<div class="modal fade" id="modalFinalizar" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-title">
+                    <h3>Be Unique</h3>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </header>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <div>
+                        @Resources.SlideShow.Price
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
+                @*<button id="btnFinalizarFluxo" class="btn primary" data-dismiss="modal">PayPal </button>*@
+                <a target="blank" href="#" title="" class="btn btn-lg">
+
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <p style="text-align:center">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="hosted_button_id" value="@Model.PaymentCode">
+                            <input type="image" src="@paypalImgSrc" name="submit" alt="@Resources.SlideShow.PaypalAlt">
+                            <img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                        </p>
+                    </form>
+                </a>
             </div>
         </div>
     </div>
-</section>
-
-@*<h1 class="stylizedH1">@Resources.Categories.ResourceManager.GetObject(@Model.CategoryName)</h1>
-
-@{ 
-    int numCols = 4;
-    int colsCount = 0;
-}
-
-
-@foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList())
-{
-    var imageUrl = item.ImageUrl;
-    var urlItem = "/CategoryItem/Show/" + @item.Id;
-    if ((colsCount % numCols) == 0)
-    {
-        @:<div class="row-fluid">
-    }
-        <div class="span3 pagination-centered">
-            <a href="@urlItem">
-                <img class="imageShadow" alt="" src="@Url.Content(imageUrl)" />
-                <div>@Resources.CategoriesItem.ResourceManager.GetObject(item.ItemName)</div>
-            </a>
-        </div>
-    colsCount++;
-    if (colsCount == numCols)
-    {
-        @:</div>
-        colsCount = 0;
-    }
-}
-*@
-
-
-
-
-
-
-
-
-
-
-@*<table class="CategoryList">
-
-@{ 
-    int numCols = 4;
-    int colsCount = 0;
-}
-
-@foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList()) {
-    var imageUrl = item.ImageUrl;
-    var urlItem = "/CategoryItem/Show/" + @item.Id;
-    if ((colsCount % numCols) == 0) {
-        @:<tr>
-    }
-        <td>
-            <a href="@urlItem">
-                <img class="imageShadow" alt="" src="@Url.Content(imageUrl)" />
-                <div>@Resources.CategoriesItem.ResourceManager.GetObject(item.ItemName)</div>
-            </a>
-        </td>
-    colsCount++;
-    if (colsCount == numCols){
-        @:</tr>
-        colsCount = 0;
-    }    
-}
-
-</table>*@
+</div>

@@ -12,9 +12,9 @@ function resizeArticle() {
 function friendFilter() {
     //GOLEAK.bloquearTela();
     $.ajax({
-        url: "/User/SelectedFriendFilter",
+        url: "/Football/SelectedFriendFilter",
         data: {
-            partName: $("#search-form").val()
+            partName: $("#teamSearch").val()
         }
     }).done(function (data) {
         $("#search-result").show();

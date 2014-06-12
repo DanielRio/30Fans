@@ -24,7 +24,7 @@ namespace _30Fans.Controllers{
         //
         // GET: /Football/
         [OutputCache(Duration = 60, Location = OutputCacheLocation.Server)]
-        public ActionResult Index(){
+        public ActionResult Index_old(){
             var categoria = _categoryDao.GetByName(FOOTBALL_CATEGORY);
             if (!categoria.Enable)
                 return RedirectToAction("ComingSoon", "Home");
@@ -36,7 +36,7 @@ namespace _30Fans.Controllers{
 
 
         [OutputCache(Duration = 180, VaryByParam = "id", Location = OutputCacheLocation.Server)]
-        public ActionResult Index2(int id)
+        public ActionResult Index(int id)
         {
             List<string> fanImages = new List<string>();
             try

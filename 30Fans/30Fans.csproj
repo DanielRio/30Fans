@@ -985,7 +985,7 @@
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
     <Content Include="Views\Account\LogOn.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index_old.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
     <Content Include="Views\Web.config" />
@@ -1108,8 +1108,8 @@
     <Content Include="Views\Shared\_Bootstrap.cshtml" />
     <None Include="Properties\PublishProfiles\viscardo.pubxml" />
     <Content Include="Views\Shared\_30fans.cshtml" />
-    <Content Include="Views\Football\Index2.cshtml" />
-    <Content Include="Views\Home\Index2.cshtml" />
+    <Content Include="Views\Football\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Football\_TeamSearch.cshtml" />
     <None Include="_bin_deployableAssemblies\Microsoft.Web.Infrastructure.dll" />
     <None Include="_bin_deployableAssemblies\System.Web.WebPages.Razor.dll" />
@@ -1141,7 +1141,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Football\Index.cshtml" />
+    <Content Include="Views\Football\Index_old.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Product\SlideShow.cshtml" />

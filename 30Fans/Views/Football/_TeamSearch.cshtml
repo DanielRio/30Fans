@@ -4,11 +4,11 @@
 { 
 <li class="media">
     <a class="pull-left" href="@Url.Content("~/Football/Index/"+item.Id)">
-        <img class="media-object img-circle" src="@Url.Content(item.ImageUrl)" alt="">
+        <img class="media-object img-circle" width="64" height="64" src="@Url.Content(item.ImageUrl)" alt="">
     </a>
     <div class="media-body">
         <h4 class="media-heading">
-            <span class="badge-man"><a href="@Url.Content("~/Football/Index/" + item.Id)">item.ProductName</a></span>
+            <span class="badge-man"><a href="@Url.Content("~/Football/Index/" + item.Id)">@item.ProductName</a></span>
         </h4>
     </div>
 </li>
