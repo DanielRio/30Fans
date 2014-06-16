@@ -10,7 +10,7 @@ function resizeArticle() {
 }
 
 function friendFilter() {
-    //GOLEAK.bloquearTela();
+    $("#loading").show();
     $.ajax({
         url: "/Football/SelectedFriendFilter",
         data: {
@@ -19,9 +19,11 @@ function friendFilter() {
     }).done(function (data) {
         $("#search-result").show();
         $('#search-result').html(data);
+        $("#loading").hide();
        // GOLEAK.desbloquearTela();
     }).fail(function (response) {
         //GOLEAK.desbloquearTela();
+        $("#loading").hide();
         alert("Ooops, something wrong!");
         
     });

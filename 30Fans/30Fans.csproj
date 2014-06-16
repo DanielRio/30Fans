@@ -409,6 +409,7 @@
     <Content Include="Content\30fans\img\favicons\iTunesArtwork%402x.png" />
     <Content Include="Content\30fans\img\favicons\iTunesArtwork.png" />
     <Content Include="Content\30fans\img\forever_highlight.png" />
+    <Content Include="Content\30fans\img\loading.gif" />
     <Content Include="Content\30fans\img\logo-30fans-small.png" />
     <Content Include="Content\30fans\img\logo-30fans.png" />
     <Content Include="Content\30fans\img\shelf_default.png" />
