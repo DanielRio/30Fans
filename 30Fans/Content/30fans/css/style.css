@@ -79,13 +79,21 @@ input:focus, select:focus, button:focus {
   text-transform: uppercase;
   padding: 7px 10px; }
   .in-hero::-webkit-input-placeholder, .team-year li.current a::-webkit-input-placeholder {
-    color: white; }
+    color: white;
+    -moz-opacity: 0.4;
+    opacity: 0.4; }
   .in-hero::-moz-placeholder, .team-year li.current a::-moz-placeholder {
-    color: white; }
+    color: white;
+    -moz-opacity: 0.4;
+    opacity: 0.4; }
   .in-hero::-moz-placeholder, .team-year li.current a::-moz-placeholder {
-    color: white; }
+    color: white;
+    -moz-opacity: 0.4;
+    opacity: 0.4; }
   .in-hero::-ms-input-placeholder, .team-year li.current a::-ms-input-placeholder {
-    color: white; }
+    color: white;
+    -moz-opacity: 0.4;
+    opacity: 0.4; }
 
 .btn {
   background-color: transparent;
@@ -180,9 +188,11 @@ input:focus, select:focus, button:focus {
   -moz-border-radius: 10px 10px 0 0;
   -ms-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
-  position: relative; }
+  position: relative;
+  letter-spacing: 1px; }
   .hero .cover {
     background-size: cover;
+    background-position: center center;
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
     -ms-border-radius: 10px 10px 0 0;
@@ -202,7 +212,7 @@ input:focus, select:focus, button:focus {
     position: relative;
     z-index: 3; }
   .hero .primary {
-    display: block;
+    display: none;
     margin: auto;
     width: 270px; }
   .hero .title-main {
@@ -212,7 +222,7 @@ input:focus, select:focus, button:focus {
     margin: auto;
     padding-top: 215px;
     text-align: center;
-    width: 305px; }
+    width: 315px; }
     .hero .title-main strong {
       font-weight: normal;
       position: relative; }
@@ -243,7 +253,7 @@ input:focus, select:focus, button:focus {
       margin: 30px auto; }
     .hero .f-favoriteTeam .in-reset {
       background: transparent url("../img/b-close.png") no-repeat center center;
-      display: inline-block;
+      display: none;
       border: 0;
       height: 20px;
       position: absolute;
@@ -253,6 +263,41 @@ input:focus, select:focus, button:focus {
       .hero .f-favoriteTeam .in-reset span {
         left: -9999em;
         position: absolute; }
+
+#search-result {
+  color: white;
+  display: none;
+  letter-spacing: 1px;
+  text-align: center; }
+  #search-result h3 {
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-bottom: 5px; }
+  #search-result li {
+    float: left;
+    list-style: none;
+    margin-right: 10px; }
+    #search-result li figure {
+      background-color: white;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      border-radius: 3px;
+      display: block;
+      margin: auto;
+      padding: 15px 25px;
+      position: relative;
+      text-align: center;
+      top: 12px;
+      height: 95px;
+      width: 185px;
+      height: 90px;
+      width: 100px; }
+      #search-result li figure img {
+        height: 100%;
+        max-width: 100%; }
+    #search-result li .title-team {
+      display: none; }
 
 .page-team #header {
   height: 20px; }
@@ -267,7 +312,7 @@ input:focus, select:focus, button:focus {
   .page-team #brand a {
     height: 120px;
     width: 70px; }
-.page-team #team-brand {
+.page-team .team-brand {
   background-color: white;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -279,16 +324,22 @@ input:focus, select:focus, button:focus {
   position: relative;
   text-align: center;
   top: 12px;
+  height: 95px;
+  width: 185px;
+  top: 12px;
+  height: 95px;
   width: 185px; }
-  .page-team #team-brand img {
-    width: 135px; }
+  .page-team .team-brand img {
+    height: 100%;
+    max-width: 100%; }
 
 .team-year {
   margin: auto;
   position: absolute;
   overflow: hidden;
   top: 40%;
-  right: 29%;
+  left: 50%;
+  margin-left: 12%;
   width: 85px;
   z-index: 12; }
   .team-year li {
@@ -344,16 +395,18 @@ input:focus, select:focus, button:focus {
     left: 0;
     width: 880px;
     position: absolute; }
-  .list-fans .shelf.s1 {
-    top: 0; }
-  .list-fans .shelf.s2 {
-    top: 150px; }
-  .list-fans .shelf.s3 {
-    top: 300px; }
-  .list-fans .shelf.s4 {
-    top: 450px; }
-  .list-fans .shelf.s5 {
-    top: 600px; }
+    .list-fans .shelf.s1 {
+      top: 0; }
+    .list-fans .shelf.s2 {
+      top: 150px; }
+    .list-fans .shelf.s3 {
+      top: 300px; }
+    .list-fans .shelf.s4 {
+      top: 450px; }
+    .list-fans .shelf.s5 {
+      top: 600px; }
+    .list-fans .shelf.s6, .list-fans .shelf.s7, .list-fans .shelf.s8, .list-fans .shelf.s9, .list-fans .shelf.s10 {
+      display: none; }
   .list-fans li {
     -moz-opacity: 0;
     opacity: 0;
@@ -365,6 +418,8 @@ input:focus, select:focus, button:focus {
     top: -15px;
     height: 110px;
     width: 110px; }
+    .list-fans li:nth-child(6n+6) {
+      margin-right: 0; }
     .list-fans li:last-child {
       margin-right: 0; }
     .list-fans li a {

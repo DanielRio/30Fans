@@ -1,0 +1,170 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+$screen-sm-min: 768px
+$screen-md-min: 992px
+$screen-lg-min: 1200px
+
+$avatar-width: 96.5px
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) 
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) 
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) 
+        
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) 
+    .hidden-xs
+        display: none
+        
+    .container
+        width: 100%
+
+    #brand
+        background-size: 100%
+        top: 5px
+        width: 100px
+
+    #search-result
+        padding: 10px
+        h3
+            font-size: 1em
+        
+    .page-team
+        .hero
+            height: 92px
+        #header
+            height: 14px
+        #team-brand
+            height: 70px
+            padding: 10px
+            width: 120px
+        #brand
+            left: 70px
+            height: 70px
+            width: 40px
+        .team-year
+            margin-left: 22%
+            width: 70px
+            li
+                &.current
+                    a
+                        font-size: 1em
+                        &::after
+                            right: 3px
+                            top: 12px
+    
+    .hero
+        .title-main
+            font-size: 1em
+            padding-top: 200px
+            width: 210px
+            
+            &::after
+                right: -30px
+
+    .f-favoriteTeam
+        margin: 10% auto !important
+        width: 100% !important
+
+        #teamSearch
+            width: 100% !important
+
+    .post
+        padding: 7px
+        
+    .list-fans
+        padding-left: 0
+        width: 100%
+        
+        li
+            margin-bottom: 25px
+            margin-right: 8px
+            height: $avatar-width
+            width: $avatar-width
+            &:nth-child(3n+3)
+                margin-right: 0
+            &.b-call-paypal
+                img
+                    left: -12px
+                    width: 100px
+                figure
+                    figcaption
+                        font-size: .7em
+                        top: 18px
+                
+            figure
+                height: $avatar-width
+                width: $avatar-width
+                &.no-fan
+                    margin-top: -5px
+                    img
+                        height: 100%
+                
+        .shelf
+            left: -10px
+            width: 105.5%
+            &.s1
+                top: -13px
+            &.s2
+                top: 109px
+            &.s3
+                top: 230px
+            &.s4
+                top: 351px
+            &.s5
+                top: 472px
+        
+            &.s6
+                display: block
+                top: 593px
+            &.s7
+                @extend .s6
+                top: 593px+121
+            &.s8
+                @extend .s6
+                top: 593px+121*2
+            &.s9
+                @extend .s6
+                top: 593px+121*3
+            &.s10
+                @extend .s6
+                top: 593px+121*4
+                
+    #footer
+        font-size: .8em
+        margin: 5px
+        
+        #nav-global
+            width: 122px
+        
+        .txt-copyright
+            display: none
+    
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px)    
+        
+        
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: $screen-sm-min)
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min)
+    
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min)
+    

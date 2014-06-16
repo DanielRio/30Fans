@@ -55,15 +55,19 @@ $width-container: 960px
 =placeholder($color)        
     &::-webkit-input-placeholder // WebKit browsers
         color: $color
+        +opacity(.4)
             
     &::-moz-placeholder // Mozilla Firefox 4 to 18 
         color: $color
+        +opacity(.4)
 
     &::-moz-placeholder // Mozilla Firefox 19+ 
         color: $color
+        +opacity(.4)
 
     &::-ms-input-placeholder // Internet Explorer 10+
         color: $color
+        +opacity(.4)
 
 @keyframes blink 
     0%
@@ -91,6 +95,20 @@ $width-container: 960px
     -moz-animation: blink $seconds linear infinite
     animation: blink $seconds linear infinite
  
+=team-brand
+    background-color: $c-contrast
+    +border-radius(3px)
+    display: block
+    margin: auto
+    padding: 15px 25px
+    position: relative
+    text-align: center
+    top: 12px
+    height: 95px
+    width: 185px
+    img
+        height: 100%
+        max-width: 100%
         
 /////////////////////////////////
 //  BASE
@@ -232,9 +250,11 @@ input:focus, select:focus, button:focus
     +border-radius(10px 10px 0 0)
     //min-height: 560px
     position: relative
+    letter-spacing: 1px
     
     .cover
         background-size: cover
+        background-position: center center
         +border-radius(10px 10px 0 0)
         position: absolute
         height: 100%
@@ -248,7 +268,7 @@ input:focus, select:focus, button:focus
         z-index: 3
         
     .primary
-        display: block
+        display: none
         margin: auto
         width: 270px
     
@@ -259,7 +279,7 @@ input:focus, select:focus, button:focus
         margin: auto
         padding-top: 215px
         text-align: center
-        width: 305px
+        width: 315px
         
         strong
             font-weight: normal
@@ -290,7 +310,7 @@ input:focus, select:focus, button:focus
             
         .in-reset
             background: transparent url('../img/b-close.png') no-repeat center center
-            display: inline-block
+            display: none
             border: 0
             height: 20px
             position: absolute
@@ -303,6 +323,28 @@ input:focus, select:focus, button:focus
                 position: absolute
                     
 
+#search-result
+    color: $c-contrast
+    display: none
+    letter-spacing: 1px
+    text-align: center
+    h3
+        font-weight: normal
+        font-size: 1.3em
+        margin-bottom: 5px
+    li
+        float: left
+        list-style: none
+        margin-right: 10px
+        figure
+            +team-brand
+            height: 90px
+            width: 100px
+        .title-team
+            display: none
+                
+                
+                    
 .page-team 
     #header
         height: 20px
@@ -321,26 +363,19 @@ input:focus, select:focus, button:focus
             height: 120px
             width: 70px
              
-    #team-brand
-        background-color: $c-contrast
-        +border-radius(3px)
-        display: block
-        margin: auto
-        padding: 15px 25px
-        position: relative
-        text-align: center
+    .team-brand
+        +team-brand
         top: 12px
+        height: 95px
         width: 185px
-
-        img
-            width: 135px
         
 .team-year
     margin: auto
     position: absolute
     overflow: hidden
     top: 40%
-    right: 29%
+    left: 50%
+    margin-left: 12%
     width: 85px
     z-index: 12
     
@@ -400,16 +435,27 @@ input:focus, select:focus, button:focus
         width: 880px
         position: absolute
         
-    .shelf.s1
-        top: 0
-    .shelf.s2
-        top: 150px
-    .shelf.s3
-        top: 300px
-    .shelf.s4
-        top: 450px
-    .shelf.s5
-        top: 600px
+        &.s1
+            top: 0
+        &.s2
+            top: 150px
+        &.s3
+            top: 300px
+        &.s4
+            top: 450px
+        &.s5
+            top: 600px
+        
+        &.s6
+            display: none
+        &.s7
+            @extend .s6
+        &.s8
+            @extend .s6
+        &.s9
+            @extend .s6
+        &.s10
+            @extend .s6
     
     li
         //background-color: red
@@ -422,6 +468,10 @@ input:focus, select:focus, button:focus
         top: -15px
         height: 110px
         width: 110px
+        &:nth-child(6n+6)
+            margin-right: 0
+        //&:nth-child(6n+6)
+            //clear: both
         
         &:last-child
             margin-right: 0

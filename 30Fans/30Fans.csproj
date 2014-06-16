@@ -378,6 +378,7 @@
     <Content Include="Content\30fans\css\bootstrap.css" />
     <Content Include="Content\30fans\css\bootstrap.min.css" />
     <Content Include="Content\30fans\css\main.css" />
+    <Content Include="Content\30fans\css\mobile.css" />
     <Content Include="Content\30fans\css\normalize.css" />
     <Content Include="Content\30fans\css\normalize.min.css" />
     <Content Include="Content\30fans\css\style.css" />
@@ -1065,6 +1066,7 @@
     <Content Include="Content\ashley\js-plugin\owl.carousel\demos\json\data.json" />
     <Content Include="Content\ashley\js-plugin\owl.carousel\LICENSE" />
     <Content Include="Content\30fans\css\style.sass" />
+    <Content Include="Content\30fans\css\mobile.sass" />
     <None Include="Content\images\categories\Football\Brazil\Thumbs.db" />
     <None Include="Properties\PublishProfiles\30fans.pubxml" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />

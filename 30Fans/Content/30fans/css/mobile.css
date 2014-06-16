@@ -1,0 +1,160 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/*==========  Non-Mobile First Method  ========== */
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .hidden-xs {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  #brand {
+    background-size: 100%;
+    top: 5px;
+    width: 100px;
+  }
+
+  #search-result {
+    padding: 10px;
+  }
+  #search-result h3 {
+    font-size: 1em;
+  }
+
+  .page-team .hero {
+    height: 92px;
+  }
+  .page-team #header {
+    height: 14px;
+  }
+  .page-team #team-brand {
+    height: 70px;
+    padding: 10px;
+    width: 120px;
+  }
+  .page-team #brand {
+    left: 70px;
+    height: 70px;
+    width: 40px;
+  }
+  .page-team .team-year {
+    margin-left: 22%;
+    width: 70px;
+  }
+  .page-team .team-year li.current a {
+    font-size: 1em;
+  }
+  .page-team .team-year li.current a::after {
+    right: 3px;
+    top: 12px;
+  }
+
+  .hero .title-main {
+    font-size: 1em;
+    padding-top: 200px;
+    width: 210px;
+  }
+  .hero .title-main::after {
+    right: -30px;
+  }
+
+  .f-favoriteTeam {
+    margin: 10% auto !important;
+    width: 100% !important;
+  }
+  .f-favoriteTeam #teamSearch {
+    width: 100% !important;
+  }
+
+  .post {
+    padding: 7px;
+  }
+
+  .list-fans {
+    padding-left: 0;
+    width: 100%;
+  }
+  .list-fans li {
+    margin-bottom: 25px;
+    margin-right: 8px;
+    height: 96.5px;
+    width: 96.5px;
+  }
+  .list-fans li:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .list-fans li.b-call-paypal img {
+    left: -12px;
+    width: 100px;
+  }
+  .list-fans li.b-call-paypal figure figcaption {
+    font-size: 0.7em;
+    top: 18px;
+  }
+  .list-fans li figure {
+    height: 96.5px;
+    width: 96.5px;
+  }
+  .list-fans li figure.no-fan {
+    margin-top: -5px;
+  }
+  .list-fans li figure.no-fan img {
+    height: 100%;
+  }
+  .list-fans .shelf {
+    left: -10px;
+    width: 105.5%;
+  }
+  .list-fans .shelf.s1 {
+    top: -13px;
+  }
+  .list-fans .shelf.s2 {
+    top: 109px;
+  }
+  .list-fans .shelf.s3 {
+    top: 230px;
+  }
+  .list-fans .shelf.s4 {
+    top: 351px;
+  }
+  .list-fans .shelf.s5 {
+    top: 472px;
+  }
+  .list-fans .shelf.s6, .list-fans .shelf.s7, .list-fans .shelf.s8, .list-fans .shelf.s9, .list-fans .shelf.s10 {
+    display: block;
+    top: 593px;
+  }
+  .list-fans .shelf.s7 {
+    top: 714px;
+  }
+  .list-fans .shelf.s8 {
+    top: 835px;
+  }
+  .list-fans .shelf.s9 {
+    top: 956px;
+  }
+  .list-fans .shelf.s10 {
+    top: 1077px;
+  }
+
+  #footer {
+    font-size: 0.8em;
+    margin: 5px;
+  }
+  #footer #nav-global {
+    width: 122px;
+  }
+  #footer .txt-copyright {
+    display: none;
+  }
+}
+/* Custom, iPhone Retina */
+/* Small devices (tablets, 768px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
