@@ -70,9 +70,11 @@ $(document).ready(function() {
       xTriggered++;
     });
 
+    /*
     $('html').click(function () {
         $("#search-result").hide();
     });
+    */
 
     $("#teamSearch").keyup(function () {
         var texto = this.value;
