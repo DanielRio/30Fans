@@ -39,6 +39,10 @@
 
                     var imageUrl = item.ImageUrl;
                     var urlItem = "/Product/SlideShow/" + @item.Id;
+                    if (string.IsNullOrEmpty(imageUrl))
+                    { 
+                        imageUrl = "~/FanImages/be_the_first.jpg";
+                    }
                  
                     <article class="col-sm-4 isotopeItem america">
                         <section class="imgWrapper">

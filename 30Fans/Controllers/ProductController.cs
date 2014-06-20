@@ -103,6 +103,23 @@ namespace _30Fans.Controllers{
         }
 
         [Authorize]
+        public ActionResult Delete(long id)
+        {
+            try
+            {
+                var originalProduct = _productDao.Get(id);
+                long returnId = originalProduct.CategoryItem.Id;
+                _productDao.Delete(originalProduct);
+
+                return RedirectToAction("Edit", "CategoryItem", new { id = returnId });
+            }
+            catch (Exception)
+            {
+                return View();
+            }
+        }
+
+        [Authorize]
         public ActionResult UploadImage(long id) {
             var product = _productDao.Get(id);
             return View(product);
