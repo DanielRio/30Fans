@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30Fans", "30Fans\30Fans.csproj", "{10F42940-B1E2-49C6-BA92-639DF7388B67}"
 EndProject
@@ -18,11 +18,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{03820F
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "30Fans.Web", "30Fans.Web\30Fans.Web.csproj", "{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		30Fans|Any CPU = 30Fans|Any CPU
 		Debug|Any CPU = Debug|Any CPU
 		jplindgren.com|Any CPU = jplindgren.com|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{10F42940-B1E2-49C6-BA92-639DF7388B67}.30Fans|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,24 +34,40 @@ Global
 		{10F42940-B1E2-49C6-BA92-639DF7388B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10F42940-B1E2-49C6-BA92-639DF7388B67}.jplindgren.com|Any CPU.ActiveCfg = jplindgren.com|Any CPU
 		{10F42940-B1E2-49C6-BA92-639DF7388B67}.jplindgren.com|Any CPU.Build.0 = jplindgren.com|Any CPU
+		{10F42940-B1E2-49C6-BA92-639DF7388B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F42940-B1E2-49C6-BA92-639DF7388B67}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.30Fans|Any CPU.ActiveCfg = Release|Any CPU
 		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.30Fans|Any CPU.Build.0 = Release|Any CPU
 		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.jplindgren.com|Any CPU.ActiveCfg = jplindgren.com|Any CPU
 		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.jplindgren.com|Any CPU.Build.0 = jplindgren.com|Any CPU
+		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C102700D-AEB9-48B7-AFA5-EB5CB6EC2895}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.30Fans|Any CPU.ActiveCfg = Release|Any CPU
 		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.30Fans|Any CPU.Build.0 = Release|Any CPU
 		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.jplindgren.com|Any CPU.ActiveCfg = jplindgren.com|Any CPU
 		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.jplindgren.com|Any CPU.Build.0 = jplindgren.com|Any CPU
+		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B91FDDB4-F8EB-4C73-96EC-FEEA824BD540}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1442B0B4-EA39-4732-B101-903CFA61BD29}.30Fans|Any CPU.ActiveCfg = Release|Any CPU
 		{1442B0B4-EA39-4732-B101-903CFA61BD29}.30Fans|Any CPU.Build.0 = Release|Any CPU
 		{1442B0B4-EA39-4732-B101-903CFA61BD29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1442B0B4-EA39-4732-B101-903CFA61BD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1442B0B4-EA39-4732-B101-903CFA61BD29}.jplindgren.com|Any CPU.ActiveCfg = jplindgren.com|Any CPU
 		{1442B0B4-EA39-4732-B101-903CFA61BD29}.jplindgren.com|Any CPU.Build.0 = jplindgren.com|Any CPU
+		{1442B0B4-EA39-4732-B101-903CFA61BD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1442B0B4-EA39-4732-B101-903CFA61BD29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.30Fans|Any CPU.ActiveCfg = Release|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.30Fans|Any CPU.Build.0 = Release|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.jplindgren.com|Any CPU.ActiveCfg = Release|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.jplindgren.com|Any CPU.Build.0 = Release|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

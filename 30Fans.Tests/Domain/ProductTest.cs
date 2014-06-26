@@ -24,7 +24,7 @@ namespace _30Fans.Tests.Domain {
                                         .Build();
 
             Assert.AreEqual(expectedValue, aProduct.ProductName);
-            Assert.AreEqual("~/Content/images/categories/Football/Brazil/Flamengo.jpg", aProduct.ImageUrl);
+            Assert.AreEqual("~/Styles/images/categories/Football/Brazil/Flamengo.jpg", aProduct.ImageUrl);
         }
 
         [TestMethod]
@@ -80,8 +80,8 @@ namespace _30Fans.Tests.Domain {
             Assert.AreEqual(1, aProduct.Photos.Count());
 
             foreach ( var photo in aProduct.Photos){
-                Assert.AreEqual("../../Content/images/categories/Football/Brazil/Flamengo/.jpg", photo.ImageUrl);
-                Assert.AreEqual("../../Content/images/categories/Football/Brazil/Flamengo/thumbs/.jpg", photo.ImageThumbnailUrl);
+                Assert.AreEqual("../../Styles/images/categories/Football/Brazil/Flamengo/.jpg", photo.ImageUrl);
+                Assert.AreEqual("../../Styles/images/categories/Football/Brazil/Flamengo/thumbs/.jpg", photo.ImageThumbnailUrl);
             }            
         }
 
@@ -114,7 +114,7 @@ namespace _30Fans.Tests.Domain {
                                     .WithPhoto("photo test", "mengao", "jpg")
                                     .Build();
 
-            Assert.AreEqual("~/Content/images/categories/Football/Brazil/", aProduct.GetImagePath());
+            Assert.AreEqual("~/Styles/images/categories/Football/Brazil/", aProduct.GetImagePath());
         }
 
         [TestMethod]
@@ -128,7 +128,7 @@ namespace _30Fans.Tests.Domain {
                                     .WithPhoto("photo test", "mengao", "jpg")
                                     .Build();
 
-            Assert.AreEqual("~/Content/images/categories/Football/Brazil/Flamengo/", aProduct.GetPhotoImagePath());
+            Assert.AreEqual("~/Styles/images/categories/Football/Brazil/Flamengo/", aProduct.GetPhotoImagePath());
         }
     }
 }//class

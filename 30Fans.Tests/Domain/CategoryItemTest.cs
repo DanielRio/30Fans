@@ -28,8 +28,8 @@ namespace _30Fans.Tests.Domain {
                                              .WithCategory(Category().WithCategoryName("Football").Build())                                            
                                              .Build();
 
-            Assert.AreEqual("~/Content/images/categories/Football/Brazil.png", categoryItem.ImageUrl);
-            Assert.AreEqual("~/Content/images/categories/Football/thumbs/Brazil.png", categoryItem.ImageThumbnailUrl);
+            Assert.AreEqual("~/Styles/images/categories/Football/Brazil.png", categoryItem.ImageUrl);
+            Assert.AreEqual("~/Styles/images/categories/Football/thumbs/Brazil.png", categoryItem.ImageThumbnailUrl);
         }
 
         [TestMethod]
@@ -37,7 +37,7 @@ namespace _30Fans.Tests.Domain {
             var categoryItem = CategoryItem().WithCategory(Category().WithCategoryName("Football").Build())
                                              .Build();
 
-            Assert.AreEqual("~/Content/images/categories/Football/", categoryItem.GetImagePath());
+            Assert.AreEqual("~/Styles/images/categories/Football/", categoryItem.GetImagePath());
         }
 
         [TestMethod]

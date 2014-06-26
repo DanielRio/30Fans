@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.BodyClass = "home loaded";
+}
+
+<article class="hero total-window-height">
+    <figure class="cover" style="background-image: url('@Url.Content("~/Images/Style/bg_soccer_default.jpg")');"></figure>
+    <div class="entry-content">
+        <header>
+            <h1 class="title-main">You have the opportunity to be unique, special. <strong>Forever</strong>.</h1>
+        </header>
+
+        <form method="get" action="team.html" class="f-favoriteTeam">
+            <fieldset>
+                <input type="text" class="in-hero" id="teamSearch" name="teamSearch" placeholder="Type the best team of the world">
+                <aside id="search-result"></aside>
+                <img id="loading" style="display:none" src="@Url.Content("~/Images/Style/loading.gif")" />
+                <button type="reset" title="Type again" class="in-reset"><span>Type again</span></button>
+
+            </fieldset>
+        </form>
+
+    </div>
+</article>
+
+
+<div class="modal fade" id="modalAddTeam" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-title">
+                    <h3>Add your team</h3>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </header>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <div>
+                        Send us a email with your team name and you will be the first fan !
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>

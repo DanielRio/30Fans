@@ -17,38 +17,38 @@
                 remoteChangeMonitorInterval="60"
                 >
     <resourceSet name="siteCss" type="css">
-      <resource path="~/Content/css/site.css" />
-      <resource path="~/Content/css/jquery-ui.css" />
-      <resource path="~/Content/css/promo.css" />
-      <resource path="~/Content/css/style.css" />
-      <resource path="~/Content/css/elastislide.css" />
-      <resource path="~/Content/fancybox/jquery.fancybox.css" />
-      <resource path="~/Content/css/bootstrap.css" />
-      <resource path="~/Content/css/bootstrap-responsive.css" />
+      <resource path="~/Styles/css/site.css" />
+      <resource path="~/Styles/css/jquery-ui.css" />
+      <resource path="~/Styles/css/promo.css" />
+      <resource path="~/Styles/css/style.css" />
+      <resource path="~/Styles/css/elastislide.css" />
+      <resource path="~/Styles/fancybox/jquery.fancybox.css" />
+      <resource path="~/Styles/css/bootstrap.css" />
+      <resource path="~/Styles/css/bootstrap-responsive.css" />
     </resourceSet>
     <resourceSet name="siteJs" type="js">
         <!--<resource path="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" mode="dynamic" />-->
-        <resource path="~/Content/js/jquery-1.9.1.js" />
-        <resource path="~/Content/js/promo.js"/>
-        <resource path="~/Content/js/jquery.tmpl.min.js" />
-        <resource path="~/Content/js/jquery.easing.1.3.js" />
-        <resource path="~/Content/js/jquery.elastislide.js"/>        
-        <resource path="~/Content/fancybox/jquery.fancybox.js" />
-        <resource path="~/Content/js/jquery-ui.js" />
-        <resource path="~/Content/js/custom/fans.js" />
-        <resource path="~/Content/js/custom/fans.contact.js" />
-        <resource path="~/Content/js/custom/fans.condition.js" />
-        <resource path="~/Content/js/custom/fans.boot.js" />
-        <resource path="~/Content/js/bootstrap.js" />
+        <resource path="~/Styles/js/jquery-1.9.1.js" />
+        <resource path="~/Styles/js/promo.js"/>
+        <resource path="~/Styles/js/jquery.tmpl.min.js" />
+        <resource path="~/Styles/js/jquery.easing.1.3.js" />
+        <resource path="~/Styles/js/jquery.elastislide.js"/>        
+        <resource path="~/Styles/fancybox/jquery.fancybox.js" />
+        <resource path="~/Styles/js/jquery-ui.js" />
+        <resource path="~/Styles/js/custom/fans.js" />
+        <resource path="~/Styles/js/custom/fans.contact.js" />
+        <resource path="~/Styles/js/custom/fans.condition.js" />
+        <resource path="~/Styles/js/custom/fans.boot.js" />
+        <resource path="~/Styles/js/bootstrap.js" />
     </resourceSet>
     <resourceSet name="slideShowPageJs" type="js">
-        <resource path="~/Content/js/gallery.js"/>
+        <resource path="~/Styles/js/gallery.js"/>
     </resourceSet>
     <resourceSet name="editCategoryItemJs" type="js">
-        <resource path="~/Content/js/custom/CategoryItem/edit.js"/>
+        <resource path="~/Styles/js/custom/CategoryItem/edit.js"/>
     </resourceSet>
     <resourceSet name="AddPhotoJs" type="js">
-        <resource path="~/Content/js/custom/Product/addPhoto.js"/>
+        <resource path="~/Styles/js/custom/Product/addPhoto.js"/>
     </resourceSet>
   </resourceSets>
 </combres>

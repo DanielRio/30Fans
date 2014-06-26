@@ -1,3 +1,3 @@
 ﻿public class ImagePathConstants {
-    public const string CATEGORIES = "~/Content/images/categories/";
+    public const string CATEGORIES = "~/Styles/images/categories/";
 }

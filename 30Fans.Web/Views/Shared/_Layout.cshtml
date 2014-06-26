@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30fans.com</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>30 Fans - To be unique</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200,300,600,700,800,900' rel='stylesheet' type='text/css'>
+
+
+    <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="@Url.Content("~/Images/Style/favicons/Icon-76@2x.png" )">
+    <!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="@Url.Content("~/Images/Style/favicons/Icon-72@2x.png")">
+    <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="@Url.Content("~/Images/Style/favicons/Icon-60@2x.png")">
+    <!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="@Url.Content("~/Images/Style/favicons/Icon@2x.png")">
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="@Url.Content("~/Images/Style/favicons/Icon-72.png")">
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="@Url.Content("~/Images/Style/favicons/Icon.png")">
+
+    <link rel="icon" href="@Url.Content("~/Images/Style/favicons/Icon-32.png")" sizes="32x32">
+
+    <!-- IE 10 Metro tile icon (Metro equivalent of apple-touch-icon) -->
+    <meta name="msapplication-TileColor" content="#1a8bb3">
+    <meta name="msapplication-TileImage" content="@Url.Content("~/Images/Style/favicons/Icon-72@2x.png")">
+
+
+</head>
+<body class="@ViewBag.BodyClass">
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="wrapper">
+        <header id="header">
+            <div class="container">
+                <div id="brand">
+                    <a rel="home" href="http://www.30fans.com/">
+                        <strong>30 Fans - To be unique</strong>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <section id="content">
+            <div class="container">
+                @RenderBody()
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <nav id="nav-global">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </nav>
+                <em class="txt-copyright">30 Fans - All rights reserved.</em>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+            e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

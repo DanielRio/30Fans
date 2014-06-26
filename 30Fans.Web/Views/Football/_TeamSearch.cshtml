@@ -1,0 +1,38 @@
+﻿@model IList<Domain.Product>
+
+@if (Model != null && Model.Count() > 0)
+{
+    <h3><strong>Niiiice.</strong> We found these teams:</h3>
+    <ol>
+        @foreach (Domain.Product item in Model)
+        {
+
+            var imagem = "~/Images/Style/nopicture.jpg";
+            if (!string.IsNullOrEmpty(item.ImageUrl))
+            {
+                imagem = item.ImageUrl;
+            }
+            <li>
+                <a href="@Url.Content("~/Football/Index/"+item.Id)" title="@item.ProductName">
+                    <article>
+                        <figure>
+                            <img width="64" height="64" src="@Url.Content(imagem)" alt="">
+                        </figure>
+                        <header>
+                            <h2 class="title-team">
+                                @item.ProductName
+                            </h2>
+                        </header>
+                    </article>
+                </a>
+            </li>
+
+
+
+        }
+    </ol>
+}
+else
+{
+    <a href="#" data-toggle="modal" data-target="#modalAddTeam" style="display:block" class="btn primary big"> Did I miss your team?</a>
+}

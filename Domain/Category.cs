@@ -20,13 +20,13 @@ namespace Domain {
 
         public virtual string ImageUrl {
             get {
-                return string.Format("{0}/{1}{2}", "../../Content/images/categories", this.ImageName, this.ImageExtension);
+                return string.Format("{0}/{1}{2}", "../../Images/Teams", this.ImageName, this.ImageExtension);
             }
         }
 
         public virtual string ImageThumbnailUrl {
             get {
-                return string.Format("{0}/{1}/{2}{3}", "../../Content/images/categories", "thumbs", this.ImageName, this.ImageExtension);
+                return string.Format("{0}/{1}/{2}{3}", "../../Images/Teams", "thumbs", this.ImageName, this.ImageExtension);
             }
         }
 

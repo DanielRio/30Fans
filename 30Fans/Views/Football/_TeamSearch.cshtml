@@ -7,12 +7,16 @@
             @foreach (Domain.Product item in Model)
             {
 
-
+                var imagem = "~/Styles/images/categories/football.jpg";
+                if(!string.IsNullOrEmpty(item.ImageUrl))
+                {
+                    imagem = item.ImageUrl;
+                }
                 <li>
                     <a href="@Url.Content("~/Football/Index/"+item.Id)" title="@item.ProductName">
                         <article>
                             <figure>
-                                <img width="64" height="64" src="@Url.Content(item.ImageUrl)" alt="">
+                                <img width="64" height="64" src="@Url.Content(imagem)" alt="">
                             </figure>
                             <header>
                                 <h2 class="title-team">

@@ -33,8 +33,8 @@ namespace _30Fans.Tests.Domain {
             category.ImageName = "Running";
             category.ImageExtension = ".jpg";
 
-            Assert.AreEqual("../../Content/images/categories/Running.jpg", category.ImageUrl);
-            Assert.AreEqual("../../Content/images/categories/thumbs/Running.jpg", category.ImageThumbnailUrl);
+            Assert.AreEqual("../../Styles/images/categories/Running.jpg", category.ImageUrl);
+            Assert.AreEqual("../../Styles/images/categories/thumbs/Running.jpg", category.ImageThumbnailUrl);
         }
     }// class
 }

@@ -34,7 +34,7 @@ namespace Domain {
         }
 
         public virtual string GetImagePath() {
-            return string.Format("{0}/{1}/", "~/Content/images/categories", this.Category.CategoryName);
+            return string.Format("{0}/{1}/", "~/Images/Teams", this.Category.CategoryName);
         }
     }// class
 }

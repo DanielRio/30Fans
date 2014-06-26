@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{841EED73-93CE-4D41-97A2-EBFEA59A6EBF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_30Fans.Web</RootNamespace>
+    <AssemblyName>30Fans.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\Iesi.Collections.3.2.0.1001\lib\Net35\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.0.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.0.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.0.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.2.1.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.2.1.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.2.1.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FootballController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\mobile.css" />
+    <Content Include="Content\normalize.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="hibernate.cfg.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Fans\2014\1\1.jpg" />
+    <Content Include="Images\Fans\2014\1\10.jpg" />
+    <Content Include="Images\Fans\2014\1\11.jpg" />
+    <Content Include="Images\Fans\2014\1\12.jpg" />
+    <Content Include="Images\Fans\2014\1\13.jpg" />
+    <Content Include="Images\Fans\2014\1\14.jpg" />
+    <Content Include="Images\Fans\2014\1\15.jpg" />
+    <Content Include="Images\Fans\2014\1\16.jpg" />
+    <Content Include="Images\Fans\2014\1\17.jpg" />
+    <Content Include="Images\Fans\2014\1\18.jpg" />
+    <Content Include="Images\Fans\2014\1\19.jpg" />
+    <Content Include="Images\Fans\2014\1\2.jpg" />
+    <Content Include="Images\Fans\2014\1\20.jpg" />
+    <Content Include="Images\Fans\2014\1\3.jpg" />
+    <Content Include="Images\Fans\2014\1\30.jpg" />
+    <Content Include="Images\Fans\2014\1\4.jpg" />
+    <Content Include="Images\Fans\2014\1\5.jpg" />
+    <Content Include="Images\Fans\2014\1\6.jpg" />
+    <Content Include="Images\Fans\2014\1\7.jpg" />
+    <Content Include="Images\Fans\2014\1\8.jpg" />
+    <Content Include="Images\Fans\2014\1\9.jpg" />
+    <Content Include="Images\Style\avatars\user-01.jpg" />
+    <Content Include="Images\Style\avatars\user-02.jpg" />
+    <Content Include="Images\Style\avatars\user-03.jpg" />
+    <Content Include="Images\Style\avatars\user-04.jpg" />
+    <Content Include="Images\Style\avatars\user-05.jpg" />
+    <Content Include="Images\Style\b-close.png" />
+    <Content Include="Images\Style\bg_soccer_default.jpg" />
+    <Content Include="Images\Style\bg_soccer_westcoast_eagles.jpg" />
+    <Content Include="Images\Style\favicon.ico" />
+    <Content Include="Images\Style\favicons\Icon%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-32.png" />
+    <Content Include="Images\Style\favicons\Icon-60%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-60.png" />
+    <Content Include="Images\Style\favicons\Icon-72%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-72.png" />
+    <Content Include="Images\Style\favicons\Icon-76%40.png" />
+    <Content Include="Images\Style\favicons\Icon-76%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-Small%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-Small-40%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-Small-40.png" />
+    <Content Include="Images\Style\favicons\Icon-Small-50%402x.png" />
+    <Content Include="Images\Style\favicons\Icon-Small-50.png" />
+    <Content Include="Images\Style\favicons\Icon-Small.png" />
+    <Content Include="Images\Style\favicons\Icon.png" />
+    <Content Include="Images\Style\favicons\iTunesArtwork%402x.png" />
+    <Content Include="Images\Style\favicons\iTunesArtwork.png" />
+    <Content Include="Images\Style\forever_highlight.png" />
+    <Content Include="Images\Style\loading.gif" />
+    <Content Include="Images\Style\logo-30fans-small.png" />
+    <Content Include="Images\Style\logo-30fans.png" />
+    <Content Include="Images\Style\nopicture.jpg" />
+    <Content Include="Images\Style\shelf_default.png" />
+    <Content Include="Images\Style\tag-counter-white.png" />
+    <Content Include="Images\Style\tag-counter.png" />
+    <Content Include="Images\Style\teams\team-westcoast-eagles.png" />
+    <Content Include="Images\Style\winner-brighter.png" />
+    <Content Include="Images\Teams\Football\Argentina\all_boys.png" />
+    <Content Include="Images\Teams\Football\Argentina\argentinos_juniors.png" />
+    <Content Include="Images\Teams\Football\Argentina\arsenal_de_sarandí.png" />
+    <Content Include="Images\Teams\Football\Argentina\atletico_rafaela.png" />
+    <Content Include="Images\Teams\Football\Argentina\belgrano.png" />
+    <Content Include="Images\Teams\Football\Argentina\boca_juniors.png" />
+    <Content Include="Images\Teams\Football\Argentina\colon.png" />
+    <Content Include="Images\Teams\Football\Argentina\estudiantes.png" />
+    <Content Include="Images\Teams\Football\Argentina\gimnasia.png" />
+    <Content Include="Images\Teams\Football\Argentina\godoy_cruz.png" />
+    <Content Include="Images\Teams\Football\Argentina\lanus.png" />
+    <Content Include="Images\Teams\Football\Argentina\newells_old_boys.png" />
+    <Content Include="Images\Teams\Football\Argentina\olimpo.png" />
+    <Content Include="Images\Teams\Football\Argentina\quilmes.png" />
+    <Content Include="Images\Teams\Football\Argentina\racing.png" />
+    <Content Include="Images\Teams\Football\Argentina\river_plate.png" />
+    <Content Include="Images\Teams\Football\Argentina\rosario_central.png" />
+    <Content Include="Images\Teams\Football\Argentina\san_lorenzo.png" />
+    <Content Include="Images\Teams\Football\Argentina\tigre.png" />
+    <Content Include="Images\Teams\Football\Argentina\velez_sarsfield.png" />
+    <Content Include="Images\Teams\Football\Australia\adelaide.png" />
+    <Content Include="Images\Teams\Football\Australia\brisbanelions.png" />
+    <Content Include="Images\Teams\Football\Australia\bulldogs.png" />
+    <Content Include="Images\Teams\Football\Australia\carlton.png" />
+    <Content Include="Images\Teams\Football\Australia\collingwood.png" />
+    <Content Include="Images\Teams\Football\Australia\essendon.png" />
+    <Content Include="Images\Teams\Football\Australia\fremantle.png" />
+    <Content Include="Images\Teams\Football\Australia\geelong.png" />
+    <Content Include="Images\Teams\Football\Australia\giants.png" />
+    <Content Include="Images\Teams\Football\Australia\goldcoast.png" />
+    <Content Include="Images\Teams\Football\Australia\hawthorne.png" />
+    <Content Include="Images\Teams\Football\Australia\melbourne.png" />
+    <Content Include="Images\Teams\Football\Australia\northmelbourne.png" />
+    <Content Include="Images\Teams\Football\Australia\portadelaide.png" />
+    <Content Include="Images\Teams\Football\Australia\richmond.png" />
+    <Content Include="Images\Teams\Football\Australia\stkilda.png" />
+    <Content Include="Images\Teams\Football\Australia\sydney.png" />
+    <Content Include="Images\Teams\Football\Australia\westcoast.png" />
+    <Content Include="Images\Teams\Football\Brazil\america_mineiro.png" />
+    <Content Include="Images\Teams\Football\Brazil\atletico_goianiense.png" />
+    <Content Include="Images\Teams\Football\Brazil\atletico_mineiro.png" />
+    <Content Include="Images\Teams\Football\Brazil\atletico_paranaense.png" />
+    <Content Include="Images\Teams\Football\Brazil\avai.png" />
+    <Content Include="Images\Teams\Football\Brazil\bahia.png" />
+    <Content Include="Images\Teams\Football\Brazil\botafogo.png" />
+    <Content Include="Images\Teams\Football\Brazil\ceara.png" />
+    <Content Include="Images\Teams\Football\Brazil\corintians.png" />
+    <Content Include="Images\Teams\Football\Brazil\coritiba.png" />
+    <Content Include="Images\Teams\Football\Brazil\cruzeiro.png" />
+    <Content Include="Images\Teams\Football\Brazil\figueirense.png" />
+    <Content Include="Images\Teams\Football\Brazil\flamengo.png" />
+    <Content Include="Images\Teams\Football\Brazil\fluminense.png" />
+    <Content Include="Images\Teams\Football\Brazil\gremio.png" />
+    <Content Include="Images\Teams\Football\Brazil\internacional.png" />
+    <Content Include="Images\Teams\Football\Brazil\palmeiras.png" />
+    <Content Include="Images\Teams\Football\Brazil\santos.png" />
+    <Content Include="Images\Teams\Football\Brazil\sao_paulo.png" />
+    <Content Include="Images\Teams\Football\Brazil\vasco.png" />
+    <Content Include="Images\Teams\Football\Chile\antofagasta.png" />
+    <Content Include="Images\Teams\Football\Chile\audaxItaliano.png" />
+    <Content Include="Images\Teams\Football\Chile\cobreloa.png" />
+    <Content Include="Images\Teams\Football\Chile\cobresal.png" />
+    <Content Include="Images\Teams\Football\Chile\colo_colo.png" />
+    <Content Include="Images\Teams\Football\Chile\everton.png" />
+    <Content Include="Images\Teams\Football\Chile\huachipato.png" />
+    <Content Include="Images\Teams\Football\Chile\iquique.png" />
+    <Content Include="Images\Teams\Football\Chile\nublense.png" />
+    <Content Include="Images\Teams\Football\Chile\ohiggins.png" />
+    <Content Include="Images\Teams\Football\Chile\palestino.png" />
+    <Content Include="Images\Teams\Football\Chile\rangers.png" />
+    <Content Include="Images\Teams\Football\Chile\santiago_wanderers.png" />
+    <Content Include="Images\Teams\Football\Chile\san_marcos_arica.png" />
+    <Content Include="Images\Teams\Football\Chile\union_espanola.png" />
+    <Content Include="Images\Teams\Football\Chile\union_la_calera.png" />
+    <Content Include="Images\Teams\Football\Chile\universidad_catolica.png" />
+    <Content Include="Images\Teams\Football\Chile\universidad_de_chile.png" />
+    <Content Include="Images\Teams\Football\Colombia\alianza_petrolera.png" />
+    <Content Include="Images\Teams\Football\Colombia\atletico_huila.png" />
+    <Content Include="Images\Teams\Football\Colombia\atletico_nacional.png" />
+    <Content Include="Images\Teams\Football\Colombia\boyaca_chico.png" />
+    <Content Include="Images\Teams\Football\Colombia\deportes_tolima.png" />
+    <Content Include="Images\Teams\Football\Colombia\deportivo_cali.png" />
+    <Content Include="Images\Teams\Football\Colombia\deportivo_pasto.png" />
+    <Content Include="Images\Teams\Football\Colombia\envigado.png" />
+    <Content Include="Images\Teams\Football\Colombia\fortaleza.png" />
+    <Content Include="Images\Teams\Football\Colombia\independiente_medellin.png" />
+    <Content Include="Images\Teams\Football\Colombia\itagui.png" />
+    <Content Include="Images\Teams\Football\Colombia\junior.png" />
+    <Content Include="Images\Teams\Football\Colombia\la_equidad.png" />
+    <Content Include="Images\Teams\Football\Colombia\millonarios.png" />
+    <Content Include="Images\Teams\Football\Colombia\once_caldas.png" />
+    <Content Include="Images\Teams\Football\Colombia\patriotas.png" />
+    <Content Include="Images\Teams\Football\Colombia\santa_fe.png" />
+    <Content Include="Images\Teams\Football\Colombia\uniautonoma.png" />
+    <Content Include="Images\Teams\Football\Czech\banik_ostrava.png" />
+    <Content Include="Images\Teams\Football\Czech\baumit_jablonec.png" />
+    <Content Include="Images\Teams\Football\Czech\bohemians_1905.png" />
+    <Content Include="Images\Teams\Football\Czech\dukla_prague.png" />
+    <Content Include="Images\Teams\Football\Czech\mlada_boleslav.png" />
+    <Content Include="Images\Teams\Football\Czech\pribram.png" />
+    <Content Include="Images\Teams\Football\Czech\sigma_olomouc.png" />
+    <Content Include="Images\Teams\Football\Czech\slavia_praha.png" />
+    <Content Include="Images\Teams\Football\Czech\slovacko.png" />
+    <Content Include="Images\Teams\Football\Czech\slovan_liberec.png" />
+    <Content Include="Images\Teams\Football\Czech\sparta_prague.png" />
+    <Content Include="Images\Teams\Football\Czech\teplice.png" />
+    <Content Include="Images\Teams\Football\Czech\viktoria_plzen.png" />
+    <Content Include="Images\Teams\Football\Czech\vysocina_jihlava.png" />
+    <Content Include="Images\Teams\Football\Czech\zbrojovka_brno.png" />
+    <Content Include="Images\Teams\Football\Czech\znojmo.png" />
+    <Content Include="Images\Teams\Football\Denmark\aalborg.png" />
+    <Content Include="Images\Teams\Football\Denmark\agf.png" />
+    <Content Include="Images\Teams\Football\Denmark\brondby.png" />
+    <Content Include="Images\Teams\Football\Denmark\esbjerg.png" />
+    <Content Include="Images\Teams\Football\Denmark\kobenhavn.png" />
+    <Content Include="Images\Teams\Football\Denmark\midtjylland.png" />
+    <Content Include="Images\Teams\Football\Denmark\nordsjaelland.png" />
+    <Content Include="Images\Teams\Football\Denmark\odense_boldklub.png" />
+    <Content Include="Images\Teams\Football\Denmark\randers.png" />
+    <Content Include="Images\Teams\Football\Denmark\sonderjyske.png" />
+    <Content Include="Images\Teams\Football\Denmark\vestsjaelland.png" />
+    <Content Include="Images\Teams\Football\Denmark\viborg.png" />
+    <Content Include="Images\Teams\Football\Ecuador\barcelona_sc.png" />
+    <Content Include="Images\Teams\Football\Ecuador\cuenca.png" />
+    <Content Include="Images\Teams\Football\Ecuador\el_nacional.png" />
+    <Content Include="Images\Teams\Football\Ecuador\emelec.png" />
+    <Content Include="Images\Teams\Football\Ecuador\espoli.png" />
+    <Content Include="Images\Teams\Football\Ecuador\imbabura.png" />
+    <Content Include="Images\Teams\Football\Ecuador\independiente_jt.png" />
+    <Content Include="Images\Teams\Football\Ecuador\ldu_loja.png" />
+    <Content Include="Images\Teams\Football\Ecuador\ldu_quito.png" />
+    <Content Include="Images\Teams\Football\Ecuador\manta.png" />
+    <Content Include="Images\Teams\Football\Ecuador\olmedo.png" />
+    <Content Include="Images\Teams\Football\Ecuador\quito.png" />
+    <Content Include="Images\Teams\Football\England\arsenal.png" />
+    <Content Include="Images\Teams\Football\England\aston_villa.png" />
+    <Content Include="Images\Teams\Football\England\cardiff_city.png" />
+    <Content Include="Images\Teams\Football\England\chelsea.png" />
+    <Content Include="Images\Teams\Football\England\crystal_palace.png" />
+    <Content Include="Images\Teams\Football\England\everton.png" />
+    <Content Include="Images\Teams\Football\England\fulham.png" />
+    <Content Include="Images\Teams\Football\England\hull_city.png" />
+    <Content Include="Images\Teams\Football\England\liverpool.png" />
+    <Content Include="Images\Teams\Football\England\manchester_city.png" />
+    <Content Include="Images\Teams\Football\England\manchester_united.png" />
+    <Content Include="Images\Teams\Football\England\newcastle_united.png" />
+    <Content Include="Images\Teams\Football\England\norwich_city.png" />
+    <Content Include="Images\Teams\Football\England\southampton.png" />
+    <Content Include="Images\Teams\Football\England\stoke_city.png" />
+    <Content Include="Images\Teams\Football\England\sunderland.png" />
+    <Content Include="Images\Teams\Football\England\swansea_city.png" />
+    <Content Include="Images\Teams\Football\England\tottenham_hotspur.png" />
+    <Content Include="Images\Teams\Football\England\west_bromwich_albion.png" />
+    <Content Include="Images\Teams\Football\England\west_ham_united.png" />
+    <Content Include="Images\Teams\Football\Finland\hjk.png" />
+    <Content Include="Images\Teams\Football\Finland\honka.png" />
+    <Content Include="Images\Teams\Football\Finland\ifk_mariehamnin.png" />
+    <Content Include="Images\Teams\Football\Finland\inter.png" />
+    <Content Include="Images\Teams\Football\Finland\jaro.png" />
+    <Content Include="Images\Teams\Football\Finland\jjk.png" />
+    <Content Include="Images\Teams\Football\Finland\kups.png" />
+    <Content Include="Images\Teams\Football\Finland\lahti.png" />
+    <Content Include="Images\Teams\Football\Finland\mypa.png" />
+    <Content Include="Images\Teams\Football\Finland\rops.png" />
+    <Content Include="Images\Teams\Football\Finland\tps.png" />
+    <Content Include="Images\Teams\Football\Finland\vps.png" />
+    <Content Include="Images\Teams\Football\France\ajaccio.png" />
+    <Content Include="Images\Teams\Football\France\bastia.png" />
+    <Content Include="Images\Teams\Football\France\bordeaux.png" />
+    <Content Include="Images\Teams\Football\France\evian.png" />
+    <Content Include="Images\Teams\Football\France\guingamp.png" />
+    <Content Include="Images\Teams\Football\France\lille.png" />
+    <Content Include="Images\Teams\Football\France\lorient.png" />
+    <Content Include="Images\Teams\Football\France\lyonnais.png" />
+    <Content Include="Images\Teams\Football\France\marseille.png" />
+    <Content Include="Images\Teams\Football\France\monaco.png" />
+    <Content Include="Images\Teams\Football\France\montpellier.png" />
+    <Content Include="Images\Teams\Football\France\nantes.png" />
+    <Content Include="Images\Teams\Football\France\nice.png" />
+    <Content Include="Images\Teams\Football\France\paris_saint_germain.png" />
+    <Content Include="Images\Teams\Football\France\saint_etienne.png" />
+    <Content Include="Images\Teams\Football\France\sochaux.png" />
+    <Content Include="Images\Teams\Football\France\stade_reims.png" />
+    <Content Include="Images\Teams\Football\France\stade_rennais.png" />
+    <Content Include="Images\Teams\Football\France\toulouse.png" />
+    <Content Include="Images\Teams\Football\France\valenciennes.png" />
+    <Content Include="Images\Teams\Football\Germany\augsburg.png" />
+    <Content Include="Images\Teams\Football\Germany\bayern_munchen.png" />
+    <Content Include="Images\Teams\Football\Germany\bayer_leverkusen.png" />
+    <Content Include="Images\Teams\Football\Germany\borussia_dortmund.png" />
+    <Content Include="Images\Teams\Football\Germany\borussia_monchengladbach.png" />
+    <Content Include="Images\Teams\Football\Germany\eintracht_braunschweig.png" />
+    <Content Include="Images\Teams\Football\Germany\eintracht_frankfurt.png" />
+    <Content Include="Images\Teams\Football\Germany\freiburg.png" />
+    <Content Include="Images\Teams\Football\Germany\hannover_96.png" />
+    <Content Include="Images\Teams\Football\Germany\hertha_bsc.png" />
+    <Content Include="Images\Teams\Football\Germany\hoffenheim.png" />
+    <Content Include="Images\Teams\Football\Germany\hsv.png" />
+    <Content Include="Images\Teams\Football\Germany\mainz_05.png" />
+    <Content Include="Images\Teams\Football\Germany\nurnberg.png" />
+    <Content Include="Images\Teams\Football\Germany\schalke_04.png" />
+    <Content Include="Images\Teams\Football\Germany\vfb_stuttgart.png" />
+    <Content Include="Images\Teams\Football\Germany\vfl_wolfsburg.png" />
+    <Content Include="Images\Teams\Football\Germany\werder_bremen.png" />
+    <Content Include="Images\Teams\Football\Italy\atalanta.png" />
+    <Content Include="Images\Teams\Football\Italy\bologna.png" />
+    <Content Include="Images\Teams\Football\Italy\cagliari.png" />
+    <Content Include="Images\Teams\Football\Italy\calcio.png" />
+    <Content Include="Images\Teams\Football\Italy\catania.png" />
+    <Content Include="Images\Teams\Football\Italy\chievo.png" />
+    <Content Include="Images\Teams\Football\Italy\fiorentina.png" />
+    <Content Include="Images\Teams\Football\Italy\genoa.png" />
+    <Content Include="Images\Teams\Football\Italy\hellas_verona.png" />
+    <Content Include="Images\Teams\Football\Italy\internazionale.png" />
+    <Content Include="Images\Teams\Football\Italy\juventus.png" />
+    <Content Include="Images\Teams\Football\Italy\lazio.png" />
+    <Content Include="Images\Teams\Football\Italy\milan.png" />
+    <Content Include="Images\Teams\Football\Italy\napoli.png" />
+    <Content Include="Images\Teams\Football\Italy\parma.png" />
+    <Content Include="Images\Teams\Football\Italy\roma.png" />
+    <Content Include="Images\Teams\Football\Italy\sampdoria.png" />
+    <Content Include="Images\Teams\Football\Italy\sassuolo.png" />
+    <Content Include="Images\Teams\Football\Italy\torino.png" />
+    <Content Include="Images\Teams\Football\Italy\udinese.png" />
+    <Content Include="Images\Teams\Football\Japan\albirex_niigata.png" />
+    <Content Include="Images\Teams\Football\Japan\cerezo_osaka.png" />
+    <Content Include="Images\Teams\Football\Japan\gamba_osaka.png" />
+    <Content Include="Images\Teams\Football\Japan\kashima_antlers.png" />
+    <Content Include="Images\Teams\Football\Japan\kashiwa_reysol.png" />
+    <Content Include="Images\Teams\Football\Japan\kawasaki_frontale.png" />
+    <Content Include="Images\Teams\Football\Japan\nagoya_grampus.png" />
+    <Content Include="Images\Teams\Football\Japan\omiya_ardija.png" />
+    <Content Include="Images\Teams\Football\Japan\saga_tosu.png" />
+    <Content Include="Images\Teams\Football\Japan\sanfrecce_hiroshima.png" />
+    <Content Include="Images\Teams\Football\Japan\shimizu_s_pulse.png" />
+    <Content Include="Images\Teams\Football\Japan\tokushima_vortis.png" />
+    <Content Include="Images\Teams\Football\Japan\tokyo.png" />
+    <Content Include="Images\Teams\Football\Japan\urawa_reds.png" />
+    <Content Include="Images\Teams\Football\Japan\vegalta-sendai.png" />
+    <Content Include="Images\Teams\Football\Japan\ventforet_kofu.png" />
+    <Content Include="Images\Teams\Football\Japan\vissel_kobe.png" />
+    <Content Include="Images\Teams\Football\Japan\yokohama_f_marinos.png" />
+    <Content Include="Images\Teams\Football\Mexico\america.png" />
+    <Content Include="Images\Teams\Football\Mexico\atlante.png" />
+    <Content Include="Images\Teams\Football\Mexico\atlas.png" />
+    <Content Include="Images\Teams\Football\Mexico\cruz_azul.png" />
+    <Content Include="Images\Teams\Football\Mexico\guadalajara.png" />
+    <Content Include="Images\Teams\Football\Mexico\jaguares.png" />
+    <Content Include="Images\Teams\Football\Mexico\leon.png" />
+    <Content Include="Images\Teams\Football\Mexico\monterrey.png" />
+    <Content Include="Images\Teams\Football\Mexico\morelia.png" />
+    <Content Include="Images\Teams\Football\Mexico\pachuca.png" />
+    <Content Include="Images\Teams\Football\Mexico\puebla.png" />
+    <Content Include="Images\Teams\Football\Mexico\pumas_unam.png" />
+    <Content Include="Images\Teams\Football\Mexico\queretaro.png" />
+    <Content Include="Images\Teams\Football\Mexico\santos_laguna.png" />
+    <Content Include="Images\Teams\Football\Mexico\tigres_uanl.png" />
+    <Content Include="Images\Teams\Football\Mexico\tijuana.png" />
+    <Content Include="Images\Teams\Football\Mexico\toluca.png" />
+    <Content Include="Images\Teams\Football\Mexico\veracruz.png" />
+    <Content Include="Images\Teams\Football\Netherlands\ado_den_haag.png" />
+    <Content Include="Images\Teams\Football\Netherlands\ajax.png" />
+    <Content Include="Images\Teams\Football\Netherlands\az_alkmaar.png" />
+    <Content Include="Images\Teams\Football\Netherlands\feyenoord.png" />
+    <Content Include="Images\Teams\Football\Netherlands\go_ahead_eagles.png" />
+    <Content Include="Images\Teams\Football\Netherlands\groningen.png" />
+    <Content Include="Images\Teams\Football\Netherlands\heerenveen.png" />
+    <Content Include="Images\Teams\Football\Netherlands\heracles_almelo.png" />
+    <Content Include="Images\Teams\Football\Netherlands\nac_breda.png" />
+    <Content Include="Images\Teams\Football\Netherlands\nec_nijmegen.png" />
+    <Content Include="Images\Teams\Football\Netherlands\pec_zwolle.png" />
+    <Content Include="Images\Teams\Football\Netherlands\psv_eindhoven.png" />
+    <Content Include="Images\Teams\Football\Netherlands\rkc_waalwijk.png" />
+    <Content Include="Images\Teams\Football\Netherlands\roda_jc.png" />
+    <Content Include="Images\Teams\Football\Netherlands\sc_cambuur.png" />
+    <Content Include="Images\Teams\Football\Netherlands\twente.png" />
+    <Content Include="Images\Teams\Football\Netherlands\utrecht.png" />
+    <Content Include="Images\Teams\Football\Netherlands\vitesse.png" />
+    <Content Include="Images\Teams\Football\Norway\aalesunds.png" />
+    <Content Include="Images\Teams\Football\Norway\brann.png" />
+    <Content Include="Images\Teams\Football\Norway\haugesund.png" />
+    <Content Include="Images\Teams\Football\Norway\honefoss.png" />
+    <Content Include="Images\Teams\Football\Norway\ik_start.png" />
+    <Content Include="Images\Teams\Football\Norway\lillestrom.png" />
+    <Content Include="Images\Teams\Football\Norway\molde.png" />
+    <Content Include="Images\Teams\Football\Norway\odds.png" />
+    <Content Include="Images\Teams\Football\Norway\rosenborg.png" />
+    <Content Include="Images\Teams\Football\Norway\sandnes_ulf.png" />
+    <Content Include="Images\Teams\Football\Norway\sarpsborg_08.png" />
+    <Content Include="Images\Teams\Football\Norway\sogndal.png" />
+    <Content Include="Images\Teams\Football\Norway\stromsgodset.png" />
+    <Content Include="Images\Teams\Football\Norway\tromso.png" />
+    <Content Include="Images\Teams\Football\Norway\valerenga.png" />
+    <Content Include="Images\Teams\Football\Norway\viking.png" />
+    <Content Include="Images\Teams\Football\Nthire\ards.png" />
+    <Content Include="Images\Teams\Football\Nthire\ballinamallard_united.png" />
+    <Content Include="Images\Teams\Football\Nthire\ballymena_united.png" />
+    <Content Include="Images\Teams\Football\Nthire\cliftonville.png" />
+    <Content Include="Images\Teams\Football\Nthire\coleraine.png" />
+    <Content Include="Images\Teams\Football\Nthire\crusaders.png" />
+    <Content Include="Images\Teams\Football\Nthire\dungannon_swifts.png" />
+    <Content Include="Images\Teams\Football\Nthire\glenavon.png" />
+    <Content Include="Images\Teams\Football\Nthire\glentoran.png" />
+    <Content Include="Images\Teams\Football\Nthire\linfield.png" />
+    <Content Include="Images\Teams\Football\Nthire\portadown.png" />
+    <Content Include="Images\Teams\Football\Nthire\warrenpoint_town.png" />
+    <Content Include="Images\Teams\Football\Portugal\academica.png" />
+    <Content Include="Images\Teams\Football\Portugal\arouca.png" />
+    <Content Include="Images\Teams\Football\Portugal\belenenses.png" />
+    <Content Include="Images\Teams\Football\Portugal\benfica.png" />
+    <Content Include="Images\Teams\Football\Portugal\braga.png" />
+    <Content Include="Images\Teams\Football\Portugal\estoril.png" />
+    <Content Include="Images\Teams\Football\Portugal\gil_vicente.png" />
+    <Content Include="Images\Teams\Football\Portugal\maritimo.png" />
+    <Content Include="Images\Teams\Football\Portugal\nacional.png" />
+    <Content Include="Images\Teams\Football\Portugal\olhanense.png" />
+    <Content Include="Images\Teams\Football\Portugal\pacos_de_ferreira.png" />
+    <Content Include="Images\Teams\Football\Portugal\porto.png" />
+    <Content Include="Images\Teams\Football\Portugal\rio_ave.png" />
+    <Content Include="Images\Teams\Football\Portugal\sporting_cp.png" />
+    <Content Include="Images\Teams\Football\Portugal\vitoria_fc.png" />
+    <Content Include="Images\Teams\Football\Portugal\vitoria_sc.png" />
+    <Content Include="Images\Teams\Football\Repire\bohemian_dublin.png" />
+    <Content Include="Images\Teams\Football\Repire\bray_wanderers.png" />
+    <Content Include="Images\Teams\Football\Repire\cork_city.png" />
+    <Content Include="Images\Teams\Football\Repire\derry_city.png" />
+    <Content Include="Images\Teams\Football\Repire\drogheda_united.png" />
+    <Content Include="Images\Teams\Football\Repire\dundalk.png" />
+    <Content Include="Images\Teams\Football\Repire\limerick.png" />
+    <Content Include="Images\Teams\Football\Repire\shamrock_rovers.png" />
+    <Content Include="Images\Teams\Football\Repire\shelbourne.png" />
+    <Content Include="Images\Teams\Football\Repire\sligo_rovers.png" />
+    <Content Include="Images\Teams\Football\Repire\st_patricks_athletic.png" />
+    <Content Include="Images\Teams\Football\Repire\ucd_dublin.png" />
+    <Content Include="Images\Teams\Football\Scotland\aberdeen.png" />
+    <Content Include="Images\Teams\Football\Scotland\caley_thistle.png" />
+    <Content Include="Images\Teams\Football\Scotland\celtic.png" />
+    <Content Include="Images\Teams\Football\Scotland\dundee_united.png" />
+    <Content Include="Images\Teams\Football\Scotland\heart_of_midlothian.png" />
+    <Content Include="Images\Teams\Football\Scotland\hibernian.png" />
+    <Content Include="Images\Teams\Football\Scotland\kilmarnock.png" />
+    <Content Include="Images\Teams\Football\Scotland\motherwell.png" />
+    <Content Include="Images\Teams\Football\Scotland\partick_thistle.png" />
+    <Content Include="Images\Teams\Football\Scotland\ross_county.png" />
+    <Content Include="Images\Teams\Football\Scotland\st_johnstone.png" />
+    <Content Include="Images\Teams\Football\Scotland\st_mirren.png" />
+    <Content Include="Images\Teams\Football\Serbia\crvena_zvezda.png" />
+    <Content Include="Images\Teams\Football\Serbia\cukaricki.png" />
+    <Content Include="Images\Teams\Football\Serbia\donji_srem.png" />
+    <Content Include="Images\Teams\Football\Serbia\jagodina.png" />
+    <Content Include="Images\Teams\Football\Serbia\javor.png" />
+    <Content Include="Images\Teams\Football\Serbia\napredak_krusevac.png" />
+    <Content Include="Images\Teams\Football\Serbia\novi_pazar.png" />
+    <Content Include="Images\Teams\Football\Serbia\ofk_beograd.png" />
+    <Content Include="Images\Teams\Football\Serbia\partizan.png" />
+    <Content Include="Images\Teams\Football\Serbia\rad.png" />
+    <Content Include="Images\Teams\Football\Serbia\radnicki_1923.png" />
+    <Content Include="Images\Teams\Football\Serbia\radnicki_nis.png" />
+    <Content Include="Images\Teams\Football\Serbia\sloboda_uzice.png" />
+    <Content Include="Images\Teams\Football\Serbia\spartak_zlatibor_voda.png" />
+    <Content Include="Images\Teams\Football\Serbia\vojvodina.png" />
+    <Content Include="Images\Teams\Football\Serbia\vozdovac.png" />
+    <Content Include="Images\Teams\Football\Spain\almeria.png" />
+    <Content Include="Images\Teams\Football\Spain\athletic_bilbao.png" />
+    <Content Include="Images\Teams\Football\Spain\atletico_madrid.png" />
+    <Content Include="Images\Teams\Football\Spain\barcelona.png" />
+    <Content Include="Images\Teams\Football\Spain\celta_vigo.png" />
+    <Content Include="Images\Teams\Football\Spain\elche.png" />
+    <Content Include="Images\Teams\Football\Spain\espanyol.png" />
+    <Content Include="Images\Teams\Football\Spain\getafe.png" />
+    <Content Include="Images\Teams\Football\Spain\granada.png" />
+    <Content Include="Images\Teams\Football\Spain\levante.png" />
+    <Content Include="Images\Teams\Football\Spain\malaga.png" />
+    <Content Include="Images\Teams\Football\Spain\osasuna.png" />
+    <Content Include="Images\Teams\Football\Spain\rayo_vallecano.png" />
+    <Content Include="Images\Teams\Football\Spain\real_betis.png" />
+    <Content Include="Images\Teams\Football\Spain\real_madrid.png" />
+    <Content Include="Images\Teams\Football\Spain\real_sociedad.png" />
+    <Content Include="Images\Teams\Football\Spain\real_valladolid.png" />
+    <Content Include="Images\Teams\Football\Spain\sevilla.png" />
+    <Content Include="Images\Teams\Football\Spain\valencia.png" />
+    <Content Include="Images\Teams\Football\Spain\villarreal.png" />
+    <Content Include="Images\Teams\Football\Sweden\aik.png" />
+    <Content Include="Images\Teams\Football\Sweden\atvidabergs.png" />
+    <Content Include="Images\Teams\Football\Sweden\brommapojkarna.png" />
+    <Content Include="Images\Teams\Football\Sweden\djurgardens.png" />
+    <Content Include="Images\Teams\Football\Sweden\elfsborg.png" />
+    <Content Include="Images\Teams\Football\Sweden\gefle.png" />
+    <Content Include="Images\Teams\Football\Sweden\goteborg.png" />
+    <Content Include="Images\Teams\Football\Sweden\hacken.png" />
+    <Content Include="Images\Teams\Football\Sweden\halmstads.png" />
+    <Content Include="Images\Teams\Football\Sweden\helsingborgs.png" />
+    <Content Include="Images\Teams\Football\Sweden\kalmar.png" />
+    <Content Include="Images\Teams\Football\Sweden\malmo.png" />
+    <Content Include="Images\Teams\Football\Sweden\mjallby.png" />
+    <Content Include="Images\Teams\Football\Sweden\norrkoping.png" />
+    <Content Include="Images\Teams\Football\Sweden\osters.png" />
+    <Content Include="Images\Teams\Football\Sweden\syrianska.png" />
+    <Content Include="Images\Teams\Football\Switzerland\aarau.png" />
+    <Content Include="Images\Teams\Football\Switzerland\basel.png" />
+    <Content Include="Images\Teams\Football\Switzerland\bsc_young_boys.png" />
+    <Content Include="Images\Teams\Football\Switzerland\grasshopper_club_zurich.png" />
+    <Content Include="Images\Teams\Football\Switzerland\lausanne_sport.png" />
+    <Content Include="Images\Teams\Football\Switzerland\luzern.png" />
+    <Content Include="Images\Teams\Football\Switzerland\sion.png" />
+    <Content Include="Images\Teams\Football\Switzerland\st_gallen.png" />
+    <Content Include="Images\Teams\Football\Switzerland\thun.png" />
+    <Content Include="Images\Teams\Football\Switzerland\zurich.png" />
+    <Content Include="Images\Teams\Football\Turkey\akhisar_belediyespor.png" />
+    <Content Include="Images\Teams\Football\Turkey\antalyaspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\besiktas_jk.png" />
+    <Content Include="Images\Teams\Football\Turkey\bursaspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\caykur_rizespor.png" />
+    <Content Include="Images\Teams\Football\Turkey\elazıgspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\eskisehirspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\fenerbahce.png" />
+    <Content Include="Images\Teams\Football\Turkey\galatasaray.png" />
+    <Content Include="Images\Teams\Football\Turkey\gaziantepspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\genclerbirligi.png" />
+    <Content Include="Images\Teams\Football\Turkey\karabukspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\kasımpasa.png" />
+    <Content Include="Images\Teams\Football\Turkey\kayserispor.png" />
+    <Content Include="Images\Teams\Football\Turkey\kayseri_erciyesspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\konyaspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\sivasspor.png" />
+    <Content Include="Images\Teams\Football\Turkey\trabzonspor.png" />
+    <Content Include="Images\Teams\Football\Uruguay\bella_vista.png" />
+    <Content Include="Images\Teams\Football\Uruguay\central_espanol.png" />
+    <Content Include="Images\Teams\Football\Uruguay\cerro.png" />
+    <Content Include="Images\Teams\Football\Uruguay\danubio_fc.png" />
+    <Content Include="Images\Teams\Football\Uruguay\defensor_sporting.png" />
+    <Content Include="Images\Teams\Football\Uruguay\el_tanque_sisley.png" />
+    <Content Include="Images\Teams\Football\Uruguay\fenix.png" />
+    <Content Include="Images\Teams\Football\Uruguay\liverpool.png" />
+    <Content Include="Images\Teams\Football\Uruguay\miramar_misiones.png" />
+    <Content Include="Images\Teams\Football\Uruguay\montevideo_wanderers.png" />
+    <Content Include="Images\Teams\Football\Uruguay\nacional.png" />
+    <Content Include="Images\Teams\Football\Uruguay\penarol.png" />
+    <Content Include="Images\Teams\Football\Uruguay\racing.png" />
+    <Content Include="Images\Teams\Football\Uruguay\rampla_juniors.png" />
+    <Content Include="Images\Teams\Football\Uruguay\river_plate.png" />
+    <Content Include="Images\Teams\Football\Uruguay\tacuarembo.png" />
+    <Content Include="Images\Teams\Football\USA\chicago_fire.png" />
+    <Content Include="Images\Teams\Football\USA\chivas_usa.png" />
+    <Content Include="Images\Teams\Football\USA\colorado_rapids.png" />
+    <Content Include="Images\Teams\Football\USA\columbus_crew.png" />
+    <Content Include="Images\Teams\Football\USA\d_c_united.png" />
+    <Content Include="Images\Teams\Football\USA\fc_dallas.png" />
+    <Content Include="Images\Teams\Football\USA\houston_dynamo.png" />
+    <Content Include="Images\Teams\Football\USA\la_galaxy.png" />
+    <Content Include="Images\Teams\Football\USA\montreal_impact.png" />
+    <Content Include="Images\Teams\Football\USA\new_england_revolution.png" />
+    <Content Include="Images\Teams\Football\USA\new_york_red_bulls.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\49ers.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\arizona_cardinals.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\atlanta_falcons.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\baltimore_ravens.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\buffalo_bills.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\carolina_panthers.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\chicago_bears.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\cincinnati_bengals.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\cleveland_browns.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\dallas_cowboys.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\denver_broncos.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\green_bay_packers.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\houston_texans.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\indianapolis_colts.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\jacksonville_jaguars.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\kansas_city_chiefs.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\miami_dolphins.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\minnesota_vikings.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\new_england_patriots.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\new_lions.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\new_orleans_saints.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\new_york_giants.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\new_york_jets.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\oakland_raiders.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\philadelphia_eagles.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\pittsburgh_steelers.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\san_diego_chargers.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\seattle_seahawks_vector.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\st_louis_rams.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\tampa_bay_buccaneers.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\tennessee_titans.png" />
+    <Content Include="Images\Teams\Football\USA\nfl\washington_redskins.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\boston_breakers.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\chicago_red_stars.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\houston_dash.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\kansas_city.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\portland_thorns.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\seattle_reign.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\sky_blue.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\washington_spirit.png" />
+    <Content Include="Images\Teams\Football\USA\nwsl\western_ny_flash.png" />
+    <Content Include="Images\Teams\Football\USA\philadelphia_union.png" />
+    <Content Include="Images\Teams\Football\USA\portland_timbers.png" />
+    <Content Include="Images\Teams\Football\USA\real_salt_lake.png" />
+    <Content Include="Images\Teams\Football\USA\san_jose_earthquakes.png" />
+    <Content Include="Images\Teams\Football\USA\seattle_sounders.png" />
+    <Content Include="Images\Teams\Football\USA\sporting_kansas_ity.png" />
+    <Content Include="Images\Teams\Football\USA\toronto_fc.png" />
+    <Content Include="Images\Teams\Football\USA\vancouver_whitecaps.png" />
+    <Content Include="Images\Teams\Football\Wales\aberystwyth-town.png" />
+    <Content Include="Images\Teams\Football\Wales\afan_lido.png" />
+    <Content Include="Images\Teams\Football\Wales\airbus.png" />
+    <Content Include="Images\Teams\Football\Wales\bala_town.png" />
+    <Content Include="Images\Teams\Football\Wales\bangor_city.png" />
+    <Content Include="Images\Teams\Football\Wales\carmarthen_town.png" />
+    <Content Include="Images\Teams\Football\Wales\connahs_quay.png" />
+    <Content Include="Images\Teams\Football\Wales\newtown.png" />
+    <Content Include="Images\Teams\Football\Wales\new_saints.png" />
+    <Content Include="Images\Teams\Football\Wales\port_talbot_town.png" />
+    <Content Include="Images\Teams\Football\Wales\prestatyn_town.png" />
+    <Content Include="Images\Teams\Football\Wales\rhyl.png" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\mobile.sass" />
+    <Content Include="Content\style.sass" />
+    <Content Include="Images\Teams\Football\Argentina\XXArgentina.docx" />
+    <Content Include="Images\Teams\Football\Australia\XXAustralia.docx" />
+    <Content Include="Images\Teams\Football\Chile\XXChile.docx" />
+    <Content Include="Images\Teams\Football\Colombia\XXColombia.docx" />
+    <Content Include="Images\Teams\Football\Czech\ZZCzech.docx" />
+    <Content Include="Images\Teams\Football\Denmark\XXDenmark.docx" />
+    <Content Include="Images\Teams\Football\Ecuador\XXEcuador.docx" />
+    <Content Include="Images\Teams\Football\England\XXEngland.docx" />
+    <Content Include="Images\Teams\Football\Finland\XXFinland.docx" />
+    <Content Include="Images\Teams\Football\France\XXFrance.docx" />
+    <Content Include="Images\Teams\Football\Germany\XXGermany.docx" />
+    <Content Include="Images\Teams\Football\Italy\XXItaly.docx" />
+    <Content Include="Images\Teams\Football\Japan\ZZJapan.docx" />
+    <Content Include="Images\Teams\Football\Mexico\XXMexico.docx" />
+    <Content Include="Images\Teams\Football\Netherlands\XXNetherlands.docx" />
+    <Content Include="Images\Teams\Football\Norway\XXNorway.docx" />
+    <Content Include="Images\Teams\Football\Nthire\XXNthire.docx" />
+    <Content Include="Images\Teams\Football\Portugal\XXPortugal.docx" />
+    <Content Include="Images\Teams\Football\Repire\XXRepire.docx" />
+    <Content Include="Images\Teams\Football\Scotland\XXScotland.docx" />
+    <Content Include="Images\Teams\Football\Serbia\XXSerbia.docx" />
+    <Content Include="Images\Teams\Football\Spain\XXSpain.docx" />
+    <Content Include="Images\Teams\Football\Sweden\XXSweden.docx" />
+    <Content Include="Images\Teams\Football\Switzerland\ZZSwitzerland.docx" />
+    <Content Include="Images\Teams\Football\Turkey\XXTurkey.docx" />
+    <Content Include="Images\Teams\Football\United States\XXNWSL.docx" />
+    <Content Include="Images\Teams\Football\United States\XXUSAMLS.docx" />
+    <Content Include="Images\Teams\Football\United States\XXUSANFL.docx" />
+    <Content Include="Images\Teams\Football\Uruguay\XXUruguay.docx" />
+    <Content Include="Images\Teams\Football\Wales\XXWales.docx" />
+    <Content Include="Images\Teams\Football\Brazil\XXBrazil.docx" />
+    <None Include="Properties\PublishProfiles\30fans.Web.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Football\_TeamSearch.cshtml" />
+    <Content Include="Views\Football\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\Teams\Football\USA\mls\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dao\Dao.csproj">
+      <Project>{b91fddb4-f8eb-4c73-96ec-feea824bd540}</Project>
+      <Name>Dao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{1442b0b4-ea39-4732-b101-903cfa61bd29}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1099</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1099/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

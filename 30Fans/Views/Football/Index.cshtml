@@ -7,13 +7,19 @@
     var language = languageHandler.GetSelectedLanguage().Replace("-", "_");
     var paypalImgSrc = string.Format("https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif");
     Layout = "~/Views/Shared/_30fans.cshtml";
+
+    var imagem = "~/Styles/images/categories/football.jpg";
+    if (!string.IsNullOrEmpty(@Model.ImageUrl))
+    {
+        imagem = @Model.ImageUrl;
+    }
 }
 
 
 <article class="hero">
-    <figure class="cover" style="background-image:url('@Url.Content("~/Content/30fans/img/bg_soccer_westcoast_eagles.jpg")');"></figure>
+    <figure class="cover" style="background-image:url('@Url.Content("~/Styles/30fans/img/bg_soccer_westcoast_eagles.jpg")');"></figure>
     <div class="entry-content">
-        <figure class="team-brand"><img src="@Url.Content(@Model.ImageUrl)" alt="Brand West Coast Eagles"></figure>
+        <figure class="team-brand"><img src="@Url.Content(imagem)" alt="Brand West Coast Eagles"></figure>
 
         <header>
             <h1 class="hidden-text title-main">
@@ -52,7 +58,7 @@
                     <li class="b-call-paypal">
                         <a href="#" data-toggle="modal" data-target="#modalFinalizar">
                             <em><span>#</span>@((i + 1).ToString())</em>
-                            <img src="@Url.Content("~/Content/30fans/img/winner-brighter.png" )">
+                            <img src="@Url.Content("~/Styles/30fans/img/winner-brighter.png" )">
                             <figure class="avatar">
                                 <figcaption><span class="txt-1">You.</span> <span class="txt-2">Unique.</span> <span class="txt-3">Forever!</span></figcaption>
                             </figure>
@@ -63,7 +69,7 @@
                 {
                     <li>
                         <figure class="no-fan">
-                            <img src="@Url.Content("~/Content/30fans/img/logo-30fans-small.png" )" alt="">
+                            <img src="@Url.Content("~/Styles/30fans/img/logo-30fans-small.png" )" alt="">
                         </figure>
                     </li>
                 }
