@@ -1,0 +1,68 @@
+﻿@model Domain.Category
+
+@{
+    ViewBag.Title = Model.CategoryName;
+}
+
+@section breadcumb {
+    @Html.ActionLink("30Fans", string.Empty, "Home", null, new { @class = "teste" })  <text>>></text>
+    @Model.CategoryName
+}
+
+<h1 class="stylizedH1 greyish">@Model.CategoryName</h1>
+
+@{ 
+    int numCols = 4;
+    int colsCount = 0;
+}
+
+@foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList()) {
+    var imageUrl = item.ImageUrl;
+    var urlItem = "/CategoryItem/Show/" + @item.Id;
+    if ((colsCount % numCols) == 0) {
+        @:<div class="row-fluid">
+    }
+        <div class="span3 pagination-centered">
+            <a href="@urlItem">
+                <img class="imageShadow" alt="" src="@Url.Content(imageUrl)" />
+                <div>@Resources.CategoriesItem.ResourceManager.GetObject(item.ItemName)</div>
+            </a>
+        </div>
+    colsCount++;
+    if (colsCount == numCols){
+        @:</div>
+        colsCount = 0;
+    }    
+}
+
+
+
+
+@*<table class="CategoryList">
+
+@{ 
+    int numCols = 4;
+    int colsCount = 0;
+}
+
+@foreach (var item in Model.Items.OrderByDescending(x => x.Priority).ToList()) {
+    var imageUrl = item.ImageUrl;
+    var urlItem = "/CategoryItem/Show/" + @item.Id;
+    if ((colsCount % numCols) == 0) {
+        @:<tr>
+    }
+        <td>
+            <a href="@urlItem">
+                <img class="imageShadow" alt="" src="@Url.Content(imageUrl)" />
+                <div>@Resources.CategoriesItem.ResourceManager.GetObject(item.ItemName)</div>
+            </a>
+        </td>
+    colsCount++;
+    if (colsCount == numCols){
+        @:</tr>
+        colsCount = 0;
+    }    
+}
+
+</table>
+*@

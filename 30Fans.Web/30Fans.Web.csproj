@@ -174,6 +174,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\FootballController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -848,6 +849,18 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Football\_TeamSearch.cshtml" />
     <Content Include="Views\Football\Index.cshtml" />
+    <Content Include="Views\Admin\CreateProduto.cshtml" />
+    <Content Include="Views\Admin\EditProduto.cshtml" />
+    <Content Include="Views\Admin\UploadImageProduto.cshtml" />
+    <Content Include="Views\Admin\ListAllCategoria.cshtml" />
+    <Content Include="Views\Admin\IndexCategoria.cshtml" />
+    <Content Include="Views\Admin\EditCategoria.cshtml" />
+    <Content Include="Views\Admin\UploadImageCategoria.cshtml" />
+    <Content Include="Views\Admin\ShowItem.cshtml" />
+    <Content Include="Views\Admin\CreateItem.cshtml" />
+    <Content Include="Views\Admin\EditItem.cshtml" />
+    <Content Include="Views\Admin\UploadImageItem.cshtml" />
+    <Content Include="Views\Admin\_ListCategoryItems.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,51 @@
+﻿@model Domain.Category
+
+<p>
+    @Html.ActionLink("Create New", "Create", "CategoryItem", new { id = Model.Id }, null)
+</p>
+<table width="90%">
+    <tr>
+        <th>
+            ItemName
+        </th>
+        <th>
+            Enable
+        </th>
+        <th>
+            Priority
+        </th>
+        <th>
+            ImageUrl
+        </th>
+        <th>
+            ImageThumbnailUrl
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Items) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ItemName)
+        </td>
+        <td>
+            @Html.ConvertBooleanToYesNo(item.Enable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Priority)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageUrl)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImageThumbnailUrl)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", "CategoryItem", new { id=item.Id }, null) |
+            @Html.ActionLink("Upload Image", "UploadImage", "CategoryItem", new { id=item.Id }, null) |
+            @Html.ActionLink("Delete", "Delete", "CategoryItem", new { id=item.Id }, null)
+        </td>
+    </tr>
+}
+
+</table>
