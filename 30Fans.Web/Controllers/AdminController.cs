@@ -178,6 +178,8 @@ namespace _30Fans.Web.Controllers
         public ActionResult EditProduto(long id)
         {
             var product = _productDao.Get(id);
+            ViewBag.Produtos = _productDao.GetByCategoryItemId(id);
+            ViewBag.CategoryItemId = id;
             return View(product);
         }
 

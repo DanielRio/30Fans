@@ -864,6 +864,7 @@
     <Content Include="Views\Admin\_ListCategoryItems.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\CreateCategory.cshtml" />
+    <Content Include="Views\Admin\_AdminProductList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
