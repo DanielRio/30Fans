@@ -29,7 +29,7 @@
             @Html.DisplayFor(modelItem => item.ItemName)
         </td>
         <td>
-            @Html.ConvertBooleanToYesNo(item.Enable)
+            @Html.DisplayFor(x => item.Enable)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Priority)
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.ImageThumbnailUrl)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", "CategoryItem", new { id=item.Id }, null) |
-            @Html.ActionLink("Upload Image", "UploadImage", "CategoryItem", new { id=item.Id }, null) |
-            @Html.ActionLink("Delete", "Delete", "CategoryItem", new { id=item.Id }, null)
+            @Html.ActionLink("Edit", "EditItem", "Admin", new { id=item.Id }, null) |
+            @Html.ActionLink("Upload Image", "UploadImageItem", "Admin", new { id = item.Id }, null) |
+            @Html.ActionLink("Delete", "DeleteItem", "Admin", new { id = item.Id }, null)
         </td>
     </tr>
 }

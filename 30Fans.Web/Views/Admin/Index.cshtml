@@ -1,0 +1,44 @@
+﻿@model  IEnumerable<Domain.Category>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Admin Area</h2>
+<p>
+    @Html.ActionLink("Add Photo!", "AddPhoto")
+</p>
+<fieldset>
+    <legend>Categories</legend>
+    <p>
+        @Html.ActionLink("Create New Category", "CreateCategory")
+    </p>
+    <table style="width:90%">
+        <tr>
+            <th>Category</th>
+            <th>Image Url</th>
+            <th>Enabled</th>
+            <th>Priority</th>
+            <th>Actions</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(x => item.CategoryName)
+                    <text>(@item.Items.Count())</text>
+                </td>
+                <td>@Html.DisplayFor(x => item.FullImageName)</td>
+                <td>@Html.DisplayFor(x => item.Enable)</td>
+                <td>@Html.DisplayFor(x => item.Priority)</td>
+                <td>
+                    @Html.ActionLink("Add Item", "CreateItem", "Admin", new { id = item.Id }, null) |
+                    @Html.ActionLink("Edit", "EditCategoria", "Admin", new { id = item.Id }, null) |
+                    @Html.ActionLink("Upload Image", "UploadImageCategoria", "Admin", new { id = item.Id }, null) |
+                    @Html.ActionLink("Delete", "DeleteCategoria", "Admin", new { id = item.Id }, null)
+                </td>
+            </tr>
+        }
+    </table>
+</fieldset>

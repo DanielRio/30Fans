@@ -173,8 +173,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\FootballController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\FootballController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -805,6 +805,7 @@
     <Content Include="Images\Teams\Football\Brazil\XXBrazil.docx" />
     <None Include="Properties\PublishProfiles\30fans.Web.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\editItem.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -861,6 +862,8 @@
     <Content Include="Views\Admin\EditItem.cshtml" />
     <Content Include="Views\Admin\UploadImageItem.cshtml" />
     <Content Include="Views\Admin\_ListCategoryItems.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\CreateCategory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

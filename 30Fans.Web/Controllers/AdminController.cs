@@ -131,7 +131,7 @@ namespace _30Fans.Web.Controllers
 
         //
         // GET: /Product/SlideShow/5
-        [Authorize]
+        //[Authorize]
         public ActionResult ListProduto(int id)
         {
             IList<Product> products = null;
@@ -147,7 +147,7 @@ namespace _30Fans.Web.Controllers
             return PartialView("_AdminProductList", products);
         }
 
-        [Authorize]
+       // [Authorize]
         public ActionResult CreateProduto(long idCategoryItem)
         {
             var categoryItem = _categoryItemDao.Get(idCategoryItem);
@@ -156,7 +156,7 @@ namespace _30Fans.Web.Controllers
             return View();
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public ActionResult CreateProduto(Product product, long CategoryItemId)
         {
@@ -174,14 +174,14 @@ namespace _30Fans.Web.Controllers
             }
         }
 
-        [Authorize]
+       // [Authorize]
         public ActionResult EditProduto(long id)
         {
             var product = _productDao.Get(id);
             return View(product);
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public ActionResult EditProduto(long id, Product product)
         {
@@ -199,7 +199,7 @@ namespace _30Fans.Web.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult DeleteProduto(long id)
         {
             try
@@ -216,7 +216,7 @@ namespace _30Fans.Web.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadImageProduto(long id)
         {
             var product = _productDao.Get(id);
@@ -224,7 +224,7 @@ namespace _30Fans.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadImageProduto(HttpPostedFileBase file, string id, FormCollection collection)
         {
             Product product = null;
@@ -251,7 +251,7 @@ namespace _30Fans.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadPhotoProduto(HttpPostedFileBase uploadFile, FormCollection collection)
         {
             if (string.IsNullOrEmpty(collection["ddProducts"]))
@@ -327,7 +327,7 @@ namespace _30Fans.Web.Controllers
 
         //
         // GET: /Admin/Edit/5 
-        [Authorize]
+       // [Authorize]
         public ActionResult EditCategoria(int id)
         {
             var category = _categoryDao.Get(id);
@@ -337,7 +337,7 @@ namespace _30Fans.Web.Controllers
         //
         // POST: /Admin/Edit/5
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public ActionResult EditCategoria(int id, Category category)
         {
             try
@@ -358,7 +358,7 @@ namespace _30Fans.Web.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadImageCategoria(long id)
         {
             var category = _categoryDao.Get(id);
@@ -366,7 +366,7 @@ namespace _30Fans.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadImageCategoria(HttpPostedFileBase file, string id, FormCollection collection)
         {
             if (file != null && file.ContentLength > 0)
@@ -390,7 +390,7 @@ namespace _30Fans.Web.Controllers
 
         //
         // GET: /Admin/Edit/5 
-        [Authorize]
+       // [Authorize]
         public ActionResult DeleteCategoria(int id)
         {
             var category = _categoryDao.Get(id);
@@ -400,7 +400,7 @@ namespace _30Fans.Web.Controllers
         //
         // POST: /Admin/Edit/5
         [HttpPost]
-        [Authorize]
+       // [Authorize]
         public ActionResult DeleteCategoria(int id, FormCollection collection)
         {
             try
@@ -455,14 +455,14 @@ namespace _30Fans.Web.Controllers
             return View(products);
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult CreateItem(long id)
         {
             ViewBag.CategoryId = id;
             return View();
         }
 
-        [Authorize]
+       // [Authorize]
         [HttpPost]
         public ActionResult CreateItem(CategoryItem categoryItem, long CategoryId)
         {
@@ -478,14 +478,14 @@ namespace _30Fans.Web.Controllers
             }
         }
 
-        [Authorize]
+       // [Authorize]
         public ActionResult EditItem(long id)
         {
             var categoryItem = _categoryItemDao.Get(id);
             return View(categoryItem);
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpPost]
         public ActionResult EditItem(long id, CategoryItem categoryItem)
         {
@@ -501,7 +501,7 @@ namespace _30Fans.Web.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadImageItem(long id)
         {
             var categoryItem = _categoryItemDao.Get(id);
@@ -509,7 +509,7 @@ namespace _30Fans.Web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public ActionResult UploadImageItem(HttpPostedFileBase file, string id, FormCollection collection)
         {
             CategoryItem categoryItem = null;
@@ -534,14 +534,14 @@ namespace _30Fans.Web.Controllers
             return RedirectToAction("Edit", "Category", new { id = categoryItem.Category.Id });
         }
 
-        [Authorize]
+       // [Authorize]
         public ActionResult DeleteItem(long id)
         {
             var categoryItem = _categoryItemDao.Get(id);
             return View(categoryItem);
         }
 
-        [Authorize]
+       // [Authorize]
         [HttpPost]
         public ActionResult DeleteItem(long id, CategoryItem categoryItem)
         {

@@ -63,8 +63,8 @@
     <hr />
      <fieldset>
         <legend>Products</legend>
-        <div id="productsResult" data-url="@Url.Action("List","Product", new { id = Model.Id})">
-            <img id="productLoaderImage" src="../../Images/Style/loading" />
+        <div id="productsResult" data-url="@Url.Action("ListProduto", "Admin", new { id = Model.Id })">
+            <img id="productLoaderImage" src="~/Images/Style/loading.gif" />
         </div>
     </fieldset>
 }
@@ -73,8 +73,7 @@
     @Html.ActionLink("Back to List", "Edit", "Category", new { id = Model.Category.Id }, null)
 </div>
 
-@section scripts{
-   <script type="text/javascript" src="@Url.Content("~/Styles/js/custom/CategoryItem/edit.js")" />
-}
+    
+
 
 
