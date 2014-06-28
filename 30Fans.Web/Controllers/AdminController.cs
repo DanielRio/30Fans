@@ -39,6 +39,8 @@ namespace _30Fans.Web.Controllers
 
         //
         // GET: /Admin/
+
+        [Authorize()]
         public ActionResult Index(){
             return View(_categoryDao.GetaAll());
         }
@@ -483,6 +485,11 @@ namespace _30Fans.Web.Controllers
        // [Authorize]
         public ActionResult EditItem(long id)
         {
+
+            ViewBag.Produtos = _productDao.GetByCategoryItemId(id);
+            ViewBag.CategoryItemId = id;
+
+
             var categoryItem = _categoryItemDao.Get(id);
             return View(categoryItem);
         }

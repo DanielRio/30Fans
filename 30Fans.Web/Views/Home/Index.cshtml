@@ -1,6 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
-    ViewBag.BodyClass = "home loaded";
+    ViewBag.BodyClass = "home";
 }
 
 <article class="hero total-window-height">
@@ -10,13 +10,12 @@
             <h1 class="title-main">You have the opportunity to be unique, special. <strong>Forever</strong>.</h1>
         </header>
 
-        <form method="get" action="team.html" class="f-favoriteTeam">
+        <form method="get" action="/" class="f-favoriteTeam">
             <fieldset>
-                <input type="text" class="in-hero" id="teamSearch" name="teamSearch" placeholder="Type the best team of the world">
+                <input type="text" class="in-hero" id="teamSearch" autocomplete="off" name="teamSearch" placeholder="Type your team">
                 <aside id="search-result"></aside>
-                <img id="loading" style="display:none" src="@Url.Content("~/Images/Style/loading.gif")" />
+                <img id="loading" style="display:none" src="@Url.Content("~/Images/Style/loading.gif")">
                 <button type="reset" title="Type again" class="in-reset"><span>Type again</span></button>
-
             </fieldset>
         </form>
 

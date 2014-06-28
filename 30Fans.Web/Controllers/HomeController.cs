@@ -20,6 +20,12 @@ namespace _30Fans.Web.Controllers
             return View();
         }
 
+
+        public ActionResult ThankYou()
+        {
+            return View();
+        }
+
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";

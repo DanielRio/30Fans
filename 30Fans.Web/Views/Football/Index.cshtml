@@ -1,7 +1,7 @@
 ﻿
 @model Domain.Product
 @{
-    ViewBag.BodyClass = "page-team loaded";
+    ViewBag.BodyClass = "page-team";
     var paypalImgSrc = string.Format("https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif");
     Layout = "~/Views/Shared/_Layout.cshtml";
 
@@ -14,9 +14,9 @@
 
 
 <article class="hero">
-    <figure class="cover" style="background-image:url('@Url.Content("~/Images/Style/bg_soccer_westcoast_eagles.jpg")');"></figure>
+    <figure class="cover" style="background-image:url('@Url.Content("~/Images/Style/stadium.jpg")');"></figure>
     <div class="entry-content">
-        <figure class="team-brand"><img src="@Url.Content(imagem)" alt="Brand West Coast Eagles"></figure>
+        <figure class="team-brand"><img src="@Url.Content(imagem)" alt="@Model.ProductName"></figure>
 
         <header>
             <h1 class="hidden-text title-main">
@@ -34,7 +34,7 @@
 
 <article class="post">
     <section class="list-fans">
-        <i class="shelf s1"></i><i class="shelf s2"></i><i class="shelf s3"></i><i class="shelf s4"></i><i class="shelf s5"></i>
+        <i class="shelf s1"></i><i class="shelf s2"></i><i class="shelf s3"></i><i class="shelf s4"></i><i class="shelf s5"></i><i class="shelf s6"></i><i class="shelf s7"></i><i class="shelf s8"></i><i class="shelf s9"></i><i class="shelf s10"></i>
         <ol>
             @for (int i = 0; i < 30; i++)
             {
@@ -57,7 +57,7 @@
                             <em><span>#</span>@((i + 1).ToString())</em>
                             <img src="@Url.Content("~/Images/Style/winner-brighter.png" )">
                             <figure class="avatar">
-                                <figcaption><span class="txt-1">You.</span> <span class="txt-2">Unique.</span> <span class="txt-3">Forever!</span></figcaption>
+                                <figcaption><span class="txt-1">Click to be</span> <span class="txt-2">unique</span> <span class="txt-3">forever!</span></figcaption>
                             </figure>
                         </a>
                     </li>
@@ -77,40 +77,30 @@
     </section>
 </article>
 
-<div class="modal fade" id="modalFinalizar" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<section class="modal fade" id="modalFinalizar" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog">
         <div class="modal-content">
             <header class="modal-header">
                 <div class="modal-title">
+                	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h3>Be Unique</h3>
                 </div>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </header>
 
             <div class="modal-body">
-                <div class="form-group">
-                    <div>
-                        Only $99.00! You will enter in your team history.
-                    </div>
-                </div>
+                Click on paypal button and see how easy and cheap is be part of the history.
             </div>
 
-            <div class="modal-footer">
-                <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
-                @*<button id="btnFinalizarFluxo" class="btn primary" data-dismiss="modal">PayPal </button>*@
-                <a target="blank" href="#" title="" class="btn btn-lg">
-
-                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                        <p style="text-align:center">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="hosted_button_id" value="@Model.PaymentCode">
-                            <input type="image" src="@paypalImgSrc" name="submit" alt="PayPal - The easiest way to make a payment.">
-                            <img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
-                        </p>
-                    </form>
-                </a>
+            <div class="modal-footer">                
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="@Model.PaymentCode">
+                    
+                    <button name="submit" class="btn primary" type="submit">Pay with Paypal</button>
+                    
+                    <img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
+                </form>
             </div>
         </div>
     </div>
-</div>
-
+</section>

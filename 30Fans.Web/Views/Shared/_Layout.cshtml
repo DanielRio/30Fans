@@ -3,22 +3,26 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html>
+<html class="no-js">
+<!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30fans.com</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>30 Fans - To be unique</title>
+	@if (string.IsNullOrEmpty(ViewBag.Title))
+	{
+	    <title>30 Fans - To be unique</title>
+	}
+	else
+	{
+	    <title>@ViewBag.Title - 30 Fans</title>
+	}
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200,300,600,700,800,900' rel='stylesheet' type='text/css'>
 
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
 
     <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="@Url.Content("~/Images/Style/favicons/Icon-76@2x.png" )">
@@ -38,8 +42,6 @@
     <!-- IE 10 Metro tile icon (Metro equivalent of apple-touch-icon) -->
     <meta name="msapplication-TileColor" content="#1a8bb3">
     <meta name="msapplication-TileImage" content="@Url.Content("~/Images/Style/favicons/Icon-72@2x.png")">
-
-
 </head>
 <body class="@ViewBag.BodyClass">
     <!--[if lt IE 7]>
@@ -49,9 +51,16 @@
         <header id="header">
             <div class="container">
                 <div id="brand">
-                    <a rel="home" href="http://www.30fans.com/">
-                        <strong>30 Fans - To be unique</strong>
-                    </a>
+					@if (string.IsNullOrEmpty(ViewBag.Title))
+					{
+					    <strong>30 Fans - To be unique</strong>
+					}
+					else
+					{
+						<a href="@Url.Content("~/")" rel="home" title="Go back home">
+						    <strong>30 Fans - To be unique</strong>
+						</a>
+					}
                 </div>
             </div>
         </header>
@@ -66,27 +75,70 @@
             <div class="container">
                 <nav id="nav-global">
                     <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalContact">Contact</a></li>
+                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalTerms">Terms of Use</a></li>
                     </ul>
                 </nav>
                 <em class="txt-copyright">30 Fans - All rights reserved.</em>
             </div>
         </footer>
     </div>
+    
+
+<section class="modal fade" id="modalContact" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-title">
+                	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Contact</h3>
+                </div>
+            </header>
+
+            <div class="modal-body">
+                @* @Html.RenderPartial("~/Shared/_Contact.cshtml") *@
+            </div>
+
+            <div class="modal-footer">
+                <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="modal fade" id="modalTerms" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-title">
+                	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h3>Terms of Use</h3>
+                </div>
+            </header>
+
+            <div class="modal-body">
+                @* @Html.RenderPartial("~/Shared/_Contact.cshtml") *@
+            </div>
+
+            <div class="modal-footer">
+                <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function (b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
-            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
-            e = o.createElement(i); r = o.getElementsByTagName(i)[0];
-            e.src = '//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X'); ga('send', 'pageview');
-    </script>
+    
+    <!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-52067661-1', '30fans.com');
+	  ga('send', 'pageview');	
+	</script>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

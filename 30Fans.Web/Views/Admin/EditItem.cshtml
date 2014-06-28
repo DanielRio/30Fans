@@ -99,7 +99,7 @@
                     </th>
                     <th></th>
                 </tr>
-                @foreach (var item in ViewBag.Produtos)
+                @foreach (Domain.Product item in ViewBag.Produtos)
                 {
                     <tr>
                         <td>
@@ -130,9 +130,9 @@
                             @Html.DisplayFor(modelItem => item.PublishedDate)
                         </td>
                         <td>
-                            @Html.ActionLink("Editar", "EditProduto", "Admin", new { id = item.Id }) |
+                            @Html.ActionLink("Editar", "EditProduto", "Admin", new { id = item.Id }, null) |
                             @Html.ActionLink("Image", "UploadImageProduto", "Admin", new { id = item.Id }, null) |
-                            @Html.ActionLink("Delete", "DeleteProduto", "Admin", new { id = item.Id })
+                            @Html.ActionLink("Delete", "DeleteProduto", "Admin", new { id = item.Id }, null)
                         </td>
                     </tr>
                 }
@@ -142,7 +142,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Edit", "Category", new { id = Model.Category.Id }, null)
+    @Html.ActionLink("Back to List", "EditCategoria", "Admin", new { id = Model.Category.Id }, null)
 </div>
 
     

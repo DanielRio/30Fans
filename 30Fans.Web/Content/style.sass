@@ -138,15 +138,36 @@ ol, ul, li
     margin: 0
     
 a
+    color: $c-blue
     text-decoration: none
     +transition(200ms)
 
+.modal-body
+    a
+        text-decoration: underline
+        
 input:focus, select:focus, button:focus
     outline: none    
 
 .hidden-text
     left: -999em
     position: absolute
+
+.fake-load
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    background: #fff url('../Images/Style/loading-fake.gif') no-repeat center center
+    +opacity(.9)
+    z-index: 999
+    
+#loading
+    position: absolute
+    top: 11px
+    right: 6%
+    +border-radius(500px)
         
 .in-hero
     border: 0
@@ -188,11 +209,11 @@ input:focus, select:focus, button:focus
     position: relative
     width: $width-container    
  
-.home .container
-    width: 100%
-    
-.home .hero
-    +border-radius(0px)
+.home
+    .container
+        width: 100%
+    .hero
+        +border-radius(0px)
 
 .title-main
     margin: 0
@@ -200,7 +221,7 @@ input:focus, select:focus, button:focus
     
 // Header
 #brand
-    background: url('../img/logo-30fans.png') no-repeat center center
+    background: url('../Images/Style/logo-30fans.png') no-repeat center center
     height: 184px
     left: 50%
     margin-left: -55px
@@ -286,7 +307,7 @@ input:focus, select:focus, button:focus
             position: relative
             
             &:after
-                background: url('../img/forever_highlight.png') no-repeat center bottom
+                background: url('../Images/Style/forever_highlight.png') no-repeat center bottom
                 content: " "
                 display: block
                 height: 6px
@@ -309,7 +330,7 @@ input:focus, select:focus, button:focus
             margin: 30px auto
             
         .in-reset
-            background: transparent url('../img/b-close.png') no-repeat center center
+            background: transparent url('../Images/Style/b-close.png') no-repeat center center
             display: none
             border: 0
             height: 20px
@@ -420,6 +441,27 @@ input:focus, select:focus, button:focus
     +border-radius(0 0 10px 10px)
     padding: 40px
     
+.modal
+    .modal-header
+        background-color: $c-blue
+        h3
+            color: $c-contrast
+            margin: 0
+            font-weight: 400
+            font-size: 2em
+            text-transform: uppercase
+        .close
+            color: $c-contrast
+            font-size: 5em
+            font-weight: 300
+            line-height: 37px
+    
+    &#modalFinalizar
+        .modal-body
+            font-size: 2em
+        .modal-footer
+            text-align: center
+            
 .list-fans
     height: 100%
     margin: auto
@@ -428,7 +470,7 @@ input:focus, select:focus, button:focus
     width: 880px
     
     .shelf
-        background: url('../img/shelf_default.png') no-repeat center bottom
+        background: url('../Images/Style/shelf_default.png') no-repeat center bottom
         display: block
         height: 143px
         left: 0
@@ -507,7 +549,7 @@ input:focus, select:focus, button:focus
                 position: absolute
         
         em
-            background: url('../img/tag-counter.png') no-repeat center top
+            background: url('../Images/Style/tag-counter.png') no-repeat center top
             color: $c-contrast
             display: block
             font-weight: 400
@@ -535,7 +577,7 @@ input:focus, select:focus, button:focus
                 color: $c-contrast
             
             em
-                background: url('../img/tag-counter-white.png') no-repeat center top
+                background: url('../Images/Style/tag-counter-white.png') no-repeat center top
                 color: $c-orange
                 z-index: 4
             
@@ -543,7 +585,7 @@ input:focus, select:focus, button:focus
                 line-height: 14px
                 +opacity(1.0)
                 position: relative
-                top: 25px
+                top: 13px
                 z-index: 4
                 
             img
@@ -561,8 +603,11 @@ input:focus, select:focus, button:focus
                 +opacity(1)
                 
             .txt-1
-                font-size: 2em
+                font-size: 1.7em
+                display: block
+                line-height: 20px
                 font-weight: 600
+                margin-bottom: 4px
                 
             .txt-2
                 font-size: 1.2em
@@ -657,3 +702,33 @@ input:focus, select:focus, button:focus
         font-size: .8em
         text-transform: lowercase
         +opacity(.6)
+            
+.page-thanks
+    .hero
+        +border-radius(0)
+        display: table
+        width: 100%
+        
+        a
+            background-color: $c-blue
+            display: inline-block
+            padding: 1px 8px
+            color: $c-contrast
+            +border-radius(10px)
+            
+    .middle
+        text-align: center
+        display: table-cell
+        vertical-align: middle
+        
+        .header, .entry-content
+            margin: auto
+            width: 27%
+        
+    .container
+        color: $c-contrast
+        width: 100%
+    #header
+        
+    .post
+        
