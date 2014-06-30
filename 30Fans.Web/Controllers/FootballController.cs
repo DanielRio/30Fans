@@ -1,4 +1,5 @@
-﻿using Dao.Impl;
+﻿using _30Fans.Web.Models;
+using Dao.Impl;
 using Domain;
 using System;
 using System.Collections.Generic;
@@ -36,7 +37,23 @@ namespace _30Fans.Web.Controllers
             return View(categoria);
         }
 
+        public ActionResult TeamsPictures()
+        {
+            List<TeamPhotoCompareModel> lista = new List<TeamPhotoCompareModel>();
+            foreach(Product produto in _productDao.GetaAll())
+            {
+                if(!System.IO.File.Exists(Server.MapPath(produto.ImageUrl)))
+                {
+                    lista.Add(new TeamPhotoCompareModel()
+                    {
+                        TeamName = produto.ProductName,
+                        TeamPicturePath = produto.ImageUrl
+                    });
+                }
 
+            }
+            return View(lista);
+        }
 
 
         [OutputCache(Duration = 180, VaryByParam = "id", Location = OutputCacheLocation.Server)]

@@ -10,6 +10,7 @@
     {
         imagem = @Model.ImageUrl;
     }
+    ViewBag.Title = @Model.ProductName + "30 fans";
 }
 
 
@@ -45,7 +46,7 @@
                             <em><span>#</span> @((i + 1).ToString())</em>
                             <figure class="avatar">
                                 <img src="@Url.Content("~/Images/Fans/2014/" + Model.Id.ToString() + "/" + ViewBag.FanImages[i])" alt=" pedro">
-                                <figcaption><strong>Nome do Torcedor @((i + 1).ToString())</strong> - Brazil</figcaption>
+                                <figcaption><strong>@ViewBag.FanImages[i].Replace(".jpg", "")</strong> - Brazil</figcaption>
                             </figure>
                         </a>
                     </li>
@@ -88,7 +89,8 @@
             </header>
 
             <div class="modal-body">
-                Click on paypal button and see how easy and cheap is be part of the history.
+                <h3>Be Unique</h3>
+                Click on the PayPal button to see how easy and cheap it is to become part of your club's history !
             </div>
 
             <div class="modal-footer">                
