@@ -25,8 +25,7 @@ namespace _30Fans.Web
             bundles.Add(new ScriptBundle("~/bundles/files").Include(
                       "~/Scripts/main.js",
                       "~/Scripts/editItem.js",
-                      "~/Scripts/jquery.fancybox.js",
-                      "~/Scripts/jquery.fancybox.pack.js"
+                      "~/Scripts/jquery.fancybox.js"
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
