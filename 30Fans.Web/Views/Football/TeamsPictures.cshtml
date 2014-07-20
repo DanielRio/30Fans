@@ -20,16 +20,17 @@
 
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.TeamName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TeamPicturePath)
-        </td>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeamPicturePath)
+            </td>
 
-    </tr>
-}
+        </tr>
+    }
 
 </table>

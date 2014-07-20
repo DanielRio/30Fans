@@ -20,10 +20,14 @@ namespace _30Fans.Web
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/bootstrap.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/files").Include(
                       "~/Scripts/main.js",
                       "~/Scripts/editItem.js",
-                      "~/Scripts/jphotogrid.js"));
+                      "~/Scripts/jquery.fancybox.js",
+                      "~/Scripts/jquery.fancybox.pack.js"
+                ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
