@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _30Fans.Web.Misc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +14,7 @@ namespace _30Fans.Web
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
+            GlobalFilters.Filters.Add(new InternationalizationAttribute());
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

@@ -79,10 +79,17 @@
 
         <footer id="footer">
             <div class="container">
+
+                <aside >
+                    <a style="color:white"  href="@Url.Content("~/Home/ChangeLanguage/pt-BR")" rel="home" title="Go back home">Portugues</a>
+                    <a style="color:white"  href="@Url.Content("~/Home/ChangeLanguage/en")" rel="home" title="Go back home">English</a>
+                    <a style="color:white"  href="@Url.Content("~/Home/ChangeLanguage/es")" rel="home" title="Go back home">Espanhol</a>
+            </aside>
+
                 <nav id="nav-global">
                     <ul>
-                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalContact">Contact</a></li>
-                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalTerms">Terms of Use</a></li>
+                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalContact">@Resources.FansResources.Contact</a></li>
+                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalTerms">@Resources.FansResources.Terms</a></li>
                     </ul>
                 </nav>
 
@@ -112,7 +119,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
+                    <button id="cancelar" class="btn" data-dismiss="modal">Cancel</button>
                 </div>
             </div>
         </div>
@@ -123,7 +130,7 @@
             <div class="modal-content">
                 <header class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h3 class="modal-title">Terms of Use</h3>
+                    <h3 class="modal-title">@Resources.FansResources.Terms</h3>
                 </header>
 
                 <div class="modal-body">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _30Fans.Web.Misc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,6 +21,12 @@ namespace _30Fans.Web.Controllers
             return View();
         }
 
+        public ActionResult ChangeLanguage(string id)
+        {
+            ILanguageHandler languageHandler = new LanguageHandler();
+            languageHandler.SetLanguage(id);
+            return RedirectToAction("Index");
+        }
 
         public ActionResult ThankYou()
         {

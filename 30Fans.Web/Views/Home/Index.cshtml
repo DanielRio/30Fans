@@ -1,6 +1,8 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.BodyClass = "home";
+    var languageHandler = new _30Fans.Web.Misc.LanguageHandler();
+    var language = languageHandler.GetSelectedLanguage().Replace("-", "_");
 
 }
 
@@ -8,12 +10,12 @@
     <figure class="cover" style="background-image: url('@Url.Content("~/Images/Style/bg_soccer_default.jpg")');"></figure>
     <div class="entry-content">
         <header>
-            <h1 class="title-main">You have the opportunity to be unique, special. <strong>Forever</strong>.</h1>
+            <h1 class="title-main">@Resources.FansResources.Home<strong>@Resources.FansResources.Forever</strong></h1>
         </header>
 
         <form method="get" action="/" class="f-favoriteTeam">
             <fieldset>
-                <input type="text" class="in-hero" id="teamSearch" autocomplete="off" name="teamSearch" placeholder="Type your team">
+                <input type="text" class="in-hero" id="teamSearch" autocomplete="off" name="teamSearch" placeholder="@Resources.FansResources.Team">
                 <aside id="search-result"></aside>
                 <img id="loading" style="display:none" src="@Url.Content("~/Images/Style/loading.gif")">
                 <button type="reset" title="Type again" class="in-reset"><span>Type again</span></button>
@@ -29,21 +31,21 @@
         <div class="modal-content">
             <header class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title">Add your team</h3>
+                <h3 class="modal-title">@Resources.FansResources.AddYourTeam</h3>
             </header>
 
             <div class="modal-body">
                 <div class="form-group">
                     <div>
 
-                        <p>Send us an email with  the name of your team - you will be the first fan !</p>
+                        <p>@Resources.FansResources.SendUsEmail</p>
                         <p>30fans@gmail.com</p>
                     </div>
                 </div>
             </div>
 
             <div class="modal-footer">
-                <button id="cancelar" class="btn" data-dismiss="modal">Cancelar</button>
+                <button id="cancelar" class="btn" data-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>
