@@ -57,7 +57,7 @@
                             <em><span>#</span>@((i + 1).ToString())</em>
                             <img src="@Url.Content("~/Images/Style/winner-brighter.png" )">
                             <figure class="avatar">
-                                <figcaption><span class="txt-1">Click to be</span> <span class="txt-2">unique</span> <span class="txt-3">forever!</span></figcaption>
+                                <figcaption><span class="txt-3">@Resources.FansResources.ClickBeUnique</span></figcaption>
                             </figure>
                         </a>
                     </li>
@@ -82,11 +82,11 @@
         <div class="modal-content">
             <header class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3 class="modal-title">Be Unique</h3>
+                <h3 class="modal-title">@Resources.FansResources.BeUnique</h3>
             </header>
 
             <div class="modal-body">
-                Click on the PayPal button to see how easy and cheap it is to become part of your club's history !
+                @Resources.FansResources.ClickPayPal
             </div>
 
             <div class="modal-footer">
@@ -94,7 +94,7 @@
                     <input type="hidden" name="cmd" value="_s-xclick">
                     <input type="hidden" name="hosted_button_id" value="@Model.PaymentCode">
 
-                    <button name="submit" class="btn primary" type="submit">Pay with Paypal</button>
+                    <button name="submit" class="btn primary" type="submit">@Resources.FansResources.PayWithPaypal</button>
 
                     <img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
                 </form>

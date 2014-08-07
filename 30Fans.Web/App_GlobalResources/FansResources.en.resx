@@ -120,6 +120,9 @@
   <data name="AddYourTeam" xml:space="preserve">
     <value>Add your team</value>
   </data>
+  <data name="BeUnique" xml:space="preserve">
+    <value>Be Unique</value>
+  </data>
   <data name="ClickBeUnique" xml:space="preserve">
     <value>Click to be unique forever</value>
   </data>
@@ -133,13 +136,16 @@
     <value>Forever</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>You have the opportunity to be unique, special. Forever.</value>
+    <value>You have the opportunity to be unique, special. </value>
   </data>
   <data name="MissYourTeam" xml:space="preserve">
     <value>Did I miss your team?</value>
   </data>
   <data name="Nice" xml:space="preserve">
     <value>Niiiice. We found these teams</value>
+  </data>
+  <data name="PayWithPaypal" xml:space="preserve">
+    <value>Pay with Paypal</value>
   </data>
   <data name="SendUsEmail" xml:space="preserve">
     <value>Send us an email with the name of your team - you will be the first fan !</value>
@@ -149,5 +155,8 @@
   </data>
   <data name="Terms" xml:space="preserve">
     <value>Terms of use</value>
+  </data>
+  <data name="TypeAgain" xml:space="preserve">
+    <value>Type Again</value>
   </data>
 </root>
