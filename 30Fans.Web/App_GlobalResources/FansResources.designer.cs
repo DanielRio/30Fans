@@ -70,6 +70,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Seja  único.
+        /// </summary>
+        internal static string BeUnique {
+            get {
+                return ResourceManager.GetString("BeUnique", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clique para ser único para sempre.
         /// </summary>
         internal static string ClickBeUnique {
@@ -97,7 +106,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Para Sempre.
+        ///   Looks up a localized string similar to Sempre.
         /// </summary>
         internal static string Forever {
             get {
@@ -106,7 +115,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Você tem a oportunidade de ser único, especial..
+        ///   Looks up a localized string similar to Você tem a oportunidade de ser único, especial. .
         /// </summary>
         internal static string Home {
             get {
@@ -129,6 +138,15 @@ namespace Resources {
         internal static string Nice {
             get {
                 return ResourceManager.GetString("Nice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pague com paypal.
+        /// </summary>
+        internal static string PayWithPaypal {
+            get {
+                return ResourceManager.GetString("PayWithPaypal", resourceCulture);
             }
         }
         
@@ -156,6 +174,15 @@ namespace Resources {
         internal static string Terms {
             get {
                 return ResourceManager.GetString("Terms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Digite Novamente.
+        /// </summary>
+        internal static string TypeAgain {
+            get {
+                return ResourceManager.GetString("TypeAgain", resourceCulture);
             }
         }
     }

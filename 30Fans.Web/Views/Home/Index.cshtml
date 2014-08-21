@@ -5,7 +5,7 @@
     var language = languageHandler.GetSelectedLanguage().Replace("-", "_");
 
 }
-
+<a title="See How It Works!" id="btn-example-page" href="http://www.30fans.com/Football/Index/515">Example Team</a>
 <article class="hero total-window-height">
     <figure class="cover" style="background-image: url('@Url.Content("~/Images/Style/bg_soccer_default.jpg")');"></figure>
     <div class="entry-content">
@@ -18,7 +18,7 @@
                 <input type="text" class="in-hero" id="teamSearch" autocomplete="off" name="teamSearch" placeholder="@Resources.FansResources.Team">
                 <aside id="search-result"></aside>
                 <img id="loading" style="display:none" src="@Url.Content("~/Images/Style/loading.gif")">
-                <button type="reset" title="Type again" class="in-reset"><span>Type again</span></button>
+                <button type="reset" title="Type again" class="in-reset"><span>@Resources.FansResources.TypeAgain</span></button>
             </fieldset>
         </form>
 

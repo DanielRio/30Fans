@@ -214,12 +214,10 @@
   <ItemGroup>
     <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\main.css" />
     <Content Include="Content\mobile.css" />
     <Content Include="Content\normalize.css" />
-    <Content Include="Content\normalize.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -804,8 +802,6 @@
     <Content Include="Images\Teams\Football\Wales\rhyl.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\mobile.sass" />
-    <Content Include="Content\style.sass" />
     <Content Include="Images\Teams\Football\Argentina\XXArgentina.docx" />
     <Content Include="Images\Teams\Football\Australia\XXAustralia.docx" />
     <Content Include="Images\Teams\Football\Chile\XXChile.docx" />

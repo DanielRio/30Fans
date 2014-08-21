@@ -120,6 +120,9 @@
   <data name="AddYourTeam" xml:space="preserve">
     <value>Añada a su equipo</value>
   </data>
+  <data name="BeUnique" xml:space="preserve">
+    <value>Sea único</value>
+  </data>
   <data name="ClickBeUnique" xml:space="preserve">
     <value>Haga clic aquí para ser solteros para siempre</value>
   </data>
@@ -130,7 +133,7 @@
     <value>Contacto</value>
   </data>
   <data name="Forever" xml:space="preserve">
-    <value>Para siempre.</value>
+    <value>Siempre.</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Usted tiene la oportunidad de ser único, especial.</value>
@@ -139,7 +142,10 @@
     <value>¿Olvidaste tu equipo?</value>
   </data>
   <data name="Nice" xml:space="preserve">
-    <value>Niiiice. Encontramos estos equipos</value>
+    <value>Encontramos estos equipos</value>
+  </data>
+  <data name="PayWithPaypal" xml:space="preserve">
+    <value>Pagar con paypal</value>
   </data>
   <data name="SendUsEmail" xml:space="preserve">
     <value>Envíenos un correo electrónico con el nombre de su equipo - usted será el primer fan!</value>
@@ -149,5 +155,8 @@
   </data>
   <data name="Terms" xml:space="preserve">
     <value>Condiciones de uso</value>
+  </data>
+  <data name="TypeAgain" xml:space="preserve">
+    <value>Digite Novamente</value>
   </data>
 </root>

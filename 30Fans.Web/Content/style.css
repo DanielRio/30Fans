@@ -52,7 +52,7 @@ ol, ul, li {
   padding: 0;
   margin: 0; }
 
-a {
+a, #btn-example-page {
   color: #1a8bb3;
   text-decoration: none !important;
   -webkit-transition: all 200ms ease-in-out;
@@ -192,7 +192,7 @@ input:focus, select:focus, button:focus {
 
 #nav-global {
   margin: auto;
-  width: 162px; }
+  width: 180px; }
   #nav-global li {
     float: left;
     margin-right: 20px; }
@@ -686,6 +686,7 @@ input:focus, select:focus, button:focus {
     transition-delay: 15.5s;
     -webkit-transition-delay: 15.5s; }
 
+
 #footer {
   margin: 15px;
   text-align: center; }
@@ -723,6 +724,26 @@ input:focus, select:focus, button:focus {
   color: white;
   width: 100%; }
   
+  
+#btn-example-page { 
+	position: absolute;
+z-index: 10;
+background: #fff;
+transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+top: 24px;
+padding: 3px 25px;
+left: -33px;
+font-size: 14px;
+opacity:0;
+}
+#btn-example-page:hover { 
+color: #fff;
+background-color:#1a8bb3;
+}
+.home.loaded #btn-example-page { opacity:1; }
+
   
   .aside-social { width: 300px;
 float: right;
