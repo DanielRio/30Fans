@@ -29,11 +29,11 @@ namespace _30Fans.Web
                 ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                "~/Content/normalize.css",      
+                "~/Content/bootstrap.css",
                       "~/Content/main.css",
-                      "~/Content/mobile.css",
-                      "~/Content/normalize.css",
-                      "~/Content/style.css"));
+                      "~/Content/style.css",
+                      "~/Content/mobile.css"));
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

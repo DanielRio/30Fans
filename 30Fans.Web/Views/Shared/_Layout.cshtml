@@ -21,11 +21,22 @@
 
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,200,300,600,700,800,900' rel='stylesheet' type='text/css'>
 
-    @Styles.Render("~/Content/css")
+    <link href="@Url.Content("~/Content/normalize.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/main.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/style.css")" rel="stylesheet">
+    <link href="@Url.Content("~/Content/mobile.css")" rel="stylesheet">
+    
+    
+
     @Scripts.Render("~/bundles/modernizr")
+    
+    <link href="@Url.Content("~/Content/jquery.fancybox.css")" rel="stylesheet">
+    
 
+    
 
-    <link href="/Content/jquery.fancybox.css" rel="stylesheet">
+    
 
 
     <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
