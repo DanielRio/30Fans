@@ -182,7 +182,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\ApiController.cs" />
+    <Compile Include="Controllers\TeamApiController .cs" />
     <Compile Include="App_GlobalResources\FansResources.es.designer.cs">
       <DependentUpon>FansResources.es.resx</DependentUpon>
       <AutoGen>True</AutoGen>
