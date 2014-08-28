@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using System.Web.Http;
 
 namespace _30Fans.Web
 {
@@ -15,6 +16,9 @@ namespace _30Fans.Web
         {
             AreaRegistration.RegisterAllAreas();
             GlobalFilters.Filters.Add(new InternationalizationAttribute());
+            
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);

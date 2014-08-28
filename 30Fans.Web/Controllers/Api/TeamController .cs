@@ -7,13 +7,14 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Mvc;
+
 namespace _30Fans.Web
 {
-    public class TeamApiController : ApiController
+    public class TeamController : ApiController
     {
         private ProductDao _productDao;
 
-        public TeamApiController()
+        public TeamController()
         {
             _productDao = new ProductDao();
         }
@@ -42,7 +43,7 @@ namespace _30Fans.Web
         }
 
         // GET api/<controller>
-        public IEnumerable<TeamModel> Get()
+        public IEnumerable<TeamModel> GetAllTeams()
         {
             var products = _productDao.GetaAll().Select(p => new TeamModel{
                 Id = int.Parse(p.Id.ToString()),
