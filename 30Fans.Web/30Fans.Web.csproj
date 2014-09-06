@@ -227,12 +227,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Readme\Elmah.txt" />
     <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\jquery.fancybox.css" />
     <Content Include="Content\main.css" />
     <Content Include="Content\mobile.css" />
     <Content Include="Content\normalize.css" />
+    <Content Include="Content\normalize.min.css" />
     <Content Include="Content\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -355,9 +356,11 @@
     <Content Include="Images\Teams\Football\Brazil\fluminense.png" />
     <Content Include="Images\Teams\Football\Brazil\gremio.png" />
     <Content Include="Images\Teams\Football\Brazil\internacional.png" />
+    <Content Include="Images\Teams\Football\Brazil\operario.png" />
     <Content Include="Images\Teams\Football\Brazil\palmeiras.png" />
     <Content Include="Images\Teams\Football\Brazil\santos.png" />
     <Content Include="Images\Teams\Football\Brazil\sao_paulo.png" />
+    <Content Include="Images\Teams\Football\Brazil\tombense.png" />
     <Content Include="Images\Teams\Football\Brazil\vasco.png" />
     <Content Include="Images\Teams\Football\Chile\antofagasta.png" />
     <Content Include="Images\Teams\Football\Chile\audaxItaliano.png" />
@@ -848,6 +851,8 @@
     <Content Include="Images\Teams\Football\Uruguay\XXUruguay.docx" />
     <Content Include="Images\Teams\Football\Wales\XXWales.docx" />
     <Content Include="Images\Teams\Football\Brazil\XXBrazil.docx" />
+    <Content Include="Content\mobile.sass" />
+    <Content Include="Content\style.sass" />
     <None Include="Properties\PublishProfiles\30fans.Web.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\editItem.js" />
@@ -919,6 +924,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Readme\" />
     <Folder Include="Images\Fans\2014\102\" />
     <Folder Include="Images\Fans\2014\103\" />
     <Folder Include="Images\Fans\2014\104\" />

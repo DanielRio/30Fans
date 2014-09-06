@@ -9,7 +9,7 @@ using Domain;
 namespace Dao.Mapping {
     public class ProductMap : ClassMapping<Product>{
         public ProductMap() {
-            Lazy(false);
+            Lazy(true);
             Id(x => x.Id, m => { m.Column("ProductId"); m.Generator(Generators.Native); });
             Property(x => x.ProductName);
             Property(x => x.ImageName);
@@ -20,6 +20,7 @@ namespace Dao.Mapping {
             Property(x => x.Priority);
             Property(x => x.Enable);
             ManyToOne(x => x.CategoryItem, map => {
+
                                                 map.Class(typeof(CategoryItem));
                                                 map.Column("CategoryItemId");
                                             });
@@ -27,7 +28,7 @@ namespace Dao.Mapping {
                                     collectionMap.Access(Accessor.NoSetter);
                                     collectionMap.Cascade(Cascade.All);
                                     collectionMap.Key(x => x.Column("ProductId"));
-                                    collectionMap.Lazy(CollectionLazy.NoLazy);
+                                    collectionMap.Lazy(CollectionLazy.Lazy);
                                 }, m => m.OneToMany());
         }
     }// class

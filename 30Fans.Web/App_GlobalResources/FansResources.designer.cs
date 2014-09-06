@@ -106,6 +106,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Time Exemplo.
+        /// </summary>
+        internal static string ExampleTeam {
+            get {
+                return ResourceManager.GetString("ExampleTeam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sempre.
         /// </summary>
         internal static string Forever {
@@ -115,11 +124,20 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Você tem a oportunidade de ser único, especial. .
+        ///   Looks up a localized string similar to Torne-se parte da história do seu clube!.
         /// </summary>
         internal static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Idioma.
+        /// </summary>
+        internal static string Language {
+            get {
+                return ResourceManager.GetString("Language", resourceCulture);
             }
         }
         

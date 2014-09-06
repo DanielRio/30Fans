@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     @if (string.IsNullOrEmpty(ViewBag.Title))
     {
-        <title>30 Fans - To be unique</title>
+        <title>30 Fans - Be unique</title>
     }
     else
     {
@@ -68,15 +68,24 @@
                 <div id="brand">
                     @if (string.IsNullOrEmpty(ViewBag.Title))
                     {
-                        <strong>30 Fans - To be unique</strong>
+                        <strong>30 Fans - Be unique</strong>
                     }
                     else
                     {
                         <a href="@Url.Content("~/")" rel="home" title="Go back home">
-                            <strong>30 Fans - To be unique</strong>
+                            <strong>30 Fans - Be unique</strong>
                         </a>
                     }
-                </div>
+                </div>         
+
+                <aside>
+                	<ul>
+                		<li class="choose-lang"><a href="javascript:void(0);" title="Choose your language">@Resources.FansResources.Language</a></li>
+                		<li class="choose"><a href="@Url.Content("~/Home/ChangeLanguage/pt-BR")" title="Conteúdo em Português">Português</a></li>
+                		<li class="choose"><a href="@Url.Content("~/Home/ChangeLanguage/en")" title="English Content">English</a></li>
+                		<li class="choose"><a href="@Url.Content("~/Home/ChangeLanguage/es")" title="Contenido en Español">Español</a></li>
+                	</ul>
+                 </aside>
             </div>
         </header>
 
@@ -88,13 +97,6 @@
 
         <footer id="footer">
             <div class="container">
-
-                <aside >
-                    <a style="color:white"  href="@Url.Content("~/Home/ChangeLanguage/pt-BR")" rel="home" title="Go back home">Portugues</a>
-                    <a style="color:white"  href="@Url.Content("~/Home/ChangeLanguage/en")" rel="home" title="Go back home">English</a>
-                    <a style="color:white"  href="@Url.Content("~/Home/ChangeLanguage/es")" rel="home" title="Go back home">Espanhol</a>
-            </aside>
-
                 <nav id="nav-global">
                     <ul>
                         <li><a href="javascript:void(0);" data-toggle="modal" data-target="#modalContact">@Resources.FansResources.Contact</a></li>
@@ -179,6 +181,18 @@
         </div>
     </section>
 
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/files")
+    @RenderSection("scripts", required: false)
+
+    <script src="/Scripts/jquery.fancybox.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+
 
 
     <!-- Google Analytics -->
@@ -192,18 +206,6 @@
 
         ga('create', 'UA-52067661-1', '30fans.com');
         ga('send', 'pageview');
-    </script>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/files")
-    @RenderSection("scripts", required: false)
-
-    <script src="/Scripts/jquery.fancybox.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".fancybox").fancybox();
-        });
     </script>
 </body>
 </html>

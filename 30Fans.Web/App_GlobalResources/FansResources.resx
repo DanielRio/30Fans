@@ -132,11 +132,17 @@
   <data name="Contact" xml:space="preserve">
     <value>Contato</value>
   </data>
+  <data name="ExampleTeam" xml:space="preserve">
+    <value>Time Exemplo</value>
+  </data>
   <data name="Forever" xml:space="preserve">
     <value>Sempre</value>
   </data>
   <data name="Home" xml:space="preserve">
-    <value>Você tem a oportunidade de ser único, especial. </value>
+    <value>Torne-se parte da história do seu clube!</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Idioma</value>
   </data>
   <data name="MissYourTeam" xml:space="preserve">
     <value>Esqueci sua equipe?</value>

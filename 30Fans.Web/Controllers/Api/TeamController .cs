@@ -43,19 +43,22 @@ namespace _30Fans.Web
         }
 
         // GET api/<controller>
-        public IEnumerable<TeamModel> GetAllTeams()
+
+        public IEnumerable<TeamModel> Get()
         {
-            var products = _productDao.GetaAll().Select(p => new TeamModel{
+            var products = _productDao.GetaAll().OrderBy(p=> p.CategoryItem.ItemName).Select(p => new TeamModel{
                 Id = int.Parse(p.Id.ToString()),
                 Name = p.ProductName,
-                Country = p.CategoryItem.ItemName
+                Country = p.CategoryItem.ItemName,
+                FlagUrl = p.ImageUrl.Replace("~", "http://www.30fans.com")
             });
 
             return products;
         }
 
         // GET api/<controller>/5
-        public TeamModel GetTeam(int id)
+
+        public TeamModel Get(int id)
         {
             List<string> fanImages = new List<string>();
             try
@@ -63,7 +66,7 @@ namespace _30Fans.Web
                 fanImages = System.IO.Directory.GetFiles(System.Web.Hosting.HostingEnvironment.MapPath("~/Images/Fans/2014/" + id)).ToList();
                 for (int i = 0; i < fanImages.Count; i++)
                 {
-                    fanImages[i] = Path.GetFileName(fanImages[i]);
+                    fanImages[i] = "http://www.30fans.com/Images/Fans/2014/"+id+"/"+Path.GetFileName(fanImages[i]);
                 }
             }
             catch
@@ -77,7 +80,7 @@ namespace _30Fans.Web
                 Id = id,
                 Country = product.CategoryItem.ItemName,
                 Name = product.ProductName,
-                FlagUrl = product.ImageUrl,
+                FlagUrl = product.ImageUrl.Replace("~", "http://www.30fans.com"),
                 PayPalCode = product.PaymentCode,
                 PhotosUrl = fanImages,
                 PhotosCount = fanImages.Count

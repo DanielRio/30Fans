@@ -87,7 +87,9 @@ $(document).ready(function() {
         friendFilter();
     });
 
-
+    $('.choose-lang a').bind('click', function() {
+        $(this).parents('ul').find('.choose').slideToggle();
+    });
 });
 
 

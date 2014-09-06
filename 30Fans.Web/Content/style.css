@@ -192,7 +192,7 @@ input:focus, select:focus, button:focus {
 
 #nav-global {
   margin: auto;
-  width: 180px; }
+  width: 235px; }
   #nav-global li {
     float: left;
     margin-right: 20px; }
@@ -322,8 +322,10 @@ input:focus, select:focus, button:focus {
       height: 70px;
       width: 70px; }
       #search-result li figure img {
-        max-height: 100%;
-        max-width: 100%; }
+        margin-left: -7px;
+        margin-top: -7px;
+        max-height: 120%;
+        max-width: 120%; }
     #search-result li .title-team {
       display: none; }
 
@@ -754,3 +756,10 @@ top: 0px; }
 position: absolute;
 right: 15px;
 top: 0px; }
+
+#header aside { position:absolute; right:10px; top:10px; font-size:.9em; z-index:9; width:100px; }
+#header aside li { list-style:none; }
+#header aside a { color:rgba(255,255,255,.8); display:inline-block; padding:3px 22px 0px; }
+#header aside .choose-lang a { background: url("../Images/Style/icon-global.png") no-repeat left 3px; }
+#header aside .choose { display:none; }
+#header aside .choose a { color:rgba(255,255,255,.5) }

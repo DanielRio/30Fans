@@ -18,6 +18,7 @@ namespace Dao.Mapping {
             Property(x => x.Priority);
             ManyToOne<Category>(x => x.Category, 
                                 m=> {
+                                    m.Lazy(LazyRelation.NoLazy);
                                     m.Class(typeof(Category));
                                     m.Column("CategoryId");
                                 });
